@@ -653,4 +653,11 @@ a[data-lightbox]:hover img{
 	h3 .textSpace{
 		font-size: 18px !important;
 	}
+	h2 .textSpace{
+		font-size: 18px !important;
+	}
+	.titleHighlight{
+		width: 25%;
+	}
+	#bloc-2 .col-sm-4{padding: 0 15% ;}
 }
