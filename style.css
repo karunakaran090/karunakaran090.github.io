@@ -25,7 +25,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
  h1, h2, h3, h4, h5, h6, p, label, .btn, a{
 	/*font-family:"Helvetica";*/
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab', serif;
 }
 
 
@@ -399,7 +399,7 @@ a[data-lightbox]{
 }
 a[data-lightbox]:hover::before{
 	content:"+";
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab', serif;
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;*/
 	font-size:32px;
 	width:50px;
