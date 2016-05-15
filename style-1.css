@@ -213,7 +213,7 @@ ul {
     top: 100%;
     left: 0; }
   .plain {
-  
+
     /*background: #f09;*/
     background-image: url(images/blue_sky.svg);
      }
@@ -531,13 +531,13 @@ ul {
     transform: scale(0.41667); }
 
 .wave.depth-80 {
-  -webkit-animation: wave 4.88889s 0.1s infinite linear;
+/*  -webkit-animation: wave 4.88889s 0.1s infinite linear;
   -moz-animation: wave 4.88889s 0.1s infinite linear;
   animation: wave 4.88889s 0.1s infinite linear;
   bottom: 0px;
   margin: 0px 0px;
   background-size: 320px 128px;
-  height: 128px; }
+  height: 128px;*/ }
   .wave.depth-80:after {
     height: 32px; }
 
@@ -573,13 +573,13 @@ ul {
     transform: scale(0.47222); }
 
 .wave.depth-100 {
-  -webkit-animation: wave 4s 0.1s infinite linear;
+/*  -webkit-animation: wave 4s 0.1s infinite linear;
   -moz-animation: wave 4s 0.1s infinite linear;
   animation: wave 4s 0.1s infinite linear;
   bottom: -40px;
   margin: 0px 0px;
   background-size: 400px 100px;
-  height: 100px; }
+  height: 100px; */}
   .wave.depth-100:after {
     height: 0px; }
 
@@ -889,7 +889,7 @@ ul {
     bottom: 0px;
     margin: 0px 0px;
     background-size: 480px 192px;
-    height: 192px; }
+    height: 182px; }
     .wave.depth-80:after {
       height: 48px; }
 
@@ -919,7 +919,7 @@ ul {
     bottom: -10%;
     margin: 0px 0px;
     background-size: 600px 240px;
-    height: 240px; }
+    height: 220px; }
     .wave.depth-100:after {
       height: 0px; }
 
@@ -1091,7 +1091,7 @@ ul {
     bottom: 0px;
     margin: 0px 0px;
     background-size: 544px 217.6px;
-    height: 218px; }
+    height: 208px; }
     .wave.depth-80:after {
       height: 54.4px; }
 
@@ -1121,7 +1121,7 @@ ul {
     bottom: -10%;
     margin: 0px 0px;
     background-size: 680px 272px;
-    height: 272px; }
+    height: 220px; }
     .wave.depth-100:after {
       height: 0px; }
 
@@ -1269,7 +1269,7 @@ ul {
     bottom: -100px;
     margin: 0px 0px;
     background-size: 576px 230.4px;
-    height: 230px; }
+    height: 210px; }
     .wave.depth-80:after {
       height: 57.6px; }
 
@@ -1624,7 +1624,7 @@ a, button {
     -webkit-transform: rotateZ(-10deg);
     -moz-transform: rotateZ(-10deg);
     transform: rotateZ(-10deg); } }
-    
+
 .positionDuplicate{
   left: 40% !important;
 }
