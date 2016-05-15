@@ -14,6 +14,7 @@ body {
   color: white; }
 
 
+
 em {
   font-style: normal;
   color: #d92400; }
@@ -171,13 +172,14 @@ ul {
   top: 42%; }
 
 .background {
-  background: url(images/background.jpg) no-repeat 50% 100%;
-  bottom: 96px;
-  background-size: cover;
+    background-color: #a7daee;
+    background-image: url("img/skulls.png");
+  bottom: 0px;
+  height: 100vh;
   position: absolute;
   width: 110%;
   left: -5%;
-  top: -5%; }
+  top: 0%; }
 
 .lighthouse {
   -webkit-transform-origin: 50% 90%;
@@ -190,7 +192,7 @@ ul {
   background-size: 128px 224px;
   height: 224px;
   width: 128px;
-  background-image: url(images/lighthouse.png);
+  background-image: url(images/ballon.svg);
   background-repeat: no-repeat;
   bottom: 64px;
   position: absolute;
@@ -202,7 +204,7 @@ ul {
   width: 300%;
   left: -100%; }
   .wave:after {
-    background-color: black;
+
     position: absolute;
     display: block;
     content: "";
@@ -210,10 +212,15 @@ ul {
     width: 100%;
     top: 100%;
     left: 0; }
-  .wave.plain {
-    background-image: url(images/wave-plain.png); }
-  .wave.paint {
-    background-image: url(images/wave-paint.png); }
+  .plain {
+  
+    /*background: #f09;*/
+    background-image: url(images/blue_sky.svg);
+     }
+  .paint {
+      /*background: #a7daee;*/
+    background-image: url(images/white_sky.svg);
+     }
 
 .light {
   margin: -120px -120px;
@@ -224,10 +231,10 @@ ul {
   bottom: 112px;
   position: absolute;
   left: 50%; }
-  .light.orange {
+/*  .light.orange {
     background-image: url(images/light-orange.png); }
   .light.purple {
-    background-image: url(images/light-purple.png); }
+    background-image: url(images/light-purple.png); }*/
   .light.a {
     bottom: 80px;
     left: 20%; }
@@ -285,7 +292,7 @@ ul {
   .hanger.position-1 {
     top: 28%; }
   .hanger.position-2 {
-    top: 46%; }
+    top : 100%; }
   .hanger.position-3 {
     top: 59%; }
   .hanger.position-4 {
@@ -297,17 +304,17 @@ ul {
   .hanger.position-7 {
     top: 59%; }
   .hanger.position-8 {
-    top: 46%; }
+    bottom: 46%; }
   .hanger.position-9 {
     top: 28%; }
   .hanger.position-1 {
-    left: 10%; }
+    left: 18%; }
   .hanger.position-2 {
     left: 20%; }
   .hanger.position-3 {
     left: 30%; }
   .hanger.position-4 {
-    left: 40%; }
+    left: 42.5%; }
   .hanger.position-5 {
     left: 50%; }
   .hanger.position-6 {
@@ -331,16 +338,25 @@ ul {
   position: absolute;
   top: -4px;
   left: 0; }
+  .position-2 img{
+    margin-top: 50%;
+    width: 350px;
+  }
   .board.birds {
-    background-image: url(images/board-birds.png); }
+    background-image: url(images/cloud1.svg); background-size: 200px 200px;margin-top: 100px;}
   .board.cloud-1 {
-    background-image: url(images/board-cloud-1.png); }
+    background-image: url(images/love2.svg); background-size: 200px 300px;margin-top:-100px;}
+
+    .board.cloud-5 {
+    background-image: url(images/love.svg);background-size: 155px 125px;}
+      .board.cloud-6 {
+    background-image: url(images/love2.svg); background-size: 160px 250px;}
   .board.cloud-2 {
-    background-image: url(images/board-cloud-2.png); }
-  .board.cloud-3 {
+    background-image: url(images/people.svg); top: calc(100vh - 600px);}
+  /*.board.cloud-3 {
     background-image: url(images/board-cloud-3.png); }
   .board.cloud-4 {
-    background-image: url(images/board-cloud-4.png); }
+    background-image: url(images/board-cloud-4.png); }*/
 
 .swing-1 {
   -webkit-animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -376,13 +392,13 @@ ul {
   background-size: 40px 16px;
   height: 16px; }
   .wave.depth-10:after {
-    height: 144px; }
+    height: 100%; }
 
 .rope.depth-10 {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   transform: scale(1);
-  top: 20%; }
+  top: 80%; }
   .rope.depth-10 .hanger {
     -webkit-transform: scale(0.25);
     -moz-transform: scale(0.25);
@@ -403,7 +419,7 @@ ul {
   -webkit-transform: scale(1.02778);
   -moz-transform: scale(1.02778);
   transform: scale(1.02778);
-  top: 16.66667%; }
+  top: 40%; }
   .rope.depth-20 .hanger {
     -webkit-transform: scale(0.27778);
     -moz-transform: scale(0.27778);
@@ -562,8 +578,8 @@ ul {
   animation: wave 4s 0.1s infinite linear;
   bottom: -40px;
   margin: 0px 0px;
-  background-size: 400px 160px;
-  height: 160px; }
+  background-size: 400px 100px;
+  height: 100px; }
   .wave.depth-100:after {
     height: 0px; }
 
@@ -604,7 +620,7 @@ ul {
       transform: scale(0.3); }
 
   .rope.depth-20 {
-    top: 6.11111%; }
+    top: 40%; }
     .rope.depth-20 .hanger {
       -webkit-transform: scale(0.33333);
       -moz-transform: scale(0.33333);
@@ -632,7 +648,7 @@ ul {
       transform: scale(0.43333); }
 
   .rope.depth-60 {
-    top: -9.44444%; }
+    top: 0.44444%; }
     .rope.depth-60 .hanger {
       -webkit-transform: scale(0.46667);
       -moz-transform: scale(0.46667);
@@ -646,7 +662,7 @@ ul {
       transform: scale(0.5); }
 
   .rope.depth-80 {
-    top: -17.22222%; }
+    top: -100.22222%; }
     .rope.depth-80 .hanger {
       -webkit-transform: scale(0.53333);
       -moz-transform: scale(0.53333);
@@ -744,7 +760,7 @@ ul {
     background-size: 192px 336px;
     height: 336px;
     width: 192px;
-    bottom: 128px; }
+    top: 160px; }
 
   .light {
     margin: -140px -140px;
@@ -788,7 +804,7 @@ ul {
       height: 192px; }
 
   .rope.depth-20 {
-    top: 16.66667%; }
+    top: 40%; }
     .rope.depth-20 .hanger {
       -webkit-transform: scale(0.55556);
       -moz-transform: scale(0.55556);
@@ -900,7 +916,7 @@ ul {
       transform: scale(0.94444); }
 
   .wave.depth-100 {
-    bottom: -60px;
+    bottom: -10%;
     margin: 0px 0px;
     background-size: 600px 240px;
     height: 240px; }
@@ -937,14 +953,14 @@ ul {
     font-size: 3.46667em; }
 
   .background {
-    bottom: 160px; }
+    bottom: 0px; }
 
   .lighthouse {
     margin: 0px -104px;
     background-size: 208px 364px;
     height: 364px;
     width: 208px;
-    bottom: 128px; }
+    top: 160px; }
 
   .light {
     margin: -160px -160px;
@@ -990,7 +1006,7 @@ ul {
       height: 217.6px; }
 
   .rope.depth-20 {
-    top: 6.66667%; }
+    top: 40%; }
     .rope.depth-20 .hanger {
       -webkit-transform: scale(0.56111);
       -moz-transform: scale(0.56111);
@@ -1050,7 +1066,7 @@ ul {
       height: 108.8px; }
 
   .rope.depth-60 {
-    top: -6.66667%; }
+    top: 0.66667%; }
     .rope.depth-60 .hanger {
       -webkit-transform: scale(0.80556);
       -moz-transform: scale(0.80556);
@@ -1102,7 +1118,7 @@ ul {
       transform: scale(0.98889); }
 
   .wave.depth-100 {
-    bottom: -68px;
+    bottom: -10%;
     margin: 0px 0px;
     background-size: 680px 272px;
     height: 272px; }
@@ -1168,7 +1184,7 @@ ul {
       height: 230.4px; }
 
   .rope.depth-20 {
-    top: 1.66667%; }
+    top: 40%; }
     .rope.depth-20 .hanger {
       -webkit-transform: scale(0.67778);
       -moz-transform: scale(0.67778);
@@ -1228,7 +1244,7 @@ ul {
       height: 115.2px; }
 
   .rope.depth-60 {
-    top: -11.66667%; }
+    top: 0.66667%; }
     .rope.depth-60 .hanger {
       -webkit-transform: scale(0.98889);
       -moz-transform: scale(0.98889);
@@ -1250,7 +1266,7 @@ ul {
       transform: scale(1.06667); }
 
   .wave.depth-80 {
-    bottom: 0px;
+    bottom: -100px;
     margin: 0px 0px;
     background-size: 576px 230.4px;
     height: 230px; }
@@ -1280,7 +1296,7 @@ ul {
       transform: scale(1.22222); }
 
   .wave.depth-100 {
-    bottom: -72px;
+    bottom: -10%;
     margin: 0px 0px;
     background-size: 720px 288px;
     height: 288px; }
@@ -1608,3 +1624,7 @@ a, button {
     -webkit-transform: rotateZ(-10deg);
     -moz-transform: rotateZ(-10deg);
     transform: rotateZ(-10deg); } }
+    
+.positionDuplicate{
+  left: 40% !important;
+}
