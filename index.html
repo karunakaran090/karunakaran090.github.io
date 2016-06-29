@@ -1,338 +1,166 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
-    <link rel="stylesheet" id="ppstyle" type="text/css" href="style-1.css">
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://karunakaran090.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <link rel='stylesheet' href='./css/font-awesome.min.css'/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab' rel='stylesheet' type='text/css'>
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/blocs.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Karunakaran Manoharan : Frontend Developer. UI Developer.">
 
-    <title>NallaWedsSowmya</title>
-    <style>
-      body{
-        background-color: #f2d8b2;
-        background-image: url("img/skulls.png");
-         }
-      .eventBg{background: url(img/mountains.jpg) no-repeat center center fixed;background-color: #a7daee;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
-      .evt-bgc-white{background: #fff;padding: 15px;border-radius: 5px;}
-      #map{width: 100%;height: 400px;}
-      .textSpace{padding: 0 4%;font-size: 36px !important}
-      .padd-Top{padding: 40px 0;}
-      #bloc-4{padding: 0 !important;}
-      .padTop{padding: 4% 0;}
-      /*h1{color: #183456;}*/
-      .titleTxt{padding: 0 3%;}
-      .nallatitle{font-size: 30px !important;}
-      .nallaTxt{font-size: 18px !important;}
-      h3, p{color: #183456;}
-      .centerImg{margin: auto;}
-    </style>
-</head>
-<body>
-<!-- Main container -->
-<div class="page-container">
-<!-- Hero Bloc -->
-<div id="bloc-1">
-	<!-- <div class="v-top">
-		<div class="vc-content row">
-			<div class="col-sm-12 padTop">
-        <div class="text-center">
-          <img style="transform:rotate(180deg);" src="img/Shape_4.png">
-        </div>
-				<h1 class=" text-center">
-          <img class="hidden-xs" src="img/Shape_2.png"><span class="titleTxt">Nallathambi & sowmya</span><img  class="hidden-xs"  style="transform:rotate(180deg);" src="img/Shape_2.png">
-				</h1>
-				<h3 class=" text-center mg-lg">
-					We're Gerrting Married on June 8th 2016
-				</h3>
-				<div class="text-center">
-					<img src="img/Shape_4.png">
-				</div>
-			</div>
-		</div><a id="scroll-hero" class="btn-dwn"><span class="fa fa-chevron-down"></span></a>
-	</div> -->
-  <div id="container" class="wrapper">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css">
 
-		<ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" style="width: 100vw; height: 100vh; -webkit-transform: translate3d(0, 0, 0); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
-			<div id="hero-bloc" style="padding-top:15%;">
-				<h1 class=" text-center" style="position: relative;z-index: 9999;">
-	          		<span class="titleTxt">Nallathambi & sowmya</span>
-				</h1>
-				<h3 class=" text-center mg-lg" style="position: relative;z-index: 9999;">
-					We're Gerrting Married on June 8th 2016
-				</h3>
-			</div>
-			<li class="layer" data-depth="0.00" style="position: relative; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0%, 0%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"></li>
-			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.29761904761904784%, -1.4893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="background"></div></li>
-			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.29761904761904784%, -1.4893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="light orange b phase-4"></div></li>
-			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.29761904761904784%, -1.4893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="light purple c phase-5"></div></li>
-			<li class="layer" data-depth="0.10" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.29761904761904784%, -1.4893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="light orange d phase-3"></div></li>
-			<li class="layer" data-depth="0.15" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 20%; -webkit-transform: translate3d(0.4464285714285717%, -2.234098939929327%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
-				<ul class="rope depth-20">
-          <!-- <li><img src="images/rope.png" alt="Rope"/></li> -->
-          			<li class="hanger position-1">
-						<div class="board cloud-5 swing-3"></div>
-					</li>
-					<li class="hanger position-1 positionDuplicate" style="left:28% !important">
-						<div class="board cloud-1 swing-3"></div>
-					</li>
+    <title>Karunakaran Manoharan</title>
+  </head>
 
+  <body>
 
-					<li class="hanger position-4">
-						<div class="board cloud-6 swing-3"></div>
-					</li>
-					<li class="hanger position-8">
-						<div class="board birds swing-5"></div>
-					</li>
-					<li class="hanger position-2">
-						<!-- <div class="board cloud-2 swing-1"></div> -->
-						<img src="images/people.svg">
-					</li>
-				</ul>
-			</li>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/raavanan">View on GitHub</a>
 
-			<li class="layer" data-depth="0.20" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.5952380952380957%, -2.9787985865724367%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"></li>
-			<li class="layer" data-depth="0.30" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.8928571428571433%, -4.468197879858654%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
-				<ul class="rope depth-30">
-          <!-- <li><img src="images/rope.png" alt="Rope"/></li> -->
+          <h1 id="project_title">Karunakaran Manoharan</h1>
+          <h2 id="project_tagline">Frontend Developer. UI Developer.</h2>
 
-				</ul>
-			</li>
-			<!-- <li class="layer" data-depth="0.30" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(0.8928571428571433%, -4.468197879858654%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave paint depth-30"></div></li>
-			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.1904761904761914%, -5.957597173144873%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave plain depth-40"></div></li> -->
-			<!-- <li class="layer" data-depth="0.50" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.488095238095239%, -7.4469964664310915%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave paint depth-50"></div></li> -->
-			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.7857142857142867%, -8.936395759717309%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="lighthouse depth-60"></div></li>
-			<li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.7857142857142867%, -8.936395759717309%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;">
-				<ul class="rope depth-60">
-          <!-- <li><img src="images/rope.png" alt="Rope"/></li> -->
-					<li class="hanger position-3">
-						<div class="board birds swing-5"></div>
-					</li>
-					<li class="hanger position-6">
-						<!-- <div class="board cloud-2 swing-2"></div> -->
-					</li>
-					<li class="hanger position-8">
-						<div class="board cloud-3 swing-4"></div>
-					</li>
-				</ul>
-			</li>
-			<!-- <li class="layer" data-depth="0.60" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 0px; -webkit-transform: translate3d(1.7857142857142867%, -8.936395759717309%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave plain depth-60"></div></li> -->
+        </header>
+    </div>
 
-       <div class="test">
-         <li class="layer" data-depth="0.80" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top: 12%; -webkit-transform: translate3d(2.3809523809523827%, -11.915194346289747%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave plain depth-80"></div></li>
-        </div>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="skills" class="anchor" href="http://karunakaran090.github.io/#skills" aria-hidden="true"><span class="octicon octicon-link"></span></a>SKILLS</h2>
 
-         <li class="layer" data-depth="1.00" style="position: absolute; display: block; height: 100%; width: 100%; left: 0px; top:12%; -webkit-transform: translate3d(2.976190476190478%, -14.893992932862183%, 0px); -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden;"><div class="wave paint depth-100"></li>
-      </div>
-		</ul>
-	</div>
-</div>
-<!-- Hero Bloc END -->
+<p>Frontend Development.         UI Development.<br>
+Intermediate design skills with Photoshop and sketch.</p>
 
-<!-- Footer - bloc-2 -->
-<div class="bloc l-bloc bgc-white" id="bloc-2">
-	<div class="container bloc-lg">
-		<div class="row">
-      <div class="col-sm-1 hidden-xs"></div>
-			<div class="col-sm-4">
-				<img src="img/art.png" class="img-responsive" />
-				<h3 class="mg-md text-center nallatitle">
-					Nallathambi
-				</h3>
-				<!-- <p class="text-center nallaTxt">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				</p> -->
-			</div>
-      <div class="col-sm-2 hidden-xs"></div>
-			<div class="col-sm-4">
-				<img src="img/art1.png" class="img-responsive" />
-				<h3 class="mg-md text-center nallatitle">
-					Sowmya
-				</h3>
-				<!-- <p class="text-center nallaTxt">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				</p> -->
-			</div>
-      <div class="col-sm-1 hidden-xs"></div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-2 END -->
+<h2>
+<a id="technologies" class="anchor" href="http://karunakaran090.github.io/#technologies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technologies</h2>
 
-<!-- Footer - bloc-3 -->
-<h3 class="mg-md text-center padd-Top">
-  <img class="titleHighlight" class="titleHighlight" src="img/Shape_5.svg"><span class="textSpace">Marriage event</span><img style="transform:rotate(180deg);" class="titleHighlight" src="img/Shape_5.svg">
+<p>HTML, CSS, Javascript.</p>
+
+<p>Bootstrap, Sass, Less. </p>
+
+<p>AngularJS, Snap.svg, Bootstrap,
+Git, Bower, Grunt.</p>
+
+<h2>
+<a id="languages" class="anchor" href="http://karunakaran090.github.io/#languages" aria-hidden="true"><span class="octicon octicon-link"></span></a>LANGUAGES</h2>
+
+<p>English, Tamil.</p>
+
+<h1>
+<a id="experience" class="anchor" href="http://karunakaran090.github.io/#experience" aria-hidden="true"><span class="octicon octicon-link"></span></a>EXPERIENCE</h1>
+
+<h3>
+<a id="deck-app-technologies-pvt-ltd-bangalore--frontend-developer-interaction-designer" class="anchor" href="http://karunakaran090.github.io/#deck-app-technologies-pvt-ltd-bangalore--frontend-developer-interaction-designer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deck App Technologies Pvt Ltd, Bangalore — FrontEnd Developer/ Interaction Designer.</h3>
+
+<p>Feb 2014 - PRESENT
+Develop UI and UX for Web Apps, and provide innovative solutions to production problems.</p>
+
+<h2>
+<a id="education" class="anchor" href="http://karunakaran090.github.io/#education" aria-hidden="true"><span class="octicon octicon-link"></span></a>EDUCATION</h2>
+
+<h3>
+<a id="mca" class="anchor" href="http://karunakaran090.github.io/#mca" aria-hidden="true">
+  <span class="octicon octicon-link"></span></a>Master of Computer Application (2010 - 2013) ,
+<br>Nallamuthu Gounder Mahalingam college of Arts and Science, Pollachi.
+<br>
 </h3>
-<div class="bloc l-bloc bgc-white eventBg" id="bloc-3">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-4">
-        <div class="evt-bgc-white">
-  				<img src="img/r-1.jpg" class="img-responsive centerImg" />
-  				<h3 class="mg-md text-center">
 
-  				</h3>
-  				<p class="text-center">
-            <span style="font-weight:600;">Wedding Reception</span><br>
-  					7 th June 2016<br>
-            Erode
-  				</p>
-        </div>
-			</div>
-			<div class="col-sm-4">
-        <div class="evt-bgc-white">
-  				<img src="img/r-3.jpg" class="img-responsive centerImg" />
-          <h3 class="mg-md text-center">
-  				</h3>
-  				<p class="text-center">
-            <span style="font-weight:600;">Wedding</span><br>
-  					8 th June 2016<br>
-            Erode
-  				</p>
-        </div>
-			</div>
-			<div class="col-sm-4">
-        <div class="evt-bgc-white">
-  				<img src="img/r-2.jpg" class="img-responsive centerImg" />
-          <h3 class="mg-md text-center">
-  				</h3>
-  				<p class="text-center">
-            <span style="font-weight:600;">Wedding Reception</span><br>
-  					10 th June 2016<br>
-            Udumalipet
-  				</p>
-        </div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-3 END -->
-
-<!-- Footer - bloc-4 -->
-<h3 class="mg-md text-center padd-Top">
-  <img class="titleHighlight" src="img/Shape_5.svg"><span class="textSpace">Location</span><img style="transform:rotate(180deg);" class="titleHighlight" src="img/Shape_5.svg">
+<p>Bharathiar university, Coimbatore
+</p>
+<h3>
+<a id="mca" class="anchor" href="http://karunakaran090.github.io/#mca" aria-hidden="true">
+  <span class="octicon octicon-link"></span></a>B.Com ( CA ) (2007 - 2010) ,
+<br>Vidhyasagar College of Arts and Science, Udumalpet.
+<br>
 </h3>
-<div class="bloc l-bloc bgc-white" id="bloc-4">
+<p>Bharathiar university, Coimbatore
+</p>
 
-<div id="map"></div>
-<!-- <div style="height:500px;width:100%;max-width:100%;list-style:none; transition: none;overflow:hidden;">
-  <div id="embedded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Chithode,+Tamil+Nadu,+India&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="google-map-enabler" href="https://www.hostingreviews.website/compare/network-solutions-vs-ipage" id="grab-map-data">rate ipage with network solutions</a><style>#embedded-map-canvas .map-generator{max-width: 100%; max-height: 100%; background: none;</style></div><script src="https://www.hostingreviews.website/google-maps-authorization.js?id=1c61658f-5162-9eb4-d974-f05b42686c49&c=google-map-enabler&u=1463077924" defer="defer" async="async"></script> -->
-  <!-- <div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
+<h1>
+<a id="projects" class="anchor" href="http://karunakaran090.github.io/#projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>PROJECTS</h1>
 
-			</div>
-		</div>
-	</div> -->
-</div>
-<!-- Footer - bloc-4 END -->
+<h2>
+<a id="snapdust--photo-management-app" class="anchor" href="http://karunakaran090.github.io/#snapdust--photo-management-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Snapdust — Photo management App.</h2>
 
-<!-- Footer - bloc-5 -->
-<div class="bloc l-bloc bgc-white" id="bloc-5">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h2 class="text-center mg-md">
-          <img class="titleHighlight " src="img/Shape_5.svg"><span class="textSpace">Gallery</span><img style="transform:rotate(180deg);" class="titleHighlight" src="img/Shape_5.svg">
-				</h2>
+<p>A Photo sharing app which helps you organise your photos based on location, time and events the photos were taken in.<br>
+(App currently live <a href="http://apps.snapdust.com/album/">http://apps.snapdust.com/album/</a> )</p>
 
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/7_b.jpg" data-caption=""><img src="img/7.png" class="img-responsive" /></a>
-			</div>
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/2_b.jpg" data-caption=""><img src="img/2.png" class="img-responsive" /></a>
-			</div>
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/3_b.jpg" data-caption=""><img src="img/3.png" class="img-responsive" /></a>
-			</div>
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/4_b.jpg" data-caption=""><img src="img/4.png" class="img-responsive" /></a>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/5_b.jpg" data-caption=""><img src="img/5.png" class="img-responsive" /></a>
-			</div>
-      <div class="col-sm-3">
-				<a href="#" data-lightbox="img/6_b.jpg" data-caption=""><img src="img/6.png" class="img-responsive" /></a>
-			</div>
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/8_b.jpg" data-caption=""><img src="img/8.png" class="img-responsive" /></a>
-			</div>
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/9_b.jpg" data-caption=""><img src="img/9.png" class="img-responsive" /></a>
-			</div>
-		</div>
+<ul>
+<li>AngularJS, Jquery, google maps api.</li>
+<li>Responsible for UI and UX development.<br>
+</li>
+<li>frontend logic in terms of integration with google maps api for location.<br>
+</li>
+<li>And location based organisation of photos.</li>
+<li>Handle large number photo upload. </li>
+<li>Integrate with social networking app like Twitter, Facebook, Instagram.
+## Snapdust Video — Create animated videos from your Photos.
+Upload photos and create a animated video based on pre designed video templates (App currently in QA and testing).</li>
+<li>AngularJS, Material­Angular.<br>
+</li>
+<li>UI and UX design and development. </li>
+<!-- <li>Adobe After effects Scripting to dynamically add photos to pre­design.</li>
+<li>After Effects templates (programming : javaScript Extended).</li>
+<li>handle HTML5 video Encoding and playback.</li> -->
+</ul>
+<!--
+<h2>
+<a id="snapdust-video-ios--ios-app-of-snapdust-video" class="anchor" href="http://karunakaran090.github.io/#snapdust-video-ios--ios-app-of-snapdust-video" aria-hidden="true"><span class="octicon octicon-link"></span></a>Snapdust Video IOS — IOS App of Snapdust Video.</h2>
 
-	</div>
-</div>
-<!-- Footer - bloc-5 END -->
-</div>
-<!-- Main container END -->
-<!-- <script src="http://wagerfield.github.io/parallax/deploy/jquery.parallax.js"></script> -->
-<!-- <script src="app.js"></script> -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
- <script>
- // $('#scene').parallax();
- $(document).ready(function() {
-    $('.maps').click(function () {
-        $('.maps iframe').css("pointer-events", "auto");
-    });
+<p>IOS version of the above app with mobile UI developed with IONIC framework and built with apache Cordova.</p> -->
 
-    $( ".maps" ).mouseleave(function() {
-      $('.maps iframe').css("pointer-events", "none");
-    });
- });
- var myCenter=new google.maps.LatLng(11.3934,77.6593);
-  function initialize()
-  {
-  var mapProp = {
-  center:myCenter,
-  draggable : false,
-  zoom:10,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var myOptions = {
-      // your other options...
-      draggable: !("ontouchend" in document)
-  };
+<h2>
+<a id="pitchdeck--presentation-app" class="anchor" href="http://karunakaran090.github.io/#pitchdeck--presentation-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>PitchDeck — Presentation App.</h2>
 
-  var map=new google.maps.Map(document.getElementById("map"),mapProp);
-  var marker=new google.maps.Marker({
-  position:myCenter,
-  });
+<p>PitchDeck is the second version of the company’s flagship app Deck. Its a Presentation app developed with flash and flex technology. I am responsible for the javascript version of the app (in Development), below mentioned tasks have been completed and added to the app.</p>
 
-  marker.setMap(map);
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
+<ul>
+<li>Developed a pipeline for design, develop and integration of assets from flash to Js.<br>
+</li>
+<li>Graphic programing with Createjs canvas framework.</li>
+<li>Developed responsive canvas graphics. </li>
+<li>Cross browser and device compatibility.<br>
+</li>
+<li>support analytics and remote presentation capabilities
+## Origami — Graphic Design App.
+Origami Lets users Design their Everyday stuff, such as their facebook cover page, twitter header, posters, Etc. The App is built on Web technology (HTML, CSS, JS). the graphics are SVGs.</li>
+<li>UI Development and implementation.<br>
+</li>
+<li>Developed core functionality of the App.</li>
+<li>Svg manipulation, free transform, Etc.</li>
+<li>Image manipulation with HTML5 canvas.</li>
+</ul>
 
- </script>
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<h2>
+<a id="pitchdeck--presentation-app" class="anchor" href="http://karunakaran090.github.io/#pitchdeck--presentation-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>PitchDeck — Presentation App DashBoard.</h2>
 
-  ga('create', 'UA-77714798-1', 'auto');
-  ga('send', 'pageview');
+<p>PitchDeck main app is developed by flex and flash, I am responsible for the javascript version of the app (in Development), below mentioned tasks have been completed and added to the app.</p>
 
-</script>
-</body>
+<ul>
+<li>User control panel for creating corporate user<br>
+</li>
+<li>Order placement and follow up the order SPOC(Single Point Of Contact) level</li>
+<li>Asign task to the designer </li>
+<li>Cross browser and device compatibility.<br>
+</li>
+<li>UI Development and implementation.<br>
+</li>
+<li>Developed core functionality of the order creation.</li>
+</ul>
 
-<!-- Google Analytics -->
+      </section>
+    </div>
 
-<!-- Google Analytics END -->
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com/">GitHub Pages</a></p>
+      </footer>
+    </div>
 
-</html>
+
+
+
+
+</body></html>
