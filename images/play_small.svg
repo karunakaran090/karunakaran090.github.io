@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>play_small</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M24,0 C37.254834,-2.4348735e-15 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 C10.745166,48 1.623249e-15,37.254834 0,24 C-1.623249e-15,10.745166 10.745166,2.4348735e-15 24,0 Z" id="path-1"></path>
+        <filter x="-54.2%" y="-45.8%" width="208.3%" height="208.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.905882353   0 0 0 0 0.207843137   0 0 0 0 0.301960784  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="robust_haven_v1" transform="translate(-184.000000, -483.000000)">
+            <g id="button" transform="translate(200.000000, 495.000000)">
+                <g id="play_small">
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#E7354D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M28.7065637,17.7925587 L36.14045,29.9571 C36.7164278,30.8996091 36.4192954,32.1305859 35.4767863,32.7065637 C35.1627705,32.8984622 34.8018958,33 34.4338863,33 L19.5661137,33 C18.4615442,33 17.5661137,32.1045695 17.5661137,31 C17.5661137,30.6319905 17.6676514,30.2711158 17.85955,29.9571 L25.2934363,17.7925587 C25.8694141,16.8500496 27.1003909,16.5529173 28.0429,17.1288951 C28.3136318,17.2943423 28.5411165,17.5218269 28.7065637,17.7925587 Z" id="Triangle" fill="#FFFFFF" transform="translate(27.000000, 24.000000) rotate(-270.000000) translate(-27.000000, -24.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

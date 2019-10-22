@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Skype</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="robust_haven_v1" transform="translate(-824.000000, -2578.000000)">
+            <g id="Group-7" transform="translate(754.000000, 2576.000000)">
+                <g id="Skype" transform="translate(68.000000, 0.000000)">
+                    <path d="M5.137,3.916 C6.687,2.797 8.88,2.701 10.53,3.658 C12.391,3.335 14.359,3.642 16.02,4.547 C17.874,5.543 19.329,7.253 20.007,9.247 C20.473,10.596 20.581,12.062 20.339,13.468 C20.935,14.516 21.142,15.778 20.9,16.961 C20.645,18.266 19.84,19.448 18.728,20.175 C17.188,21.211 15.072,21.269 13.467,20.34 C11.68,20.647 9.796,20.381 8.18,19.556 C6.301,18.612 4.803,16.942 4.07,14.971 C3.539,13.563 3.406,12.013 3.658,10.531 C3.049,9.464 2.852,8.175 3.112,6.975 C3.37,5.749 4.112,4.634 5.137,3.916 L5.137,3.916 Z" id="Path" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M9.079,14.436 C9.381,15.316 10.572,15.975 12,15.975 C14,15.975 15,15.091 15,14 L15,14.025 L15,14.025 C15,13.145 14.364,12.394 13.496,12.25 L12,12 L10.504,11.751 C9.636,11.606 9,10.855 9,9.975 L9,9.975 C9,8.884 10,8 12,8 C13.429,8 14.619,8.659 14.921,9.539" id="Path" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polygon id="Path" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " points="1.13686838e-13 0 24 0 24 24 1.13686838e-13 24"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

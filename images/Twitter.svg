@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Twitter</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="robust_haven_v1" transform="translate(-790.000000, -2580.000000)">
+            <g id="Group-7" transform="translate(754.000000, 2576.000000)">
+                <g id="Twitter" transform="translate(34.000000, 0.000000)">
+                    <path d="M19.2,9.35 C19.2,15.65 15.6,20.15 9.3,20.15 C5.7,20.15 4.257,18.271 3,16.55 M3,16.55 C3.029,16.545 5.7,15.65 5.7,15.65 C2.694,12.611 2.466,8.11 4.8,4.85 C5.907,6.909 7.974,8.809 10.2,9.35 C10.286,6.75 12.049,4.85 14.7,4.85 C16.505,4.85 17.567,5.538 18.3,6.65 L21,6.65 L19.2,9.35" id="Shape" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polygon id="Path" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " points="0 0 24 0 24 24 0 24"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
