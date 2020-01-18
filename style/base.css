@@ -107,17 +107,17 @@ footer img {
 }
 
 .banner-content .padd-cont {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .banner-content h1 {
-  font-size: 3.75em;
+  font-size: 3em;
   color: #000000;
   font-weight: bold;
 }
 
 .banner-content h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: normal;
 }
 
@@ -128,9 +128,6 @@ footer img {
 
 .banner-content .model-img {
   width: 90%;
-  position: absolute;
-  bottom: 10%;
-  right: 5%;
 }
 
 .about-container {
