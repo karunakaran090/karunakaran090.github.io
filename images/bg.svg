@@ -6,4 +6,5 @@
         </linearGradient>
     </defs>
     <path fill="url(#a)" fill-rule="evenodd" d="M0 0h1600v780l-453.755 206.68a100 100 0 0 1-60.775 7.11L0 780V0z" opacity=".104"/>
+        <image href="model.png" x="57.5%" y="14.75%"/>
 </svg>
