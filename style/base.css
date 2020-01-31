@@ -154,7 +154,7 @@ footer img {
 }
 
 .banner-content .model-img {
-  width: 90%;
+  display: none;
 }
 
 .banner-content .building-cont {
@@ -539,6 +539,16 @@ footer img {
     height: auto;
     position: absolute;
     bottom: 0;
+  }
+  #img2 {
+    display: none;
+  }
+  .model-img {
+    display: block !important;
+    width: 70%;
+    position: absolute;
+    bottom: 14px;
+    right: -15%;
   }
   .navbar-light .navbar-brand {
     display: block;
