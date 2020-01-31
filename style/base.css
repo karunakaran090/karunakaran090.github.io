@@ -69,14 +69,25 @@ footer img {
   position: absolute;
 }
 
-.imag-bg {
+#svg-icon {
+  width: 100%;
+  height: 100%;
+}
+
+#img2 {
+  width: 65%;
+  x: 57%;
+  y: 15%;
+}
+
+.imag-bg1 {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/temp.svg");
   background-attachment: fixed;
-  background-size: 100% 100%;
-  background-repeat: repeat;
-  background-position: center center;
+  background-size: 100vw 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
 .navbar-light {
@@ -373,6 +384,10 @@ footer img {
   margin-left: 12%;
 }
 
+.business-content .text-logo {
+  display: none;
+}
+
 .testimonials-content {
   padding: 4em 0;
 }
@@ -506,14 +521,32 @@ footer img {
   }
   .business-content .logoIcon {
     margin-top: -20px;
+    display: none;
+  }
+  .business-content .text-logo {
+    display: inline;
+    width: 55px;
+    margin-left: 5px;
+  }
+  .about-content {
+    padding: 5%;
   }
 }
 
 @media only screen and (max-width: 570px) {
+  #svg-icon {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+  }
   .navbar-light .navbar-brand {
     display: block;
     margin: auto;
     margin-left: calc(100vw - 50% - 100px);
+  }
+  .about-content {
+    padding: 5%;
   }
 }
 
