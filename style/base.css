@@ -547,7 +547,7 @@ footer img {
     display: block !important;
     width: 70%;
     position: absolute;
-    bottom: 14px;
+    bottom: 0;
     right: -15%;
   }
   .navbar-light .navbar-brand {
