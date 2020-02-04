@@ -521,16 +521,24 @@ footer img {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .bg-text-container {
     width: 100% !important;
     max-width: 100% !important;
   }
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
   .navbar-collapse {
-    width: 100%;
-    height: calc(100vh - 200px);
-    top: 100%;
+    height: calc(100vh - 100px);
+    top: 90%;
     position: absolute;
     z-index: 999;
+    background: #6330d5;
+    width: calc(100% + 30px);
+    margin-left: -10px;
   }
   body {
     font-size: 80%;
