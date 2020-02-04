@@ -521,6 +521,17 @@ footer img {
 }
 
 @media only screen and (max-width: 768px) {
+  .bg-text-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .navbar-collapse {
+    width: 100%;
+    height: calc(100vh - 200px);
+    top: 100%;
+    position: absolute;
+    z-index: 999;
+  }
   body {
     font-size: 80%;
   }
