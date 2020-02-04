@@ -528,18 +528,6 @@ footer img {
     width: 100% !important;
     max-width: 100% !important;
   }
-  .navbar-light .navbar-nav .nav-link {
-    color: #fff;
-  }
-  .navbar-collapse {
-    height: calc(100vh - 100px);
-    top: 90%;
-    position: absolute;
-    z-index: 999;
-    background: #6330d5;
-    width: calc(100% + 30px);
-    margin-left: -10px;
-  }
   body {
     font-size: 80%;
   }
@@ -578,6 +566,18 @@ footer img {
 }
 
 @media only screen and (max-width: 570px) {
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .navbar-collapse {
+    height: calc(100vh - 100px);
+    top: 90%;
+    position: absolute;
+    z-index: 999;
+    background: #6330d5;
+    width: calc(100% + 30px);
+    margin-left: -10px;
+  }
   .banner-content {
     width: 80%;
   }
