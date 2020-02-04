@@ -75,7 +75,6 @@ footer img {
 }
 
 #img2 {
-  width: 35%;
   x: 57%;
   y: 15%;
 }
@@ -83,11 +82,11 @@ footer img {
 .imag-bg1 {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/temp.svg");
+  background-image: url("../images/bg.svg");
   background-attachment: fixed;
-  background-size: 100vw 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: center center;
 }
 
 .navbar-light {
@@ -130,7 +129,11 @@ footer img {
 }
 
 .model-img {
-  display: none;
+  position: absolute;
+  bottom: -2%;
+  left: 61%;
+  width: 30%;
+  max-width: 330px;
 }
 
 #svg-icon1 {
@@ -502,12 +505,27 @@ footer img {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .model-img {
+    bottom: 0%;
+    left: 59%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .model-img {
+    bottom: 1%;
+    left: 58%;
+    width: 35%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: 80%;
   }
   .banner-content {
-    font-size: 70%;
+    font-size: 90%;
   }
   .col-sm-0 {
     display: none;
@@ -541,6 +559,9 @@ footer img {
 }
 
 @media only screen and (max-width: 570px) {
+  .banner-content {
+    width: 80%;
+  }
   #svg-icon, #svg-icon1 {
     width: 100%;
     height: auto;
@@ -552,7 +573,7 @@ footer img {
   }
   .model-img {
     display: block !important;
-    width: 70%;
+    width: 40%;
     position: absolute;
     bottom: 0;
     right: -15%;
