@@ -227,7 +227,7 @@ input[type=range]:focus::-ms-fill-upper {
 		max-width: 530px;
 	}
 	.logoContent font{display: inline-flex;}
-	.logoContent font img{width:30px;margin: 0px 7px;}
+	.logoContent font img{width:30px;height:30px;margin: 0px 7px;}
 	.launcher-header p{
 		margin:0 ;
 		line-height: 1.5;
@@ -248,6 +248,7 @@ input[type=range]:focus::-ms-fill-upper {
 	#Rocket{margin-top: 5px;}
 	.secondHeader{padding-right: 40px !important}
 	.headerTable{font-size:14px;}
+	.headerTable tr{font-size: 14px;font-weight: 400;}
 	.heighlightBG{border-radius: 2px;background-color: #5c00f7;padding: 5px;color:#fff;font-size: 18px;}
 	.highlightprice{padding: 8px 0 10px 0;}
 	.borderTable{border:1px solid #eeeff1}
@@ -320,12 +321,12 @@ input[type=range]:focus::-ms-fill-upper {
 				> | <a href="https://github.com/LauncherSpace/Launcher-Calculator" target="_new">Github</a> | <a href="https://discord.gg/2rcRQTK" target="_new">Discord</a></p><BR><center></p>
 			</li>
 			<li class="secondHeader">
-				<FONT size="5" title="Choose a preset Rocket or create a New Project"><b>Select Rocket</b></FONT><br><SELECT id="Rocket" title="Rocket name"></SELECT> 
-	    <FONT size="2"><LABEL id="RocketDescription"></LABEL></FONT>	
+				<FONT size="5" title="Choose a preset Rocket or create a New Project">Select Rocket</FONT><br><SELECT id="Rocket" title="Rocket name"></SELECT> 
+	    <br><FONT size="2"><LABEL id="RocketDescription"></LABEL></FONT>	
 			</li>
 			<li class="lastChild">
 				<TR>
-					<TD><FONT size="5" title="Payload mass is the main calculation result"><b>Result</b></FONT>
+					<TD><FONT size="5" title="Payload mass is the main calculation result">Result</FONT>
 					  <id="Expand" title="Display more information"></SELECT>&emsp;&emsp;
 				   
 					  <TABLE class="headerTable" border="0">
@@ -364,7 +365,7 @@ input[type=range]:focus::-ms-fill-upper {
 	  
 				<TR class="Projecting">
 				  <div class="spacetitle padd2">
-					  <FONT size="5" title="Choose the Orbit you want to reach"><b>Rocket</b></FONT>
+					  <FONT size="5" title="Choose the Orbit you want to reach">Rocket</FONT>
 				</div>
 			  <TD width="460" title="Choose an engine for the first stage">1st&ensp;engine <SELECT class="right-select" id="Engine1" title="First stage engine name"> </TD>
 			  <TD width="220"><INPUT type="text" class="inputstyle-1" id="First_stage_engine_thrust" title="First stage engine thrust"><span class='kgtext'>kg</span><INPUT id="First_stage_engines_number" type="text" class="number-text1" title="Number of engines on the first stage"> Number</TD>
@@ -505,7 +506,7 @@ input[type=range]:focus::-ms-fill-upper {
 				  <TBODY>
 				  <TR>
 					<TD>
-						<div class="spacetitle"><FONT size=5" title="Choose the Launch point"><b>Spaceport</b></FONT> <SELECT title="Spaceport name"
+						<div class="spacetitle"><FONT size=5" title="Choose the Launch point">Spaceport</FONT> <SELECT title="Spaceport name"
 					  id="StartingPoint"></SELECT>&ensp;<id="Air Launch" title="Launch of an existing rocket from an airplane"><font size="2">Air Launch</font><INPUT id="Air_Launch" type="checkbox">
 					  </div>
 					  <TABLE border="1" class="borderTable">
@@ -552,7 +553,7 @@ input[type=range]:focus::-ms-fill-upper {
 				  <TR >
 					<TD>
 						<div class="spacetitle topspace">
-							<FONT size="5" title="Choose the Orbit you want to reach"><b>Orbit</b></FONT>	 <SELECT id="Orbit" title="Orbit or Planet to reach"></SELECT>	 
+							<FONT size="5" title="Choose the Orbit you want to reach">Orbit</FONT>	 <SELECT id="Orbit" title="Orbit or Planet to reach"></SELECT>	 
 						  <FONT size="2"><LABEL id="OrbitDescription"></LABEL></FONT>
 					  </div>
 					  <TABLE border="1" class="borderTable">
@@ -591,7 +592,7 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TD><INPUT type="text" id="Extra_speed_for_flight_to_the_planets"> m/s</TD></TR></TBODY></TABLE></TD></TR >
 				  <TR>
 					<TD><div class="spacetitle topspace padd2">
-						<FONT size="5" title="Empirically determined delta-v losses for injection into LEO"><b>Losses</b><BR></FONT>
+						<FONT size="5" title="Empirically determined delta-v losses for injection into LEO">Losses<BR></FONT>
 					</div>
 					  <TABLE border="1" class="borderTable">
 						<TBODY>
@@ -616,7 +617,7 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TD><h8><LABEL 
 						id="Vsp_with_losses"></LABEL> m/s</TD></TR></TBODY></TABLE></TD></TR>
 				  <TR>
-					<TD><div class="spacetitle topspace padd24"><FONT size="" title="The main characteristics of the Rocket"><b>Output</b><BR></FONT></div> 
+					<TD><div class="spacetitle topspace padd24"><FONT size="" title="The main characteristics of the Rocket">Output<BR></FONT></div> 
 					  <TABLE border="1" class="borderTable">
 						<TBODY>
 						<TR class="Expanding">
@@ -698,7 +699,7 @@ input[type=range]:focus::-ms-fill-upper {
 </div>
 
 <div class="adwacedContent">
-	<button isBool=0 id="Expand">Advanced results</button>
+	<button isBool=0 id="Expand">Advanced...</button>
 	<!-- <font size="2">Expand</font><INPUT id="Expand" type="checkbox"> -->
 </div>
 
@@ -2009,7 +2010,7 @@ input[type=range]:focus::-ms-fill-upper {
 		if (elExpand.checked || elExpand.getAttribute("isbool") == "1")
 		{
 			elExpand.setAttribute('isBool',0);
-			elExpand.innerHTML = "show less";
+			elExpand.innerHTML = "Show Less";
 			for (var i = 0; i < elsExpanding.length; i++)
 				elsExpanding[i].removeAttribute("style");
 			if(parseFloat(elJettisoned_battery_mass.value) > 0)
@@ -2021,7 +2022,7 @@ input[type=range]:focus::-ms-fill-upper {
 		} else
 		{
 			elExpand.setAttribute('isBool',1);
-			elExpand.innerHTML = "Advanced results";
+			elExpand.innerHTML = "Advanced...";
 			for (var i = 0; i < elsExpanding.length; i++)
 				elsExpanding[i].setAttribute("style","display:none");
 			for (var i = 0; i < elsExpandingB.length; i++)
