@@ -215,7 +215,7 @@ input[type=range]:focus::-ms-fill-upper {
 		display: inline-flex;
 		list-style: none;
 		padding: 0;
-		margin-bottom: 30px;
+		margin-bottom: 0;
 		padding: 10px;
 		border-bottom: 1px solid #eeeff1;
 	}
@@ -235,6 +235,7 @@ input[type=range]:focus::-ms-fill-upper {
 		font-size: 26px;
 		font-weight: 900;
 	}
+	.headerBG{background-color: #EFF3F6;}
 	.hyper-content{font-size: 14px !important;color: #6e6e6e !important;padding:3px 0 !important;}
 	.launcher-header li a{color: #5c00f7;font-size:14px;font-weight: 500;text-decoration:none;}
 	select{border-radius: 3px;border: solid 0.5px #688093;font-size:16px;padding:5px;font-weight: 600;min-width: 200px;}
@@ -255,7 +256,7 @@ input[type=range]:focus::-ms-fill-upper {
 	.spacetitle select{margin-left: 15px;}
 	.padd2{padding:13px 10px}
 	.tdpadd1{padding: 14px 10px !important;}
-	.tablecontent{padding: 0 30px 40px 30px;}
+	.tablecontent{padding: 30px 30px 40px 30px;}
 	.number-text1{padding: 4px 8px 4px 8px;margin-top: 5px;min-width: 80px;}
 	.kgtext{padding-left: 5px;}
 	.tableRocketContent{
@@ -267,7 +268,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 30%;
     min-width: calc(100% - 750px);}
 	.right-content{float:right;border:none;}
-	
+	.adwacedContent{width:100%;margin: 20px;}	
 	@media only screen and (max-width: 980px) {
 		.tableRocketContent{float: none;width: 100%;max-width: 100%;}
 		.tableResultContent{float: none;width: 100%;max-width: 100%}
@@ -300,7 +301,7 @@ input[type=range]:focus::-ms-fill-upper {
 <META name="GENERATOR" content="MSHTML 11.00.9600.17842"></HEAD> 
 <BODY>
 <DIV class="content">
-	<div>
+	<div class="headerBG">
 		<ul class="launcher-header">
 			<li class="headerTitle">
 				<P><FONT>Launcher 🚀 Calculator</FONT>
@@ -315,7 +316,7 @@ input[type=range]:focus::-ms-fill-upper {
 			<li>
 				<TR>
 					<TD><FONT size="4" title="Payload mass is the main calculation result"><b>Result</b></FONT>
-					  <id="Expand" title="Display more information"></SELECT>&emsp;&emsp;<font size="2">Expand</font><INPUT id="Expand" type="checkbox">
+					  <id="Expand" title="Display more information"></SELECT>&emsp;&emsp;
 				   
 					  <TABLE class="headerTable" border="0">
 						<TBODY>
@@ -685,7 +686,10 @@ input[type=range]:focus::-ms-fill-upper {
 
 </div>
 </div>
-
+<div class="adwacedContent">
+	<button>adwanced</button>
+	<font size="2">Expand</font><INPUT id="Expand" type="checkbox">
+</div>
 			<div id="myModal" class="modal">
 
 				<!-- Modal content -->
