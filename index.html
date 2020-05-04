@@ -161,7 +161,7 @@ input[type=range]:focus::-ms-fill-upper {
   text-decoration: none;
   cursor: pointer;
 }
-	h8 {display:inline-block; text-align:left; width:128px;padding: 8px 0;}
+	h8 {display:inline-block; text-align:left; width:128px;padding: 2px 0;}
 	h9 {display:inline-block; text-align:left; width:120px}
 
 	body {
@@ -186,6 +186,8 @@ input[type=range]:focus::-ms-fill-upper {
 			display: inline-block;
 			text-align: left;
 			max-width:1800px;
+			height: auto;
+    		overflow: hidden;
 		}
 		input{width:64px; text-align: right; font-size: 1.1em;}
 		input[type=range]{width:96px;}
@@ -222,7 +224,10 @@ input[type=range]:focus::-ms-fill-upper {
 	.headerTitle{
 		padding-right: 20px;
 		width: 90%;
+		max-width: 530px;
 	}
+	.logoContent font{display: inline-flex;}
+	.logoContent font img{width:30px;margin: 0px 7px;}
 	.launcher-header p{
 		margin:0 ;
 		line-height: 1.5;
@@ -238,11 +243,12 @@ input[type=range]:focus::-ms-fill-upper {
 	.headerBG{background-color: #EFF3F6;}
 	.hyper-content{font-size: 14px !important;color: #6e6e6e !important;padding:3px 0 !important;}
 	.launcher-header li a{color: #5c00f7;font-size:14px;font-weight: 500;text-decoration:none;}
-	select{border-radius: 3px;border: solid 0.5px #688093;font-size:16px;padding:8px 5px;font-weight: 600;min-width: 200px;}
+	select{border-radius: 3px;background:#fff;border: solid 0.5px #688093;font-size:16px;padding:8px 5px;font-weight: 600;min-width: 200px;min-height: 40px;}
 	.right-select{float:right;}
+	#Rocket{margin-top: 5px;}
 	.secondHeader{padding-right: 40px !important}
 	.headerTable{font-size:14px;}
-	.heighlightBG{border-radius: 2px;background-color: #5c00f7;padding: 5px;color:#fff;}
+	.heighlightBG{border-radius: 2px;background-color: #5c00f7;padding: 5px;color:#fff;font-size: 18px;}
 	.highlightprice{padding: 8px 0 10px 0;}
 	.borderTable{border:1px solid #eeeff1}
 	.borderTable tr{font-size: 16px;font-weight: 400;}
@@ -255,20 +261,24 @@ input[type=range]:focus::-ms-fill-upper {
 	.spacetitle{background-color: #ffffff;padding: 10px;border: 1px solid rgba(216, 216, 216, 0.25);}
 	.spacetitle select{margin-left: 15px;}
 	.padd2{padding:13px 10px}
+	.topspace{margin-top: 30px;}
 	.tdpadd1{padding: 14px 10px !important;}
-	.tablecontent{padding: 30px 30px 40px 30px;}
+	.tablecontent{padding: 30px 30px 40px 30px;height:100%;overflow:hidden;}
 	.number-text1{padding: 4px 8px 4px 8px;margin-top: 5px;min-width: 80px;}
 	.kgtext{padding-left: 5px;}
 	.tableRocketContent{
 		float: left;
     width: 70%;
-    max-width: 750px;
+    max-width: 720px;
 	}
 	.tableResultContent{float: left;
     width: 30%;
+	margin-left: 30px;
     min-width: calc(100% - 750px);}
 	.right-content{float:right;border:none;}
-	.adwacedContent{width:100%;margin: 20px;}	
+	.adwacedContent{width:100%;padding-bottom: 40px;}	
+	.lastChild{width: 90%;max-width: 360px;}
+	.adwacedContent button{margin:0 auto;display:block;font-size:16px;width: 170px;height: 40px;border-radius: 2px;border: solid 0.5px #b5bdcd;background-color: #fff;;}
 	@media only screen and (max-width: 980px) {
 		.tableRocketContent{float: none;width: 100%;max-width: 100%;}
 		.tableResultContent{float: none;width: 100%;max-width: 100%}
@@ -304,18 +314,18 @@ input[type=range]:focus::-ms-fill-upper {
 	<div class="headerBG">
 		<ul class="launcher-header">
 			<li class="headerTitle">
-				<P><FONT>Launcher 🚀 Calculator</FONT>
+				<P class="logoContent"><FONT>Launcher <img src="rocketlogo.png"> Calculator</FONT>
 						<BR><span></span>An open source orbital launch vehicle payload calculator by <a href="https://launcherspace.com">Launcher</a><BR>
 				<p class="hyper-content"><a href="#" onclick="openAbout()">Background and usage</a> |  <a href="#" onclick="openLicense()">MIT License</a
 				> | <a href="https://github.com/LauncherSpace/Launcher-Calculator" target="_new">Github</a> | <a href="https://discord.gg/2rcRQTK" target="_new">Discord</a></p><BR><center></p>
 			</li>
 			<li class="secondHeader">
-				<FONT size="4" title="Choose a preset Rocket or create a New Project"><b>Select Rocket</b></FONT><br><SELECT id="Rocket" title="Rocket name"></SELECT> 
+				<FONT size="5" title="Choose a preset Rocket or create a New Project"><b>Select Rocket</b></FONT><br><SELECT id="Rocket" title="Rocket name"></SELECT> 
 	    <FONT size="2"><LABEL id="RocketDescription"></LABEL></FONT>	
 			</li>
-			<li>
+			<li class="lastChild">
 				<TR>
-					<TD><FONT size="4" title="Payload mass is the main calculation result"><b>Result</b></FONT>
+					<TD><FONT size="5" title="Payload mass is the main calculation result"><b>Result</b></FONT>
 					  <id="Expand" title="Display more information"></SELECT>&emsp;&emsp;
 				   
 					  <TABLE class="headerTable" border="0">
@@ -354,7 +364,7 @@ input[type=range]:focus::-ms-fill-upper {
 	  
 				<TR class="Projecting">
 				  <div class="spacetitle padd2">
-					  <FONT size="4" title="Choose the Orbit you want to reach"><b>Rocket</b></FONT>
+					  <FONT size="5" title="Choose the Orbit you want to reach"><b>Rocket</b></FONT>
 				</div>
 			  <TD width="460" title="Choose an engine for the first stage">1st&ensp;engine <SELECT class="right-select" id="Engine1" title="First stage engine name"> </TD>
 			  <TD width="220"><INPUT type="text" class="inputstyle-1" id="First_stage_engine_thrust" title="First stage engine thrust"><span class='kgtext'>kg</span><INPUT id="First_stage_engines_number" type="text" class="number-text1" title="Number of engines on the first stage"> Number</TD>
@@ -430,57 +440,57 @@ input[type=range]:focus::-ms-fill-upper {
 			  <TD title="The percentage ratio of the rocket's dry mass (vehicle plus contents)&#013;to its wet mass (vehicle plus contents plus propellant).&#013;Mass ratio is a measure of the efficiency of a rocket.">1st&ensp;stage Dry to Wet mass ratio</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="_1st_Dry_to_Wet_mass_ratio_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT id="_1st_Dry_to_Wet_mass_ratio" type="text">%</TD></TR>
+	  <INPUT id="_1st_Dry_to_Wet_mass_ratio" type="text"> %</TD></TR>
 				<TR>
 			  <TD title="The percentage ratio of the rocket's dry mass (vehicle plus contents)&#013;to its wet mass (vehicle plus contents plus propellant).&#013;Mass ratio is a measure of the efficiency of a rocket.">2nd stage Dry to Wet mass ratio</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="_2nd_Dry_to_Wet_mass_ratio_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="_2nd_Dry_to_Wet_mass_ratio">%</TD></TR>
+	  <INPUT type="text" id="_2nd_Dry_to_Wet_mass_ratio"> %</TD></TR>
 				<TR class="f3stages">
 			  <TD title="The percentage ratio of the rocket's dry mass (vehicle plus contents)&#013;to its wet mass (vehicle plus contents plus propellant).&#013;Mass ratio is a measure of the efficiency of a rocket.">Transfer Orbit stage Dry to Wet mass ratio</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="_3rd_Dry_to_Wet_mass_ratio_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="_3rd_Dry_to_Wet_mass_ratio">%</TD></TR>
+	  <INPUT type="text" id="_3rd_Dry_to_Wet_mass_ratio"> %</TD></TR>
 				<TR>
 			  <TD title="Any unused propellant trapped in the propulsion system&#013;(rocket engine, plumbing, and tanks) at thrust cutoff.&#013;It is a factor contributing significantly to the total dead weight&#013;of a vehicle and restricting its maximum performance">Unused propellant of 1st&ensp;stage</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="Unused_propellant_of_1st_Stage_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="Unused_propellant_of_1st_Stage">%</TD></TR>
+	  <INPUT type="text" id="Unused_propellant_of_1st_Stage"> %</TD></TR>
 				<TR>
 			  <TD title="Any unused propellant trapped in the propulsion system&#013;(rocket engine, plumbing, and tanks) at thrust cutoff.&#013;It is a factor contributing significantly to the total dead weight&#013;of a vehicle and restricting its maximum performance">Unused propellant of 2nd stage</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="Unused_propellant_of_2nd_Stage_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="Unused_propellant_of_2nd_Stage">%</TD></TR>
+	  <INPUT type="text" id="Unused_propellant_of_2nd_Stage"> %</TD></TR>
 				<TR class="f3stages">
 			  <TD title="Any unused propellant trapped in the propulsion system&#013;(rocket engine, plumbing, and tanks) at thrust cutoff.&#013;It is a factor contributing significantly to the total dead weight&#013;of a vehicle and restricting its maximum performance">Unused propellant of Transfer Orbit stage</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="Unused_propellant_of_Transfer_Orbit_Stage_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="Unused_propellant_of_Transfer_Orbit_Stage">%</TD></TR>
+	  <INPUT type="text" id="Unused_propellant_of_Transfer_Orbit_Stage"> %</TD></TR>
 				<TR>
 			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel.&#013;At sea level, the thrust of a rocket engine is reduced due to&#013;the influence of atmospheric pressure.">1st&ensp;stage Isp sea level or at the start altitude</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="First_stage_isp_sea_level_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="First_stage_isp_sea_level">s</TD></TR>
+	  <INPUT type="text" id="First_stage_isp_sea_level"> s</TD></TR>
 				<TR>
 			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel.">1st&ensp;stage Isp vacuum</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="First_stage_isp_vac_Range" type="range" 
 				min="1" max="100" value="50">					
-	  <INPUT type="text" id="First_stage_isp_vac">s</TD></TR>
+	  <INPUT type="text" id="First_stage_isp_vac"> s</TD></TR>
 				<TR>
 			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel.&#013;The specific impulse of the upper stage engines is usually higher,&#013;since due to the absence of amospheric pressure a higher&#013;expansion ratio can be achieved (longer nozzle).">2nd stage Isp</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="Second_stage_isp_vac_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="Second_stage_isp_vac">s</TD></TR>
+	  <INPUT type="text" id="Second_stage_isp_vac"> s</TD></TR>
 				<TR class="f3stages">
 			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel.">Transfer Orbit stage Isp</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="Transfer_Orbit_Stage_isp_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="Transfer_Orbit_Stage_isp">s</TD></TR>
+	  <INPUT type="text" id="Transfer_Orbit_Stage_isp"> s</TD></TR>
 				<TR class="ProjectingH">
 			  <TD title="Percentage change in the specific impulse of engines of all stages&#013;to demonstrate its effect on the rocket performance.">Specific Impulse variation</TD>
 			  <TD><INPUT class="slider" id="Specific_Impulse_Variation_Range" 
 				type="range" min="90" max="110" value="100">											    
-	  <INPUT type="text" id="Specific_Impulse_Variation">%</TD></TR></TBODY></TABLE></TD></TR>
+	  <INPUT type="text" id="Specific_Impulse_Variation"> %</TD></TR></TBODY></TABLE></TD></TR>
 	  
 		  </TBODY></TABLE></TD>
 		  
@@ -495,7 +505,7 @@ input[type=range]:focus::-ms-fill-upper {
 				  <TBODY>
 				  <TR>
 					<TD>
-						<div class="spacetitle"><FONT size="4" title="Choose the Launch point"><b>Spaceport</b></FONT> <SELECT title="Spaceport name"
+						<div class="spacetitle"><FONT size=5" title="Choose the Launch point"><b>Spaceport</b></FONT> <SELECT title="Spaceport name"
 					  id="StartingPoint"></SELECT>&ensp;<id="Air Launch" title="Launch of an existing rocket from an airplane"><font size="2">Air Launch</font><INPUT id="Air_Launch" type="checkbox">
 					  </div>
 					  <TABLE border="1" class="borderTable">
@@ -539,10 +549,10 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TD title="Auxiliary delta-v for losses calculation.">Delta-v for LEO (losses calc.)</TD>
 					  <TD><h8><LABEL 
 						id="Vsp_for_LEO"></LABEL> m/s</TD></TR></TBODY></TABLE></TR>
-				  <TR>
+				  <TR >
 					<TD>
-						<div class="spacetitle">
-							<FONT size="4" title="Choose the Orbit you want to reach"><b>Orbit</b></FONT>	 <SELECT id="Orbit" title="Orbit or Planet to reach"></SELECT>	 
+						<div class="spacetitle topspace">
+							<FONT size="5" title="Choose the Orbit you want to reach"><b>Orbit</b></FONT>	 <SELECT id="Orbit" title="Orbit or Planet to reach"></SELECT>	 
 						  <FONT size="2"><LABEL id="OrbitDescription"></LABEL></FONT>
 					  </div>
 					  <TABLE border="1" class="borderTable">
@@ -578,10 +588,10 @@ input[type=range]:focus::-ms-fill-upper {
 					  id="Vsp_for_target_orbit"></LABEL> m/s</TD></TR>
 						<TR>
 					  <TD title="Delta velocity for injection to trans-planet orbit from a 200km reference orbit">Extra velocity for flight to the planets</TD>
-					  <TD><INPUT type="text" id="Extra_speed_for_flight_to_the_planets"> m/s</TD></TR></TBODY></TABLE></TD></TR>
+					  <TD><INPUT type="text" id="Extra_speed_for_flight_to_the_planets"> m/s</TD></TR></TBODY></TABLE></TD></TR >
 				  <TR>
-					<TD><div class="spacetitle padd2">
-						<FONT size="4" title="Empirically determined delta-v losses for injection into LEO"><b>Losses</b><BR></FONT>
+					<TD><div class="spacetitle topspace padd2">
+						<FONT size="5" title="Empirically determined delta-v losses for injection into LEO"><b>Losses</b><BR></FONT>
 					</div>
 					  <TABLE border="1" class="borderTable">
 						<TBODY>
@@ -606,7 +616,7 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TD><h8><LABEL 
 						id="Vsp_with_losses"></LABEL> m/s</TD></TR></TBODY></TABLE></TD></TR>
 				  <TR>
-					<TD><div class="spacetitle padd24"><FONT size="" title="The main characteristics of the Rocket"><b>Output</b><BR></FONT></div> 
+					<TD><div class="spacetitle topspace padd24"><FONT size="" title="The main characteristics of the Rocket"><b>Output</b><BR></FONT></div> 
 					  <TABLE border="1" class="borderTable">
 						<TBODY>
 						<TR class="Expanding">
@@ -686,10 +696,12 @@ input[type=range]:focus::-ms-fill-upper {
 
 </div>
 </div>
+
 <div class="adwacedContent">
-	<button>adwanced</button>
-	<font size="2">Expand</font><INPUT id="Expand" type="checkbox">
+	<button isBool=0 id="Expand">Advanced results</button>
+	<!-- <font size="2">Expand</font><INPUT id="Expand" type="checkbox"> -->
 </div>
+
 			<div id="myModal" class="modal">
 
 				<!-- Modal content -->
@@ -1994,8 +2006,10 @@ input[type=range]:focus::-ms-fill-upper {
 	function ExpandChange()
 	{
 
-		if (elExpand.checked)
+		if (elExpand.checked || elExpand.getAttribute("isbool") == "1")
 		{
+			elExpand.setAttribute('isBool',0);
+			elExpand.innerHTML = "show less";
 			for (var i = 0; i < elsExpanding.length; i++)
 				elsExpanding[i].removeAttribute("style");
 			if(parseFloat(elJettisoned_battery_mass.value) > 0)
@@ -2006,6 +2020,8 @@ input[type=range]:focus::-ms-fill-upper {
 				elsExpanding3[i].removeAttribute("style");
 		} else
 		{
+			elExpand.setAttribute('isBool',1);
+			elExpand.innerHTML = "Advanced results";
 			for (var i = 0; i < elsExpanding.length; i++)
 				elsExpanding[i].setAttribute("style","display:none");
 			for (var i = 0; i < elsExpandingB.length; i++)
@@ -2512,7 +2528,7 @@ input[type=range]:focus::-ms-fill-upper {
 		updateEngine2();
 
 		elExpand.checked = false;
-		elExpand.addEventListener('change', ExpandChange);
+		elExpand.addEventListener('click', ExpandChange);
 		ExpandChange();
 		f3stagesChange();
 		elAir_Launch.checked = false;
