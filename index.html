@@ -162,7 +162,7 @@ input[type=range]:focus::-ms-fill-upper {
   cursor: pointer;
 }
 	h8 {display:inline-block; text-align:left; width:128px;padding: 2px 0;}
-	h9 {display:inline-block; text-align:left; width:120px}
+	h9 {display:inline-block; text-align:left;}
 
 	body {
 		font-family: 'Montserrat', sans-serif !important;
@@ -214,8 +214,10 @@ input[type=range]:focus::-ms-fill-upper {
  			position: fixed;
 		}
 	.launcher-header{
-		display: inline-flex;
+		display: block;
 		list-style: none;
+		height: auto;
+		overflow: hidden;
 		padding: 0;
 		margin-bottom: 0;
 		padding: 20px;
@@ -225,9 +227,13 @@ input[type=range]:focus::-ms-fill-upper {
 		padding-right: 20px;
 		width: 90%;
 		max-width: 530px;
+		float: left;
 	}
+	.secondHeader{padding-right: 40px !important;float: left;max-width: 250px;}
+	.lastChild{width: 90%;max-width: 360px;float: left;}
 	.logoContent font{display: inline-flex;}
 	.logoContent font img{width:30px;height:30px;margin: 4px 7px;}
+	#RocketDescription{margin: 0;width: 250px;overflow: hidden;font-weight: 400;line-height: 1.5;}
 	.launcher-header p{
 		margin:0 ;
 		line-height: 1.5;
@@ -240,45 +246,44 @@ input[type=range]:focus::-ms-fill-upper {
 		font-size: 26px;
 		font-weight: 900;
 	}
-	.headerBG{background-color: #EFF3F6;}
+	.headerBG{background-color: #EFF3F6;height: auto;overflow: hidden;}
 	.hyper-content{font-size: 14px !important;color: #6e6e6e !important;padding:3px 0 !important;}
 	.launcher-header li a{color: #5c00f7;font-size:14px;font-weight: 500;text-decoration:none;}
-	select{border-radius: 3px;background:#fff;border: solid 0.5px #688093;font-size:16px;padding:8px 5px;font-weight: 600;min-width: 200px;height: 40px;}
+	select{border-radius: 3px;background:#fff;border: solid 0.5px #688093;font-size:14px;padding:5px 5px;font-weight: 600;min-width: 170px;height: 33px;margin: 2px 0px;
+		}
 	.right-select{float:right;}
 	#Rocket{margin-top: 5px;}
-	.secondHeader{padding-right: 40px !important}
 	.headerTable{font-size:14px;}
 	.headerTable tr{font-size: 14px;font-weight: 400;}
 	.heighlightBG{border-radius: 2px;background-color: #5c00f7;padding: 5px;color:#fff;font-size: 18px;}
 	.highlightprice{padding: 8px 0 10px 0;}
 	.borderTable{border:1px solid #eeeff1}
-	.borderTable tr{font-size: 16px;font-weight: 400;}
-	.borderTable td{padding:6px 10px;line-height: 2.5;}
+	.borderTable tr{font-size: 15px;font-weight: 500;}
+	.borderTable td{padding:0px 10px;line-height: 2.2;}
 	input[type=checkbox]{width: 20px;background-color: #fff;}
 	input[type="text"]{border-radius: 1.5px;
-    border: solid 0.5px #688093;
-    padding: 7px 8px 5px 8px;}
+    border: solid 0.5px #688093;margin: 2px 0;
+    padding: 4px 8px 4px 8px;}
 	.inputstyle-1{width:150px;text-align: left;}
-	.spacetitle{background-color: #ffffff;padding: 10px;border: 1px solid rgba(216, 216, 216, 0.25);}
+	.spacetitle{background-color: #ffffff;padding: 5px 10px;border: 1px solid rgba(216, 216, 216, 0.25);}
 	.spacetitle select{margin-left: 15px;}
-	.padd2{padding:13px 10px}
+	.padd2{padding:5px 10px}
+	.spacetitle font, .padd2 font{font-weight: 600;}
 	.topspace{margin-top: 30px;}
-	.tdpadd1{padding: 14px 10px !important;}
+	.tdpadd1{padding: 0px 10px !important;}
 	.tablecontent{padding: 30px 30px 40px 30px;height:100%;overflow:hidden;}
 	.number-text1{padding: 4px 8px 4px 8px;margin-top: 5px;min-width: 80px;}
 	.kgtext{padding-left: 5px;}
 	.tableRocketContent{
 		float: left;
-    width: 70%;
-    max-width: 720px;
+		width: calc(55% - 15px);
 	}
 	.tableResultContent{float: left;
-    width: 30%;
+    width: calc(45% - 15px);
 	margin-left: 30px;
     min-width: calc(100% - 750px);}
 	.right-content{float:right;border:none;}
-	.adwacedContent{width:100%;padding-bottom: 40px;}	
-	.lastChild{width: 90%;max-width: 360px;}
+	.adwacedContent{width:100%;padding-bottom: 40px;}
 	.adwacedContent button{margin:0 auto;display:block;font-size:16px;width: 170px;height: 40px;border-radius: 2px;border: solid 0.5px #b5bdcd;background-color: #fff;;}
 	@media only screen and (max-width: 980px) {
 		.tableRocketContent{float: none;width: 100%;max-width: 100%;}
@@ -324,19 +329,18 @@ input[type=range]:focus::-ms-fill-upper {
 				> | <a href="https://github.com/LauncherSpace/Launcher-Calculator" target="_new">Github</a> | <a href="https://discord.gg/2rcRQTK" target="_new">Discord</a></p><BR><center></p>
 			</li>
 			<li class="secondHeader">
-				<FONT size="5" title="Choose a preset Rocket or create a New Project">Select Rocket</FONT><br><SELECT id="Rocket" title="Rocket name"></SELECT> 
-	    <br><FONT size="2"><LABEL id="RocketDescription"></LABEL></FONT>	
+				<FONT size="5" title="Choose a preset Rocket or create a New Project"></FONT>Select Rocket</FONT><br><SELECT id="Rocket" title="Rocket name"></SELECT> 
+	    <br><h6 id="RocketDescription"></h6>	
 			</li>
 			<li class="lastChild">
-				<TR>
-					<TD><FONT size="5" title="Payload mass is the main calculation result">Result</FONT>
+				<FONT size="5" title="Payload mass is the main calculation result">Result</FONT>
 					  <id="Expand" title="Display more information"></SELECT>&emsp;&emsp;
 				   
 					  <TABLE class="headerTable" border="0">
 						<TBODY>
 							<TR>
 								<TD title="Payload mass calculated by an approximate method.">Payload mass (calculated)</TD>
-								<TD><h9 class="highlightprice"><b><span class="heighlightBG"><LABEL id="Payload_mass_calculated5"></LABEL> kg </span></TD></TR>
+								<TD width="300"><h9 class="highlightprice"><b><span class="heighlightBG"><LABEL id="Payload_mass_calculated5"></LABEL> kg </span></TD></TR>
 						<TR>
 					  <TD title="The percentage ratio of payload mass to the initial rocket mass." width="600">Payload to Lift-off mass ratio</TD>
 					  <TD width="120"><h8><LABEL id="Payload_to_Lift_off_mass_ratio"></LABEL> % </TD></TR>
@@ -345,7 +349,7 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TD><h8><LABEL id="Payload_mass_calculated"></LABEL> kg</TD></TR>
 						<TR class="ProjectingH">
 					  <TD title="The percentage ratio of assumed payload mass to the calculated payload mass.">Payload change</TD>
-					  <TD><h8><LABEL id="Payload_change"></LABEL> % </TD></TR></TBODY></TABLE></TD></TR>
+					  <TD><h8><LABEL id="Payload_change"></LABEL> % </TD></TR></TBODY></TABLE>
 			</li>
 		</ul>
 
@@ -620,7 +624,7 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TD><h8><LABEL 
 						id="Vsp_with_losses"></LABEL> m/s</TD></TR></TBODY></TABLE></TD></TR>
 				  <TR>
-					<TD><div class="spacetitle topspace padd24"><FONT size="" title="The main characteristics of the Rocket">Output<BR></FONT></div> 
+					<TD><div class="spacetitle topspace padd2"><FONT size="" title="The main characteristics of the Rocket">Output<BR></FONT></div> 
 					  <TABLE border="1" class="borderTable">
 						<TBODY>
 						<TR class="Expanding">
