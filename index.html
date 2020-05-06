@@ -251,7 +251,7 @@ input[type=range]:focus::-ms-fill-upper {
 	.headerBG{background-color: #EFF3F6;height: auto;overflow: hidden;}
 	.hyper-content{font-size: 14px !important;color: #6e6e6e !important;padding:3px 0 !important;}
 	.launcher-header li a{color: #5c00f7;font-size:14px;font-weight: 500;text-decoration:none;}
-	select{border-radius: 3px;background-color:#fff !important;border: solid 0.5px #688093;font-size:14.5px;padding:5px 10px;font-weight: 600;min-width: 170px;height: 33px;margin: 2px 0px;
+	select{border-radius: 3px;background-color:#fff !important;border: solid 0.5px #688093;font-size:14.5px;padding:5px 10px;font-weight: 600;min-width: 170px;height: 32px;margin: 2px 0px;
 		background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
     -webkit-appearance: none;
     background-position-x: 96%;}
@@ -287,7 +287,8 @@ input[type=range]:focus::-ms-fill-upper {
 	margin-left: 30px;}
 	.right-content{float:right;border:none;padding: 8px 0 !important;}
 	.adwacedContent{width:100%;padding-bottom: 40px;}
-	.engineText{float: left;width: calc(100% - 170px);}
+	.engineText{float: left;width: calc(100% - 170px);padding-top: 8px;}
+	.nopadd{padding-top: 0;}
 	.spaceheder2cont, .leftTitle{float: left;}
 	.adwacedContent button{margin:0 auto;display:block;font-size:16px;width: 170px;height: 40px;border-radius: 2px;border: solid 0.5px #b5bdcd;background-color: #fff;;}
 	@media only screen and (max-width: 980px) {
@@ -327,6 +328,7 @@ input[type=range]:focus::-ms-fill-upper {
 		.mobilelayout_r1{width: 30%;float: right;}
 		.mobilelayout_r1 input{width: 100%;margin: 0;float: right;margin-top: -28px;}
 		.mobilelayout_r2{width: 30%;float: right;margin-top: -23px;}
+		.mobilelayout_r2 h8{padding: 2px 10px;}
 		.padd2, .spacetitle{padding: 5px;margin-bottom:5px;border-bottom:0.5px solid #eeeff1}
 	}
 	@media only screen and (max-width: 480px) {	
@@ -422,7 +424,7 @@ input[type=range]:focus::-ms-fill-upper {
 			  <TD class="mobRight" title="Third stage rocket engine cycle"> <SELECT id="Cycle3"></SELECT> </TD></TR>
 	  
 				<TR>
-			  <TD title="Having more stages increases efficiency - but also increases the complexity and the cost of the rocket"><div class="engineText">Stages</div></TD>
+			  <TD title="Having more stages increases efficiency - but also increases the complexity and the cost of the rocket"><div class="engineText nopadd">Stages</div></TD>
 			  <TD><SELECT id="Stages" title="Number of stages"></SELECT> </TD></TR>
 				<TR>
 			  <TD title="Dimensionless ratio of engine thrust to weight of a rocket"><div class="mobilelayout_l1">Thrust-to-weight ratio</div></TD>
