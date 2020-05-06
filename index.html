@@ -161,8 +161,8 @@ input[type=range]:focus::-ms-fill-upper {
   text-decoration: none;
   cursor: pointer;
 }
-	h8 {display:inline-block; text-align:left; width:128px;padding: 2px 0;}
-	h9 {display:inline-block; text-align:left;}
+	h8 {display:inline-block; text-align:left; width:128px;padding: 10px 0;}
+	h9 {display:inline-block; text-align:left;padding: 10px 0;}
 
 	body {
 		font-family: 'Montserrat', sans-serif !important;
@@ -231,47 +231,48 @@ input[type=range]:focus::-ms-fill-upper {
 	}
 	.secondHeader{padding-right: 40px !important;float: left;max-width: 250px;}
 	.lastChild{width: 90%;max-width: 360px;float: left;}
-	.secondHeader font, .lastChild font{font-weight: 600;}
+	.secondHeader font, .lastChild font{font-weight: 500;}
 	.logoContent font{display: inline-flex;}
-	.logoContent font img{width:30px;height:30px;margin: 4px 7px;}
+	.logoContent font img{width:30px;height:30px;margin: 0 7px 0px 7px;}
+	.logoContent span{font-size: 16px;}
 	#RocketDescription{margin: 0;width: 250px;overflow: hidden;font-weight: 400;line-height: 1.5;}
 	.launcher-header p{
-		margin:0 ;
-		line-height: 1.5;
+		margin: 10px 0;
+		line-height: 1;
 		padding: 0;
 		font-size: 16px;
 		letter-spacing: -0.5px;
   		color: #000000;
 	}
 	.launcher-header p FONT{
-		font-size: 26px;
 		font-weight: 600;
 	}
+	.logoContent{font-size: 26px !important;}
 	.headerBG{background-color: #EFF3F6;height: auto;overflow: hidden;}
 	.hyper-content{font-size: 14px !important;color: #6e6e6e !important;padding:3px 0 !important;}
 	.launcher-header li a{color: #5c00f7;font-size:14px;font-weight: 500;text-decoration:none;}
-	select{border-radius: 3px;background-color:#fff !important;border: solid 0.5px #688093;font-size:14px;padding:5px 10px;font-weight: 600;min-width: 170px;height: 33px;margin: 2px 0px;
+	select{border-radius: 3px;background-color:#fff !important;border: solid 0.5px #688093;font-size:14.5px;padding:5px 10px;font-weight: 600;min-width: 170px;height: 33px;margin: 2px 0px;
 		background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
     -webkit-appearance: none;
     background-position-x: 96%;}
 	.right-select{float:right;}
-	#Rocket{margin-top: 5px;}
+	#Rocket{margin-top: 5px;width: 100%;}
 	.headerTable{font-size:14px;}
 	.headerTable tr{font-size: 14px;font-weight: 400;}
 	.heighlightBG{border-radius: 2px;background-color: #5c00f7;padding: 5px;color:#fff;font-size: 18px;}
 	.highlightprice{padding: 8px 0 10px 0;}
 	.borderTable{border:1px solid #eeeff1}
 	.borderTable tr{font-size: 15px;font-weight: 400;}
-	.borderTable td{padding:0px 10px;line-height: 2.2;}
+	.borderTable td{padding:0px 10px;line-height: 1;}
 	input[type=checkbox]{width: 20px;background-color: #fff;}
 	input[type="text"]{border-radius: 1.5px;
     border: solid 0.5px #688093;margin: 2px 0;
     padding: 4px 8px 4px 8px;}
 	.inputstyle-1{width:150px;text-align: left;}
-	.spacetitle{background-color: #ffffff;padding: 5px 10px;border: 1px solid rgba(216, 216, 216, 0.25);}
+	.spacetitle{height: auto;overflow: hidden;background-color: #ffffff;padding: 5px 10px;border: 1px solid rgba(216, 216, 216, 0.25);}
 	.spacetitle select{margin-left: 15px;}
 	.padd2{padding:5px 10px}
-	.spacetitle font, .padd2 font{font-weight: 600;}
+	.spacetitle font, .padd2 font{font-weight: 500;}
 	.topspace{margin-top: 30px;}
 	.tdpadd1{padding: 0px 10px !important;}
 	.tablecontent{padding: 30px 30px 40px 30px;height:100%;overflow:hidden;}
@@ -284,36 +285,60 @@ input[type=range]:focus::-ms-fill-upper {
 	.tableResultContent{float: left;
     width: calc(45% - 15px);
 	margin-left: 30px;}
-	.right-content{float:right;border:none;}
+	.right-content{float:right;border:none;padding: 8px 0 !important;}
 	.adwacedContent{width:100%;padding-bottom: 40px;}
+	.engineText{float: left;width: calc(100% - 170px);}
+	.spaceheder2cont, .leftTitle{float: left;}
 	.adwacedContent button{margin:0 auto;display:block;font-size:16px;width: 170px;height: 40px;border-radius: 2px;border: solid 0.5px #b5bdcd;background-color: #fff;;}
 	@media only screen and (max-width: 980px) {
 		.tableRocketContent{float: none;width: 100%;max-width: 100%;}
-		.tableResultContent{float: none;width: 100%;max-width: 100%}
-		
+		.tableResultContent{float: none;width: 100%;max-width: 100%;margin: 0;}
 		
 	}
 	@media only screen and (max-width: 768px) {
-		.launcher-header{display: block;}
-		.secondHeader{padding-bottom: 30px;}
+		.headerTitle, .lastChild{padding: 0;width: 100%;}
+		.secondHeader{padding-bottom: 30px;padding-right: 0 !important;}
+
 	}
 	@media only screen and (max-width: 600px) {
-		.launcher-header{display: block;}
+		#RocketDescription{width: 100%;}
+		.tablecontent{padding: 30px 15px 40px 5px;}
+		.spacetitle{display: block;}
+		.borderTable, .spacetitle, .borderTable td{border: none;}
 		.secondHeader{padding-bottom: 30px;}
 		.right-select{float:none;}
-		.borderTable tr {display: inline-block;  width:100%;    }               
-        .borderTable td { display: inline-block;line-height: 2.5;  width:calc(100% - 20px);border:0.1px solid #eeeff1}
+		.borderTable tr {display: inline-block;font-size: 14px; width:100%;border-bottom:0.5px solid #eeeff1}               
+        .borderTable td { display: inline-block;line-height: 1.3;  width:calc(100%);padding: 0 5px;}
 		.borderTable td[hidden=true]{display: none !important;}
 		select{width:50%;margin: 10px 0;}
 		input[type="text"]{width:50%;margin: 10px 0;}
-		h8 {padding: 0px 0;}
-		.right-content{float:left;}
-		.dummy-node{display: none;}
+		h8, h9 {padding: 6px 0;}
+		.right-content{float:right;text-align: right;padding: 5px 0 10px 0 !important;}
+		.dummy-node{display: none !important;}
 		input[type=range]{margin-right: 20px;}
 		.tableResultContent{margin:0;margin-top: 20px;}
 		.spacetitle{display: grid;}
 		.spacetitle select {margin: 15px 0 0 0;}
+		select {font-size: 13px;}
+		.mobLeft select{float: left;min-width: 49%;width: 49%;margin-bottom: 0;}
+		.mobRight select{float: right;min-width: 49%;width: 49%;margin-bottom: 0;margin-top: -42px;}
+		.engineText{padding-top:5px;line-height: 1;height: auto;width: 100%;}
+		.mobilelayout_l1{width: 65%;float: left;padding-top: 4px;}
+		.mobilelayout_r1{width: 30%;float: right;}
+		.mobilelayout_r1 input{width: 100%;margin: 0;float: right;margin-top: -28px;}
+		.mobilelayout_r2{width: 30%;float: right;margin-top: -23px;}
+		.padd2, .spacetitle{padding: 5px;margin-bottom:5px;border-bottom:0.5px solid #eeeff1}
 	}
+	@media only screen and (max-width: 480px) {	
+		.launcher-header{padding:10px}
+		.logoContent span{font-size: 14px;}
+		.launcher-header p FONT{font-size: 21px;}
+		.logoContent font img {width: 25px;margin: 0 3px 0px 3px;height: 25px;}
+		.hyper-content{line-height: 1.5;}
+		.tdright{text-align: right;}
+		.tdright h8{text-align: right;}
+	}
+	.mobilelayout_r2{padding:7px 0;}
 	/* {border: 1px solid #eeeff1;
     border-collapse: separate;
     border-spacing: 0 1em;} */
@@ -326,7 +351,7 @@ input[type=range]:focus::-ms-fill-upper {
 		<ul class="launcher-header">
 			<li class="headerTitle">
 				<P class="logoContent"><FONT>Launcher <img src="rocketlogo.png"> Calculator</FONT>
-						<BR><span></span>An open source orbital launch vehicle payload calculator by <a href="https://launcherspace.com">Launcher</a><BR>
+						<BR><span>An open source orbital launch vehicle payload calculator by </span><a href="https://launcherspace.com">Launcher</a><BR>
 				<p class="hyper-content"><a href="#" onclick="openAbout()">Background and usage</a> |  <a href="#" onclick="openLicense()">MIT License</a
 				> | <a href="https://github.com/LauncherSpace/Launcher-Calculator" target="_new">Github</a> | <a href="https://discord.gg/2rcRQTK" target="_new">Discord</a></p><BR><center></p>
 			</li>
@@ -342,16 +367,16 @@ input[type=range]:focus::-ms-fill-upper {
 						<TBODY>
 							<TR>
 								<TD title="Payload mass calculated by an approximate method.">Payload mass (calculated)</TD>
-								<TD width="300"><h9 class="highlightprice"><b><span class="heighlightBG"><LABEL id="Payload_mass_calculated5"></LABEL> kg </span></TD></TR>
+								<TD width="300" class="tdright"><h9 class="highlightprice"><b><span class="heighlightBG"><LABEL id="Payload_mass_calculated5"></LABEL> kg </span></TD></TR>
 						<TR>
 					  <TD title="The percentage ratio of payload mass to the initial rocket mass." width="600">Payload to Lift-off mass ratio</TD>
-					  <TD width="120"><h8><LABEL id="Payload_to_Lift_off_mass_ratio"></LABEL> % </TD></TR>
+					  <TD width="120" class="tdright"><h8><LABEL id="Payload_to_Lift_off_mass_ratio"></LABEL> % </TD></TR>
 						<TR class="Expanding">
 					  <TD title="Payload mass calculated at first iteration">Payload mass (1)</TD>
-					  <TD><h8><LABEL id="Payload_mass_calculated"></LABEL> kg</TD></TR>
+					  <TD class="tdright"><h8><LABEL id="Payload_mass_calculated"></LABEL> kg</TD></TR>
 						<TR class="ProjectingH">
 					  <TD title="The percentage ratio of assumed payload mass to the calculated payload mass.">Payload change</TD>
-					  <TD><h8><LABEL id="Payload_change"></LABEL> % </TD></TR></TBODY></TABLE>
+					  <TD class="tdright"><h8><LABEL id="Payload_change"></LABEL> % </TD></TR></TBODY></TABLE>
 			</li>
 		</ul>
 
@@ -376,35 +401,35 @@ input[type=range]:focus::-ms-fill-upper {
 				  <div class="spacetitle padd2">
 					  <FONT size="5" title="Choose the Orbit you want to reach">Rocket</FONT>
 				</div>
-			  <TD width="460" title="Choose an engine for the first stage">1st&ensp;engine <SELECT class="right-select" id="Engine1" title="First stage engine name"> </TD>
+			  <TD width="460" title="Choose an engine for the first stage"><div class="engineText">1st&ensp;engine</div><SELECT class="right-select" id="Engine1" title="First stage engine name"> </TD>
 			  <TD width="220"><INPUT type="text" class="inputstyle-1" id="First_stage_engine_thrust" title="First stage engine thrust"><span class='kgtext'>kg</span><INPUT id="First_stage_engines_number" type="text" class="number-text1" title="Number of engines on the first stage"> Number</TD>
 			</TR>
 	  
 				<TR>
-			  <TD title="&#013;Changing the fuel or cycle in this menu only changes&#013;the maximum and minimum limits. To compare&#013;launchers with different fuels select 'Set averages'" width="460">1st&ensp;stage Fuel & Cycle &emsp;&emsp;&emsp;<SELECT  class="right-select" id="Fuel"></SELECT></TD>
-			  <TD title="Changing the cycle in this menu only changes&#013;the maximum and minimum limits. To compare&#013;launchers with different cycles select 'Set averages'" width="220"><SELECT id="Cycle"></SELECT> </TD></TR>
+			  <TD class="mobLeft" title="&#013;Changing the fuel or cycle in this menu only changes&#013;the maximum and minimum limits. To compare&#013;launchers with different fuels select 'Set averages'" width="460"><div  class="engineText">1st&ensp;stage Fuel & Cycle &emsp;&emsp;</div><SELECT  class="right-select" id="Fuel"></SELECT></TD>
+			  <TD class="mobRight" title="Changing the cycle in this menu only changes&#013;the maximum and minimum limits. To compare&#013;launchers with different cycles select 'Set averages'" width="220"><SELECT id="Cycle"></SELECT> </TD></TR>
 	  
 				<TR class="Projecting">
-			  <TD width="460" title="Choose an engine for the second stage">2nd engine <SELECT class="right-select" id="Engine2" title="Second stage engine name"> </TD>
+			  <TD width="460" title="Choose an engine for the second stage"><div class="engineText">2nd engine </div><SELECT class="right-select" id="Engine2" title="Second stage engine name"> </TD>
 			  <TD width="220"><INPUT id="Second_stage_engine_thrust" type="text" class="number-text1" title="Second stage engine thrust"><span class='kgtext'>kg</span>&emsp;<INPUT id="Second_stage_engines_number" type="text" class="number-text1" title="Number of engines on the second stage"> Number</TD></TR>
 	  
 				<TR>
-			  <TD title="Second stage rocket engine fuel and cycle">2nd stage Fuel & Cycle &emsp;&emsp;&ensp; <SELECT class="right-select" id="Fuel2" title="Second stage engine fuel"></SELECT></TD>
-			  <TD title="Second stage rocket engine cycle"> <SELECT id="Cycle2"></SELECT> </TD></TR>
+			  <TD class="mobLeft" title="Second stage rocket engine fuel and cycle"><div class="engineText">2nd stage Fuel & Cycle &emsp;&emsp;&ensp; </div><SELECT class="right-select" id="Fuel2" title="Second stage engine fuel"></SELECT></TD>
+			  <TD class="mobRight" title="Second stage rocket engine cycle"> <SELECT id="Cycle2"></SELECT> </TD></TR>
 	  
 				<TR class="f3stages">
-			  <TD title="Third stage rocket engine fuel">3rd stage Fuel & Cycle &emsp;&emsp;&emsp;<SELECT class="right-select" id="Fuel3"></SELECT></TD>
-			  <TD title="Third stage rocket engine cycle"> <SELECT id="Cycle3"></SELECT> </TD></TR>
+			  <TD class="mobLeft" title="Third stage rocket engine fuel"><div class="engineText">3rd stage Fuel & Cycle &emsp;&emsp;&emsp;</div><SELECT class="right-select" id="Fuel3"></SELECT></TD>
+			  <TD class="mobRight" title="Third stage rocket engine cycle"> <SELECT id="Cycle3"></SELECT> </TD></TR>
 	  
 				<TR>
-			  <TD title="Having more stages increases efficiency - but also increases the complexity and the cost of the rocket">Stages</TD>
+			  <TD title="Having more stages increases efficiency - but also increases the complexity and the cost of the rocket"><div class="engineText">Stages</div></TD>
 			  <TD><SELECT id="Stages" title="Number of stages"></SELECT> </TD></TR>
 				<TR>
-			  <TD title="Dimensionless ratio of engine thrust to weight of a rocket">Thrust-to-weight ratio</TD>
-			  <TD><INPUT id="Thrust_to_weight_ratio"  class="inputstyle-1" type="text"></TD></TR>
+			  <TD title="Dimensionless ratio of engine thrust to weight of a rocket"><div class="mobilelayout_l1">Thrust-to-weight ratio</div></TD>
+			  <TD><div class="mobilelayout_r1"><INPUT id="Thrust_to_weight_ratio"  class="inputstyle-1" type="text"></div></TD></TR>
 				<TR>
-			  <TD title="The initial mass of a rocket">Lift-off mass</TD>
-			  <TD><h8><LABEL id="Lift_off_Mass"></LABEL> kg</TD></TR>
+			  <TD title="The initial mass of a rocket"><div class="mobilelayout_l1">Lift-off mass</div></TD>
+			  <TD><div class="mobilelayout_r2"><h8><LABEL id="Lift_off_Mass"></LABEL> kg</div></TD></TR>
 				<TR class="ProjectingH">
 			  <TD title="The initial mass of a rocket excluding payload and fairing">Rocket mass (excluding Payload and Fairing)</TD>
 			  <TD><INPUT id="Rocket_Mass"  class="inputstyle-1" type="text"> kg</TD></TR>
@@ -435,13 +460,12 @@ input[type=range]:focus::-ms-fill-upper {
 				<TR class="f3stages">
 			  <TD title="The percentage ratio of the third stage mass to the rocket mass">Transfer Orbit stage to Lift-off mass ratio</TD>
 			  <TD><INPUT id="_3rd_Stage_mass_ratio" class="inputstyle-1" type="text"> %</TD></TR>
-				<TR>
+				
 	  
 				<TR class="ProjectingH">
 			  <TD class="dummy-node" align="center"> </TD>
 			  <TD class="tdpadd1 right-content" title="Reasonable restrictions on the rocket characteristics"></SELECT>Limitations ON<INPUT id="Limitation" type="checkbox"></TD></TR>
-				<TR>
-	  
+		
 				<TR>
 			  <TD class="tdpadd1" title="Moving the sliders to the right increases efficiency but is more difficult to achieve" align="center">Payload decrease <-- --> Payload increase </TD>
 			  <TD class="right-content" title="Using the averaged characteristics mode"></SELECT>Set averages<INPUT id="Set_averages" type="checkbox"></TD></TR>
@@ -450,7 +474,7 @@ input[type=range]:focus::-ms-fill-upper {
 			  <TD title="The percentage ratio of the rocket's dry mass (vehicle plus contents)&#013;to its wet mass (vehicle plus contents plus propellant).&#013;Mass ratio is a measure of the efficiency of a rocket.">1st&ensp;stage Dry to Wet mass ratio</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="_1st_Dry_to_Wet_mass_ratio_Range" 
 				type="range" min="1" max="100" value="50">											    
-	  <INPUT id="_1st_Dry_to_Wet_mass_ratio" type="text"> %</TD></TR>
+	  <INPUT id="_1st_Dry_to_Wet_mass_ratio" type="text"> %</TD><//TR>
 				<TR>
 			  <TD title="The percentage ratio of the rocket's dry mass (vehicle plus contents)&#013;to its wet mass (vehicle plus contents plus propellant).&#013;Mass ratio is a measure of the efficiency of a rocket.">2nd stage Dry to Wet mass ratio</TD>
 			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="_2nd_Dry_to_Wet_mass_ratio_Range" 
@@ -515,8 +539,8 @@ input[type=range]:focus::-ms-fill-upper {
 				  <TBODY>
 				  <TR>
 					<TD>
-						<div class="spacetitle"><FONT size=5" title="Choose the Launch point">Spaceport</FONT> <SELECT title="Spaceport name"
-					  id="StartingPoint"></SELECT>&ensp;<id="Air Launch" title="Launch of an existing rocket from an airplane"><font size="2">Air Launch</font><INPUT id="Air_Launch" type="checkbox">
+					<div class="spacetitle"><FONT class="leftTitle" size=5" title="Choose the Launch point">Spaceport</FONT><div class="spaceheder2cont"> <SELECT title="Spaceport name"
+					  id="StartingPoint"></SELECT>&ensp;<id="Air Launch" title="Launch of an existing rocket from an airplane"><font size="2">Air Launch</font><INPUT id="Air_Launch" type="checkbox"></div>
 					  </div>
 					  <TABLE border="1" class="borderTable">
 						<TBODY title="">
@@ -562,8 +586,8 @@ input[type=range]:focus::-ms-fill-upper {
 				  <TR >
 					<TD>
 						<div class="spacetitle topspace">
-							<FONT size="5" title="Choose the Orbit you want to reach">Orbit</FONT>	 <SELECT id="Orbit" title="Orbit or Planet to reach"></SELECT>	 
-						  <FONT size="2"><LABEL id="OrbitDescription"></LABEL></FONT>
+							<FONT class="leftTitle" size="5" title="Choose the Orbit you want to reach">Orbit</FONT><div class="spaceheder2cont"> <SELECT id="Orbit" title="Orbit or Planet to reach"></SELECT>	 
+						  <FONT size="2"><LABEL id="OrbitDescription"></LABEL></div></FONT>
 					  </div>
 					  <TABLE border="1" class="borderTable">
 						<TBODY>
