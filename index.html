@@ -225,12 +225,12 @@ input[type=range]:focus::-ms-fill-upper {
 	}
 	.headerTitle{
 		padding-right: 20px;
-		width: 90%;
+		width: calc(40% - 35px);
 		max-width: 530px;
 		float: left;
 	}
-	.secondHeader{padding-right: 40px !important;float: left;max-width: 250px;}
-	.lastChild{width: 90%;max-width: 360px;float: left;}
+	.secondHeader{padding-right: 40px !important;float: left;max-width: 300px;width: 30%;}
+	.lastChild{width: 30%;max-width: 360px;float: right;}
 	.secondHeader font, .lastChild font{font-weight: 500;}
 	.logoContent font{display: inline-flex;}
 	.logoContent font img{width:30px;height:30px;margin: 0 7px 0px 7px;}
@@ -294,6 +294,7 @@ input[type=range]:focus::-ms-fill-upper {
 	@media only screen and (max-width: 980px) {
 		.tableRocketContent{float: none;width: 100%;max-width: 100%;}
 		.tableResultContent{float: none;width: 100%;max-width: 100%;margin: 0;}
+	.secondHeader{padding-right: 30px !important;}
 		
 	}
 	@media only screen and (max-width: 768px) {
