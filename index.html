@@ -558,17 +558,17 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TABLE border="1" class="borderTable">
 						<TBODY title="">
 						<TR>
-					  <TD title="Spaceport or (in case air launch) airplane altitude above sea level" width="460">Launch point Altitude</TD>
-					  <TD width="220"><INPUT type="text" id="Starting_point_Altitude"> km</TD></TR>
+					  <TD title="Spaceport or (in case air launch) airplane altitude above sea level" width="460"><div class="mobilelayout_l1">Launch point Altitude</div></TD>
+					  <TD width="220"><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Starting_point_Altitude"> <span>km</span></div></TD></TR>
 						<TR>
-					  <TD  title="Speed added to rocket speed when starting from an airplane.">Additional velocity (Air Launch)</TD>
-					  <TD><INPUT type="text" id="Additional_Speed"> m/s</TD></TR>
+					  <TD  title="Speed added to rocket speed when starting from an airplane."><div class="mobilelayout_l1">Additional velocity (Air Launch)</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Additional_Speed"><span> m/s</span></div></TD></TR>
 						<TR>
-					  <TD title="An angle which ranges from 0 deg at the Equator to 90 deg (North or South)">Spaceport Latitude</TD>
-					  <TD><INPUT type="text" id="Spaceport_latitude"> deg</TD></TR>
+					  <TD title="An angle which ranges from 0 deg at the Equator to 90 deg (North or South)"><div class="mobilelayout_l1">Spaceport Latitude</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Spaceport_latitude"> <span>deg</span></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="An approximate azimuth calculated by spherical trigonometry.">Auxiliary angle</TD>
-					  <TD><h8><LABEL id="Intermediate_angle"></LABEL> deg</TD></TR>
+					  <TD title="An approximate azimuth calculated by spherical trigonometry."><div class="mobilelayout_l1">Auxiliary angle</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><LABEL id="Intermediate_angle"></LABEL> <span>deg</span></div></TD></TR>
 						<TR>
 					  <TD title="The angle between the north direction and the projection&#013;of the initial orbital plane onto the launch location.">Launch Azimuth</TD>
 					  <TD><h8><LABEL id="Launch_azimuth"></LABEL> deg</TD></TR>
@@ -1316,7 +1316,7 @@ input[type=range]:focus::-ms-fill-upper {
 			} else if (itt == 5)
 			{
 				var Assumed_payload_mass_base = parseFloat(elAssumed_payload_mass.value);
-				elPayload_mass_calculated5.textContent = Payload_mass_calculated.toFixed(1).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+				elPayload_mass_calculated5.textContent = Payload_mass_calculated.toFixed(1);
 				var Payload_change = Payload_mass_calculated/Assumed_payload_mass_base;
 				elPayload_change.textContent = (Payload_change * 100.).toFixed(1);	
 			}
