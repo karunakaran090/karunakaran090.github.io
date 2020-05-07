@@ -458,12 +458,12 @@ input[type=range]:focus::-ms-fill-upper {
 			  <TD title="A predetermined velocity, which corresponds to a flight altitude&#013;where the separation of the fairing is permissible.&#013;This method is used to simplify the calculations."><div class="mobilelayout_l1">Fairing jettison velocity</div></TD>
 			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT id="Fairing_jettison_velocity" class="inputstyle-1" type="text"> <span>m/s</span></div></TD></TR>
 				<TR class="Expanding">
-			  <TD title="Delta velocity required to achieve actual fairing separation velocity&#013;taking into account losses.">Fairing jettison delta-v</TD>
-			  <TD><LABEL 
-			  id="Fairing_jettison_delta_v"></LABEL> m/s</TD></TR>
+			  <TD title="Delta velocity required to achieve actual fairing separation velocity&#013;taking into account losses."><div class="mobilelayout_l1">Fairing jettison delta-v</div></TD>
+			  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL 
+			  id="Fairing_jettison_delta_v"></LABEL> <span>m/s</span></h8></div></TD></TR>
 				<TR class="Electric">
-			  <TD title="Mass of the dropped batteries of the second stage to improve payload.&#013;It is estimated that it is 2/3 of the total battery mass.">Jettisoned battery mass</TD>
-			  <TD><INPUT id="Jettisoned_battery_mass" class="inputstyle-1" type="text"> kg</TD></TR>
+			  <TD title="Mass of the dropped batteries of the second stage to improve payload.&#013;It is estimated that it is 2/3 of the total battery mass."><div class="mobilelayout_l1">Jettisoned battery mass</div></TD>
+			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT id="Jettisoned_battery_mass" class="inputstyle-1" type="text"><span> kg</span></div></TD></TR>
 				<TR class="ProjectingH">
 			  <TD title="Estimated payload mass for the initial approximation at the beginning of the calculation"><div class="mobilelayout_l1">Assumed payload mass</div></TD>
 			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT id="Assumed_payload_mass" class="inputstyle-1" type="text"> <span>kg</span></div></TD></TR>
@@ -1318,7 +1318,7 @@ input[type=range]:focus::-ms-fill-upper {
 			{
 				var Assumed_payload_mass_base = parseFloat(elAssumed_payload_mass.value);
 				var strComma = Payload_mass_calculated.toFixed(0);
-				strComma = strComma.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")
+				strComma = strComma.toLocaleString()
 				elPayload_mass_calculated5.textContent = strComma;
 				var Payload_change = Payload_mass_calculated/Assumed_payload_mass_base;
 				elPayload_change.textContent = (Payload_change * 100.).toFixed(1);	
