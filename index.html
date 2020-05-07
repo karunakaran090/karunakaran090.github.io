@@ -336,8 +336,9 @@ input[type=range]:focus::-ms-fill-upper {
 		.mobilelayout_r2 h8{padding: 2px 10px;}
 		.padd2, .spacetitle{padding: 5px;margin-bottom:5px;border-bottom:0.5px solid #eeeff1}
 		.layout_wt_content{margin-top:-26px ;}
-		.layout_wt_content input{float: left;margin: 0;width: calc(100% - 40px);}
+		.layout_wt_content input{float: left;margin: 0;width: calc(100% - 50px);}
 		.layout_wt_content span{float: left;padding-left: 5px;}
+		.layout_wt_content h8, .layout_wt_content h9{display: flex;}
 	}
 	@media only screen and (max-width: 480px) {	
 		.launcher-header{padding:10px}
@@ -570,32 +571,32 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TD title="An approximate azimuth calculated by spherical trigonometry."><div class="mobilelayout_l1">Auxiliary angle</div></TD>
 					  <TD><div class="mobilelayout_r1 layout_wt_content"><LABEL id="Intermediate_angle"></LABEL> <span>deg</span></div></TD></TR>
 						<TR>
-					  <TD title="The angle between the north direction and the projection&#013;of the initial orbital plane onto the launch location.">Launch Azimuth</TD>
-					  <TD><h8><LABEL id="Launch_azimuth"></LABEL> deg</TD></TR>
+					  <TD title="The angle between the north direction and the projection&#013;of the initial orbital plane onto the launch location."><div class="mobilelayout_l1">Launch Azimuth</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Launch_azimuth"></LABEL> <span>deg</span></h8></div></</TD></TR>
 						<TR>
-					  <TD title="The speed of the Earth surface due to the Earth's rotation&#013;at the latitude of the Spaceport.">Earth rotation velocity</TD>
-					  <TD><h8><LABEL id="Launch_point_speed"></LABEL> m/s</TD></TR>
+					  <TD title="The speed of the Earth surface due to the Earth's rotation&#013;at the latitude of the Spaceport."><div class="mobilelayout_l1">Earth rotation velocity</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Launch_point_speed"></LABEL> <span>m/s</span></h8></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="The imaginary satellite velocity at the starting point altitude, which is necessary&#013;for calculating the HohmannTransfer to Low Earth Orbit.">Launch point altitude orb. velocity (imaginary)</TD>
-					  <TD><h8><LABEL 
-						id="Starting_point_Altitude_orbital_velocity"></LABEL> m/s</TD></TR>
+					  <TD title="The imaginary satellite velocity at the starting point altitude, which is necessary&#013;for calculating the HohmannTransfer to Low Earth Orbit."><div class="mobilelayout_l1">Launch point altitude orb. velocity (imaginary)</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL 
+						id="Starting_point_Altitude_orbital_velocity"></LABEL> <span>m/s</span></h8></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="The absolute orbital speed of the satellite">Absolute orbital velocity</TD>
-					  <TD><h8><LABEL id="Absolute_orbital_velocity"></LABEL> m/s</TD></TR>
+					  <TD title="The absolute orbital speed of the satellite"><div class="mobilelayout_l1">Absolute orbital velocity</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Absolute_orbital_velocity"></LABEL> <span>m/s</span></h8></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="The orbital speed of the satellite relative to the Earth surface.">Relative orbital velocity</TD>
-					  <TD><h8><LABEL id="Orbital_velocity"></LABEL> m/s</TD></TR>
+					  <TD title="The orbital speed of the satellite relative to the Earth surface."><div class="mobilelayout_l1">Relative orbital velocity</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Orbital_velocity"></LABEL><span> m/s</span></h8></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="Increment of speed depending on the direction of launch relative to&#013;the direction of Earth's rotation.">Orbital velocity gain due to the Earth rotation</TD>
-					  <TD><h8><LABEL id="Orbital_velocity_increment_due_to_the_Earth_rotation"></LABEL> m/s</TD></TR>
+					  <TD title="Increment of speed depending on the direction of launch relative to&#013;the direction of Earth's rotation."><div class="mobilelayout_l1">Orbital velocity gain due to the Earth rotation</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Orbital_velocity_increment_due_to_the_Earth_rotation"></LABEL><span> m/s</span></h8></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="Auxiliary delta-v for orbital maneuver calculation.">Delta-v for circular orbit (ideal)</TD>
-					  <TD><h8><LABEL 
-						id="Vsp_for_circular_orbit"></LABEL> m/s</TD></TR>
+					  <TD title="Auxiliary delta-v for orbital maneuver calculation."><div class="mobilelayout_l1">Delta-v for circular orbit (ideal)</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL 
+						id="Vsp_for_circular_orbit"></LABEL> <span>m/s</span></h8></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="Auxiliary delta-v for losses calculation.">Delta-v for LEO (losses calc.)</TD>
-					  <TD><h8><LABEL 
-						id="Vsp_for_LEO"></LABEL> m/s</TD></TR></TBODY></TABLE></TR>
+					  <TD title="Auxiliary delta-v for losses calculation."><div class="mobilelayout_l1">Delta-v for LEO (losses calc.)</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL 
+						id="Vsp_for_LEO"></LABEL> <span>m/s</span></h8></div></TD></TR></TBODY></TABLE></TR>
 				  <TR >
 					<TD>
 						<div class="spacetitle topspace">
@@ -605,37 +606,37 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TABLE border="1" class="borderTable">
 						<TBODY>
 						<TR>
-					  <TD title="The point of the orbit closest to Earth" width="460"><LABEL id="Reference"></LABEL> Orbit Perigee</TD>
-					  <TD width="220"><INPUT type="text" id="Orbit_Perigee"> km</TD></TR>
+					  <TD title="The point of the orbit closest to Earth" width="460"><div class="mobilelayout_l1"><LABEL id="Reference"></LABEL> Orbit Perigee</div></TD>
+					  <TD width="220"><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Orbit_Perigee"> <span>km</span></div></TD></TR>
 						<TR>
-					  <TD title="The point of the orbit farthest from Earth">Orbit Apogee (0 means a circular orbit)</TD>
-					  <TD><INPUT type="text" id="Orbit_Apogee"> km</TD></TR>
+					  <TD title="The point of the orbit farthest from Earth"><div class="mobilelayout_l1">Orbit Apogee (0 means a circular orbit)</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Orbit_Apogee"> <span>km</span></div></TD></TR>
 						<TR class="fGEOI">
-					  <TD title="The angle between the Earth's equatorial plane and the satellite's orbital plane.&#013;The inclination of an orbit is always greater than the spaceport latitude.">Orbit Inclination</TD>
-					  <TD><INPUT type="text" id="Orbit_Inclination"> deg</TD></TR>
+					  <TD title="The angle between the Earth's equatorial plane and the satellite's orbital plane.&#013;The inclination of an orbit is always greater than the spaceport latitude."><div class="mobilelayout_l1">Orbit Inclination</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Orbit_Inclination"><span> deg</span></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="Orbital speed at perigee (maximum)">Perigee velocity</TD>
-					  <TD><h8><LABEL id="Perigee_velocity"></LABEL> m/s</TD></TR>
+					  <TD title="Orbital speed at perigee (maximum)"><div class="mobilelayout_l1">Perigee velocity</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Perigee_velocity"></LABEL> <span>m/s</span></h8></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="Orbital speed at apogee (minimum)">Apogee velocity</TD>
-					  <TD><h8><LABEL id="Apogee_velocity"></LABEL> m/s</TD></TR>
+					  <TD title="Orbital speed at apogee (minimum)"><div class="mobilelayout_l1">Apogee velocity</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Apogee_velocity"></LABEL><span> m/s</span></h8></div></TD></TR>
 					   <TR>
-					  <TD title="The time a given satellite takes to complete one orbit around Earth">Orbital Period</TD>
-					  <TD><h8><LABEL id="Orbital_period"></LABEL> min</TD></TR>
+					  <TD title="The time a given satellite takes to complete one orbit around Earth"><div class="mobilelayout_l1">Orbital Period</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Orbital_period"></LABEL><span> min</span></h8></div></TD></TR>
 						<TR class="fGEO">
-					  <TD title="Velocity increment needed to achieve zero inclination within a Geosynchronous orbit&#013;if the inclination of the Geosynchronous Transfer Orbit is not a zero.&#013;Usually this velocity increment is added at the apogee of the Geosynchronous Transfer Orbit.">Delta-v for change orbit inclination to 0</TD>
-					  <TD><h8><LABEL 
-					  id="Vsp_for_inclination_change"></LABEL> m/s</TD></TR>
+					  <TD title="Velocity increment needed to achieve zero inclination within a Geosynchronous orbit&#013;if the inclination of the Geosynchronous Transfer Orbit is not a zero.&#013;Usually this velocity increment is added at the apogee of the Geosynchronous Transfer Orbit."><div class="mobilelayout_l1">Delta-v for change orbit inclination to 0</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL 
+					  id="Vsp_for_inclination_change"></LABEL> <span>m/s</span></h8></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="Delta velocity needed for injection into target orbit without&#013;taking into account the effect of the Earth's rotation.">Orbital (injection) velocity</TD>
-					  <TD><h8><LABEL id="Injection_velocity"></LABEL> m/s</TD></TR>
+					  <TD title="Delta velocity needed for injection into target orbit without&#013;taking into account the effect of the Earth's rotation."><div class="mobilelayout_l1">Orbital (injection) velocity</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Injection_velocity"></LABEL><span> m/s</span></h8></div></TD></TR>
 						<TR>
-					  <TD title="Delta-v, as used in spacecraft flight dynamics, is a measure of the impulse per unit of &#013;spacecraft mass that is needed to perform a maneuver, such as launching from or landing&#013;on a planet or moon, or an in-space orbital maneuver. It is a scalar that has the units of speed.&#013;As used in this context, it is not the same as the physical change in velocity of the vehicle.&#013;The required delta-v to achieve a given orbit in this software is calculated according to the&#013;Hohmann Transfer formula for the energy-optimal two burn maneuver which provides &#013;very good accuracy. However, these formulas do not take into account the losses associated&#013;with the Earth&#039;s gravity and atmosphere.">Delta-v for target orbit (ideal)</TD>
-					  <TD><h8><LABEL 
-					  id="Vsp_for_target_orbit"></LABEL> m/s</TD></TR>
+					  <TD title="Delta-v, as used in spacecraft flight dynamics, is a measure of the impulse per unit of &#013;spacecraft mass that is needed to perform a maneuver, such as launching from or landing&#013;on a planet or moon, or an in-space orbital maneuver. It is a scalar that has the units of speed.&#013;As used in this context, it is not the same as the physical change in velocity of the vehicle.&#013;The required delta-v to achieve a given orbit in this software is calculated according to the&#013;Hohmann Transfer formula for the energy-optimal two burn maneuver which provides &#013;very good accuracy. However, these formulas do not take into account the losses associated&#013;with the Earth&#039;s gravity and atmosphere."><div class="mobilelayout_l1">Delta-v for target orbit (ideal)</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL 
+					  id="Vsp_for_target_orbit"></LABEL><span> m/s</span></h8></div></TD></TR>
 						<TR>
-					  <TD title="Delta velocity for injection to trans-planet orbit from a 200km reference orbit">Extra velocity for flight to the planets</TD>
-					  <TD><INPUT type="text" id="Extra_speed_for_flight_to_the_planets"> m/s</TD></TR></TBODY></TABLE></TD></TR >
+					  <TD title="Delta velocity for injection to trans-planet orbit from a 200km reference orbit"><div class="mobilelayout_l1">Extra velocity for flight to the planets</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Extra_speed_for_flight_to_the_planets"> <span>m/s</span></div></TD></TR></TBODY></TABLE></TD></TR >
 				  <TR>
 					<TD><div class="spacetitle topspace padd2">
 						<FONT size="5" title="Empirically determined delta-v losses for injection into LEO">Losses<BR></FONT>
@@ -643,97 +644,97 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TABLE border="1" class="borderTable">
 						<TBODY>
 						<TR class="Expanding">
-					  <TD title="An estimate of gravitational losses during the vertical phase of a flight&#013;which is used to determine the total gravitational losses.">Gravity Losses at specific altitude</TD>
-					  <TD><h8><LABEL id="Gravity_losses_at_specific_altitude"></LABEL> m/s</TD></TR>
+					  <TD title="An estimate of gravitational losses during the vertical phase of a flight&#013;which is used to determine the total gravitational losses."><div class="mobilelayout_l1">Gravity Losses at specific altitude</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Gravity_losses_at_specific_altitude"></LABEL><span> m/s</span></h8></div></TD></TR>
 						<TR>
-					  <TD title="A measure of the loss in the net performance of a rocket&#013;while it is thrusting in a gravitational field">Gravity Losses</TD>
-					  <TD><h8><LABEL id="Gravity_losses"></LABEL> m/s</TD></TR>
+					  <TD title="A measure of the loss in the net performance of a rocket&#013;while it is thrusting in a gravitational field"><div class="mobilelayout_l1">Gravity Losses</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Gravity_losses"></LABEL> <span>m/s</span></h8></div></TD></TR>
 						<TR>
-					  <TD title="A measure of the loss in the net performance of a rocket due to the&#013;aerodynamic forces which are applied on both the body and the fins" width="460">Aerodynamic Losses</TD>
-					  <TD width="220"><h8><LABEL 
-						id="Aerodynamic_losses"></LABEL> m/s</TD></TR>
+					  <TD title="A measure of the loss in the net performance of a rocket due to the&#013;aerodynamic forces which are applied on both the body and the fins" width="460"><div class="mobilelayout_l1">Aerodynamic Losses</div></TD>
+					  <TD width="220"><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL 
+						id="Aerodynamic_losses"></LABEL><span> m/s</span></h8></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="Total losses including gravity, aerodynamic and control losses">Summary Losses</TD>
-					  <TD><h8><LABEL id="Summary_losses"></LABEL> m/s</TD></TR>
+					  <TD title="Total losses including gravity, aerodynamic and control losses"><div class="mobilelayout_l1">Summary Losses</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Summary_losses"></LABEL> <span>m/s</span></h8></div></TD></TR>
 						<TR>
-					  <TD title="The percentage ratio of total losses to the delta velocity for Low Earth Orbit.">Assumed Losses</TD>
-					  <TD><h8><LABEL id="Assumed_losses"></LABEL> %&ensp;</TD></TR>
+					  <TD title="The percentage ratio of total losses to the delta velocity for Low Earth Orbit."><div class="mobilelayout_l1">Assumed Losses</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL id="Assumed_losses"></LABEL> <span>%&ensp;</span></h8></div></TD></TR>
 						<TR>
-					  <TD title="Delta-v needed to achieve a required calculated according to the Hohmann Transfer&#013;formula plus losses calculated according to the Y. Lobanovsky approximation method.&#013;This speed would have a rocket in the absence of external forces. However, the actual&#013;speed due to losses will be significantly lower.">Delta-v with Losses</TD>
-					  <TD><h8><LABEL 
-						id="Vsp_with_losses"></LABEL> m/s</TD></TR></TBODY></TABLE></TD></TR>
+					  <TD title="Delta-v needed to achieve a required calculated according to the Hohmann Transfer&#013;formula plus losses calculated according to the Y. Lobanovsky approximation method.&#013;This speed would have a rocket in the absence of external forces. However, the actual&#013;speed due to losses will be significantly lower."><div class="mobilelayout_l1">Delta-v with Losses</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h8><LABEL 
+						id="Vsp_with_losses"></LABEL> <span>m/s</span></h8></div></TD></TR></TBODY></TABLE></TD></TR>
 				  <TR>
 					<TD><div class="spacetitle topspace padd2"><FONT size="" title="The main characteristics of the Rocket">Output<BR></FONT></div> 
 					  <TABLE border="1" class="borderTable">
 						<TBODY>
 						<TR class="Expanding">
-					  <TD title="The integral specific impulse of the engines of the first stage.&#013;This way back pressure losses are taken into account.">1st&ensp;stage average trajectory Isp</TD>
-					  <TD><h9><LABEL id="First_stage_average_trajectory_isp"></LABEL> s &emsp;</TD></TR>
+					  <TD title="The integral specific impulse of the engines of the first stage.&#013;This way back pressure losses are taken into account."><div class="mobilelayout_l1">1st&ensp;stage average trajectory Isp</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="First_stage_average_trajectory_isp"></LABEL> <span>s &emsp;</span></h9></div></TD></TR>
 						<TR>
-					  <TD class="tdpadd1" title="The increment of the rocket velocity due to the thrust of the first stage engines&#013;in the ideal case (the absence of external forces) calculated by the Tsiolkovsky formula." width="460">1st&ensp;stage delta-v</TD>
-					  <TD width="220"><h9><LABEL id="First_stage_delta_v"></LABEL> m/s</TD></TR>
+					  <TD class="tdpadd1" title="The increment of the rocket velocity due to the thrust of the first stage engines&#013;in the ideal case (the absence of external forces) calculated by the Tsiolkovsky formula." width="460"><div class="mobilelayout_l1">1st&ensp;stage delta-v</div></TD>
+					  <TD width="220"><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="First_stage_delta_v"></LABEL> <span>m/s</span></h9></div></TD></TR>
 						<TR class="Expanding">
-					  <TD class="tdpadd1" title="The total mass of the rocket at the shutdown of the first stage engines.">1st&ensp;stage final mass</TD>
-					  <TD><h9><LABEL id="First_stage_final_mass"></LABEL> kg</TD></TR>
+					  <TD class="tdpadd1" title="The total mass of the rocket at the shutdown of the first stage engines."><div class="mobilelayout_l1">1st&ensp;stage final mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="First_stage_final_mass"></LABEL><span> kg</span></h9></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="The total mass of the oxidizer and fuel of the first stage">1st&ensp;stage propellant mass</TD>
-					  <TD><INPUT type="text" id="First_stage_propellant_mass" style="width:106px"> kg</TD></TR>
+					  <TD title="The total mass of the oxidizer and fuel of the first stage"><div class="mobilelayout_l1">1st&ensp;stage propellant mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="First_stage_propellant_mass"> <span>kg</span></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="The mass of the vehicle first stage plus contents.">1st&ensp;stage dry mass</TD>
-					  <TD><INPUT type="text" id="First_stage_dry_mass" style="width:106px"> kg</TD></TR>
+					  <TD title="The mass of the vehicle first stage plus contents."><div class="mobilelayout_l1">1st&ensp;stage dry mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="First_stage_dry_mass"><span> kg</span></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="Approximate engines run time&#013;This is usually less than the real time&#013;because it does not take into account&#013;the real thrust profile.">1st&ensp;stage engines run time</TD>
-					  <TD><h9><LABEL id="First_stage_run_time"></LABEL> s &emsp;</TD></TR>
+					  <TD title="Approximate engines run time&#013;This is usually less than the real time&#013;because it does not take into account&#013;the real thrust profile."><div class="mobilelayout_l1">1st&ensp;stage engines run time</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="First_stage_run_time"></LABEL> <span>s &emsp;</span></h9></div></TD></TR>
 			  
 						<TR>
-					  <TD class="tdpadd1" title="The increment of the rocket velocity due to the thrust of the second stage engines&#013;in the ideal case (the absence of external forces) calculated by the Tsiolkovsky formula.">2nd stage delta-v <LABEL id="Required"></LABEL> </TD>
-					  <TD><h9><LABEL id="Second_stage_delta_v"></LABEL> m/s</TD></TR>
+					  <TD class="tdpadd1" title="The increment of the rocket velocity due to the thrust of the second stage engines&#013;in the ideal case (the absence of external forces) calculated by the Tsiolkovsky formula."><div class="mobilelayout_l1">2nd stage delta-v <LABEL id="Required"></LABEL></div> </TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Second_stage_delta_v"></LABEL> <span>m/s</span></h9></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="The total mass of the rocket at the start of the second stage engines.">2nd stage total (start) mass</TD>
-					  <TD><h9><LABEL id="Second_stage_total_Start_mass"></LABEL> kg</TD></TR>
+					  <TD title="The total mass of the rocket at the start of the second stage engines."><div class="mobilelayout_l1">2nd stage total (start) mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Second_stage_total_Start_mass"></LABEL> <span>kg</span></h9></div></TD></TR>
 						<TR class="Expanding">
-					  <TD>2nd stage total mass before fairing jettison</TD>
-					  <TD><h9><LABEL id="Second_stage_total_mass_before_fairing_jettison"></LABEL> kg</TD></TR>
+					  <TD><div class="mobilelayout_l1">2nd stage total mass before fairing jettison</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Second_stage_total_mass_before_fairing_jettison"></LABEL> <span>kg</span></h9></div></TD></TR>
 						<TR class="ExpandingB">
-					  <TD>2nd stage total mass before battery jettison</TD>
-					  <TD><h9><LABEL id="Second_stage_total_mass_before_battery_jettison"></LABEL> kg</TD></TR>
+					  <TD><div class="mobilelayout_l1">2nd stage total mass before battery jettison</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Second_stage_total_mass_before_battery_jettison"></LABEL> <span>kg</span></h9></div></TD></TR>
 						<TR class="ExpandingB">
-					  <TD>2nd stage delta-v before batt. jettison</TD>
-					  <TD><h9><LABEL id="Second_stage_delta_v_before_battery_jettison"></LABEL> m/s</TD></TR>
+					  <TD><div class="mobilelayout_l1">2nd stage delta-v before batt. jettison</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Second_stage_delta_v_before_battery_jettison"></LABEL> <span>m/s</span></h9></div></TD></TR>
 						<TR class="Expanding">
-					  <TD class="tdpadd1" title="The total mass of the rocket at the shutdown of the second stage engines.">2nd stage final mass</TD>
-					  <TD><h9><LABEL id="Second_stage_final_mass"></LABEL> kg</TD></TR>
+					  <TD class="tdpadd1" title="The total mass of the rocket at the shutdown of the second stage engines."><div class="mobilelayout_l1">2nd stage final mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Second_stage_final_mass"></LABEL><span> kg</span></h9></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="The total mass of the oxidizer and fuel of the second stage">2nd stage propellant mass</TD>
-					  <TD><INPUT type="text" id="Second_stage_propellant_mass" style="width:106px"> kg</TD></TR>
+					  <TD title="The total mass of the oxidizer and fuel of the second stage"><div class="mobilelayout_l1">2nd stage propellant mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Second_stage_propellant_mass"><span> kg</span></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="The mass of the second stage plus contents.">2nd stage dry mass</TD>
-					  <TD><INPUT type="text" id="Second_stage_dry_mass" style="width:106px"> kg</TD></TR>
+					  <TD title="The mass of the second stage plus contents."><div class="mobilelayout_l1">2nd stage dry mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Second_stage_dry_mass"> <span>kg</span></div></TD></TR>
 						<TR class="Expanding">
-					  <TD title="Approximate engine run time">2nd&ensp;stage engine run time</TD>
-					  <TD><h9><LABEL id="Second_stage_run_time"></LABEL> s &emsp;</TD></TR>
+					  <TD title="Approximate engine run time"><div class="mobilelayout_l1">2nd&ensp;stage engine run time</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Second_stage_run_time"></LABEL> <span>s &emsp;</span></h9></div></TD></TR>
 			  
 						<TR class="f3stages">
-					  <TD class="tdpadd1" title="The increment of the rocket velocity due to the thrust of the third stage engines&#013;in the ideal case (the absence of external forces) calculated by the Tsiolkovsky formula.">Transfer Orbit stage delta-v (required)</TD>
-					  <TD><h9><LABEL id="Transfer_Orbit_stage_delta_v_required"></LABEL> m/s</TD></TR>
+					  <TD class="tdpadd1" title="The increment of the rocket velocity due to the thrust of the third stage engines&#013;in the ideal case (the absence of external forces) calculated by the Tsiolkovsky formula."><div class="mobilelayout_l1">Transfer Orbit stage delta-v (required)</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Transfer_Orbit_stage_delta_v_required"></LABEL><span> m/s</span></h9></div></TD></TR>
 						<TR class="Expanding3">
-					  <TD class="tdpadd1" title="The total mass of the rocket at the start of the third stage engines.">Transfer Orbit stage total (start) mass</TD>
-					  <TD><h9><LABEL 
-						id="Transfer_Orbit_stage_total_Start_mass"></LABEL> kg</TD></TR>
+					  <TD class="tdpadd1" title="The total mass of the rocket at the start of the third stage engines."><div class="mobilelayout_l1">Transfer Orbit stage total (start) mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL 
+						id="Transfer_Orbit_stage_total_Start_mass"></LABEL> <span>kg</span></h9></div></TD></TR>
 						<TR class="Expanding3">
-					  <TD class="tdpadd1" title="The total mass of the rocket at the shutdown of the third stage engines.">Transfer Orbit stage final mass</TD>
-					  <TD><h9><LABEL 
-						id="Transfer_Orbit_stage_final_mass"></LABEL> kg</TD></TR>
+					  <TD class="tdpadd1" title="The total mass of the rocket at the shutdown of the third stage engines."><div class="mobilelayout_l1">Transfer Orbit stage final mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL 
+						id="Transfer_Orbit_stage_final_mass"></LABEL><span> kg</span></h9></div></TD></TR>
 						<TR class="Expanding3">
-					  <TD title="The total mass of the oxidizer and fuel of the third stage">Transfer Orbit stage propellant mass</TD>
-					  <TD><INPUT type="text" id="Transfer_Orbit_stage_propellant_mass" style="width:106px"> kg</TD></TR>
+					  <TD title="The total mass of the oxidizer and fuel of the third stage"><div class="mobilelayout_l1">Transfer Orbit stage propellant mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Transfer_Orbit_stage_propellant_mass"><span> kg</span></div></TD></TR>
 						<TR class="Expanding3">
-					  <TD title="The mass of the third stage plus contents.">Transfer Orbit stage dry mass</TD>
-					  <TD><INPUT type="text" id="Transfer_Orbit_stage_dry_mass" style="width:106px"> kg</TD></TR>
+					  <TD title="The mass of the third stage plus contents."><div class="mobilelayout_l1">Transfer Orbit stage dry mass</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Transfer_Orbit_stage_dry_mass"><span> kg</span></div></TD></TR>
 			  
 						<TR>
-					  <TD class="tdpadd1" title="The procedure error - it should not be equated with actual accuracy of the result.">Calculation Error</TD>
-					  <TD><h9><LABEL id="Calculation_Error"></LABEL> m/s</TD></TR>
+					  <TD class="tdpadd1" title="The procedure error - it should not be equated with actual accuracy of the result."><div class="mobilelayout_l1">Calculation Error</div></TD>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Calculation_Error"></LABEL><span> m/s</span></h9></div></TD></TR>
 						  </TBODY></TABLE>
 						  </TD>
 						  </TR></TBODY></TABLE></TD>
@@ -1316,7 +1317,9 @@ input[type=range]:focus::-ms-fill-upper {
 			} else if (itt == 5)
 			{
 				var Assumed_payload_mass_base = parseFloat(elAssumed_payload_mass.value);
-				elPayload_mass_calculated5.textContent = Payload_mass_calculated.toFixed(1);
+				var strComma = Payload_mass_calculated.toFixed(0);
+				strComma = strComma.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")
+				elPayload_mass_calculated5.textContent = strComma;
 				var Payload_change = Payload_mass_calculated/Assumed_payload_mass_base;
 				elPayload_change.textContent = (Payload_change * 100.).toFixed(1);	
 			}
