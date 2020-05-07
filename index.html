@@ -302,7 +302,7 @@ input[type=range]:focus::-ms-fill-upper {
 	}
 	@media only screen and (max-width: 768px) {
 		.headerTitle, .lastChild{padding: 0;width: 100%;}
-		.secondHeader{padding-bottom: 30px;padding-right: 0 !important;}
+		.secondHeader{padding-bottom: 30px;padding-right: 0 !important;width: 100%;}
 
 	}
 	@media only screen and (max-width: 600px) {
@@ -330,17 +330,21 @@ input[type=range]:focus::-ms-fill-upper {
 		.engineText{padding-top:5px;line-height: 1;height: auto;width: 100%;}
 		.mobilelayout_l1{width: 65%;float: left;padding-top: 4px;}
 		.mobilelayout_r1{width: 30%;float: right;}
-		.mobilelayout_r1 input{width: 100%;margin: 0;float: right;margin-top: -28px;}
+		.mobilelayout_r1 input{width: 82%;margin: 0;float: right;margin-top: -28px;}
+		.mobilelayout_r1 select{width: 100%;min-width:80px;margin: 4px 0;float: right;margin-top: -15px;}
 		.mobilelayout_r2{width: 30%;float: right;margin-top: -23px;}
 		.mobilelayout_r2 h8{padding: 2px 10px;}
 		.padd2, .spacetitle{padding: 5px;margin-bottom:5px;border-bottom:0.5px solid #eeeff1}
+		.layout_wt_content{margin-top:-26px ;}
+		.layout_wt_content input{float: left;margin: 0;width: calc(100% - 40px);}
+		.layout_wt_content span{float: left;padding-left: 5px;}
 	}
 	@media only screen and (max-width: 480px) {	
 		.launcher-header{padding:10px}
 		.logoContent span{font-size: 14px;}
 		.launcher-header p FONT{font-size: 21px;}
 		.logoContent font img {width: 25px;margin: 0 3px 0px 3px;height: 25px;}
-		.hyper-content{line-height: 1.5;}
+		.hyper-content{line-height: 1.5 !important;}
 		.tdright{text-align: right;}
 		.tdright h8{text-align: right;}
 	}
@@ -431,8 +435,8 @@ input[type=range]:focus::-ms-fill-upper {
 			  <TD class="mobRight" title="Third stage rocket engine cycle"> <SELECT id="Cycle3"></SELECT> </TD></TR>
 	  
 				<TR>
-			  <TD title="Having more stages increases efficiency - but also increases the complexity and the cost of the rocket"><div class="engineText nopadd">Stages</div></TD>
-			  <TD><SELECT id="Stages" title="Number of stages"></SELECT> </TD></TR>
+			  <TD title="Having more stages increases efficiency - but also increases the complexity and the cost of the rocket"><div class="engineText mobilelayout_l1 nopadd">Stages</div></TD>
+			  <TD><div class="mobilelayout_r1"><SELECT id="Stages" title="Number of stages"></SELECT> </div></TD></TR>
 				<TR>
 			  <TD title="Dimensionless ratio of engine thrust to weight of a rocket"><div class="mobilelayout_l1">Thrust-to-weight ratio</div></TD>
 			  <TD><div class="mobilelayout_r1"><INPUT id="Thrust_to_weight_ratio"  class="inputstyle-1" type="text"></div></TD></TR>
@@ -440,18 +444,18 @@ input[type=range]:focus::-ms-fill-upper {
 			  <TD title="The initial mass of a rocket"><div class="mobilelayout_l1">Lift-off mass</div></TD>
 			  <TD><div class="mobilelayout_r2"><h8><LABEL id="Lift_off_Mass"></LABEL> kg</div></TD></TR>
 				<TR class="ProjectingH">
-			  <TD title="The initial mass of a rocket excluding payload and fairing">Rocket mass (excluding Payload and Fairing)</TD>
-			  <TD><INPUT id="Rocket_Mass"  class="inputstyle-1" type="text"> kg</TD></TR>
+			  <TD title="The initial mass of a rocket excluding payload and fairing"><div class="mobilelayout_l1">Rocket mass (excluding Payload and Fairing)</div></TD>
+			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT id="Rocket_Mass"  class="inputstyle-1" type="text"><span>kg</span></div></TD></TR>
 				<TR>
-			  <TD title="The maximum diameter midsection of the rocket, which determines the aerodynamic drag.&#013;For modern rockets this is usually the fairing diameter.">Max midsection diameter</TD>
-			  <TD><INPUT class="inputstyle-1" type="text" id="Max_midsection_D"> m</TD></TR>
+			  <TD title="The maximum diameter midsection of the rocket, which determines the aerodynamic drag.&#013;For modern rockets this is usually the fairing diameter."><div class="mobilelayout_l1">Max midsection diameter</div></TD>
+			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT class="inputstyle-1" type="text" id="Max_midsection_D"> <span>m</span></div></TD></TR>
 	  
 				<TR>
-			  <TD title="The fairing is a nose cone used to protect a spacecraft against the&#013;aerodynamic influence during launch through an atmosphere.&#013;The fairing is usually separated after the vehicle has traversed&#013;the densest part of the atmosphere.">Fairing mass</TD>
-			  <TD><INPUT class="inputstyle-1" type="text" id="Fairing_mass"> kg</TD></TR>
+			  <TD title="The fairing is a nose cone used to protect a spacecraft against the&#013;aerodynamic influence during launch through an atmosphere.&#013;The fairing is usually separated after the vehicle has traversed&#013;the densest part of the atmosphere."><div class="mobilelayout_l1">Fairing mass</div></TD>
+			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT class="inputstyle-1" type="text" id="Fairing_mass"> <span>kg</span></div></TD></TR>
 				<TR class="Expanding">
-			  <TD title="A predetermined velocity, which corresponds to a flight altitude&#013;where the separation of the fairing is permissible.&#013;This method is used to simplify the calculations.">Fairing jettison velocity</TD>
-			  <TD><INPUT id="Fairing_jettison_velocity" class="inputstyle-1" type="text"> m/s</TD></TR>
+			  <TD title="A predetermined velocity, which corresponds to a flight altitude&#013;where the separation of the fairing is permissible.&#013;This method is used to simplify the calculations."><div class="mobilelayout_l1">Fairing jettison velocity</div></TD>
+			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT id="Fairing_jettison_velocity" class="inputstyle-1" type="text"> <span>m/s</span></div></TD></TR>
 				<TR class="Expanding">
 			  <TD title="Delta velocity required to achieve actual fairing separation velocity&#013;taking into account losses.">Fairing jettison delta-v</TD>
 			  <TD><LABEL 
@@ -460,15 +464,15 @@ input[type=range]:focus::-ms-fill-upper {
 			  <TD title="Mass of the dropped batteries of the second stage to improve payload.&#013;It is estimated that it is 2/3 of the total battery mass.">Jettisoned battery mass</TD>
 			  <TD><INPUT id="Jettisoned_battery_mass" class="inputstyle-1" type="text"> kg</TD></TR>
 				<TR class="ProjectingH">
-			  <TD title="Estimated payload mass for the initial approximation at the beginning of the calculation">Assumed payload mass</TD>
-			  <TD><INPUT id="Assumed_payload_mass" class="inputstyle-1" type="text"> kg</TD></TR>
+			  <TD title="Estimated payload mass for the initial approximation at the beginning of the calculation"><div class="mobilelayout_l1">Assumed payload mass</div></TD>
+			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT id="Assumed_payload_mass" class="inputstyle-1" type="text"> <span>kg</span></div></TD></TR>
 				<TR>
-			  <TD title="The percentage ratio of the second and third stage mass to the rocket mass">2nd stage to Lift-off mass ratio</TD>
-			  <TD><INPUT id="_2nd_Stage_mass_ratio" class="inputstyle-1" type="text"> %</TD></TR>
+			  <TD title="The percentage ratio of the second and third stage mass to the rocket mass"><div class="mobilelayout_l1">2nd stage to Lift-off mass ratio</div></TD>
+			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT id="_2nd_Stage_mass_ratio" class="inputstyle-1" type="text"> <span>%</span></div></TD></TR>
 	  
 				<TR class="f3stages">
-			  <TD title="The percentage ratio of the third stage mass to the rocket mass">Transfer Orbit stage to Lift-off mass ratio</TD>
-			  <TD><INPUT id="_3rd_Stage_mass_ratio" class="inputstyle-1" type="text"> %</TD></TR>
+			  <TD title="The percentage ratio of the third stage mass to the rocket mass"><div class="mobilelayout_l1">Transfer Orbit stage to Lift-off mass ratio</div></TD>
+			  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT id="_3rd_Stage_mass_ratio" class="inputstyle-1" type="text"><span> %</span></div></TD></TR>
 				
 	  
 				<TR class="ProjectingH">
