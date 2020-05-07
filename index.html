@@ -353,6 +353,13 @@ input[type=range]:focus::-ms-fill-upper {
 	@media (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
 	select{background: url("dropdown@2x.png") no-repeat right;}
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	select {background-position-x: 96%;background-size: 12px;}
+}
 	/* {border: 1px solid #eeeff1;
     border-collapse: separate;
     border-spacing: 0 1em;} */
