@@ -1316,7 +1316,7 @@ input[type=range]:focus::-ms-fill-upper {
 			} else if (itt == 5)
 			{
 				var Assumed_payload_mass_base = parseFloat(elAssumed_payload_mass.value);
-				elPayload_mass_calculated5.textContent = Payload_mass_calculated.toFixed(1);
+				elPayload_mass_calculated5.textContent = Payload_mass_calculated.toFixed(1).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 				var Payload_change = Payload_mass_calculated/Assumed_payload_mass_base;
 				elPayload_change.textContent = (Payload_change * 100.).toFixed(1);	
 			}
