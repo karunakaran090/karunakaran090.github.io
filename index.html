@@ -162,7 +162,7 @@ input[type=range]:focus::-ms-fill-upper {
   cursor: pointer;
 }
 	h8 {display:inline-block; text-align:left; width:128px;padding: 10px 0;}
-	h9 {display:inline-block; text-align:left;padding: 4px 0;}
+	h9 {display:inline-block; text-align:left;padding: 4px 0;width:128px}
 
 	body {
 		font-family: 'Montserrat', sans-serif !important;
@@ -266,6 +266,7 @@ input[type=range]:focus::-ms-fill-upper {
     border: solid 0.5px #688093;margin: 2px 0;text-align: right;
     padding: 4px 8px 4px 8px;}
 	.tableResultContent input[type="text"]{width:85px;}
+	.tableResultContent .mobilelayout_r1{padding-right: 10px;}
 	.inputstyle-1{width:150px;text-align: left;}
 	.spacetitle{height: auto;overflow: hidden;background-color: #ffffff;padding: 5px 10px;border: 1px solid rgba(216, 216, 216, 0.25);}
 	.spacetitle select{margin-left: 15px;}
@@ -296,8 +297,10 @@ input[type=range]:focus::-ms-fill-upper {
 	.layout_wt_content span{display: inline-block;width: 20px;text-align:left;padding-left:5px;margin-top: 10px;}
 	.layout_wt_content h8 span{margin-top: 0;}
 	.adwacedContent button{margin:0 auto;display:block;font-size:16px;width: 170px;height: 40px;border-radius: 2px;border: solid 0.5px #b5bdcd;background-color: #fff;;}
-	.mobilelayout_r2{width: 100%;}
-	.mobilelayout_r2 input[type="range"]{margin-top: 15px;}
+	.mobilelayout_r2, .mobilelayout_r2 h8{text-align:right;width: 100%;}
+	.mobilelayout_r1, .mobRight{text-align: right;}
+	.mobRight select, .mobpadd select, .mobpadd input{margin-right: 25px;}
+	.mobilelayout_r2 input[type="range"]{margin-top: 15px;width:calc(100% - 115px)}
 	.mobileinner-r1 input{margin-left: 5px;}
 	@media only screen and (max-width: 980px) {
 		.tableRocketContent{float: none;width: 100%;max-width: 100%;}
@@ -338,17 +341,18 @@ input[type=range]:focus::-ms-fill-upper {
 		.mobilelayout_r1 input{width: 82%;margin: 0;float: right;margin-top: -28px;}
 		.mobilelayout_r1 select{width: 100%;min-width:80px;margin: 4px 0;float: right;margin-top: -15px;}
 		.mobilelayout_r2{width: 30%;float: right;margin-top: -23px;}
-		.mobilelayout_r2 h8{padding: 2px 10px;}
+		.mobilelayout_r2 h8{padding: 2px 10px;text-align: right !important;}
 		.padd2, .spacetitle{padding: 5px;margin-bottom:5px;border-bottom:0.5px solid #eeeff1}
 		.layout_wt_content{margin-top:-26px ;}
-		.layout_wt_content input{float: left;margin: 0;width: calc(100% - 50px);}
+		.layout_wt_content input{float: left;margin: 0;width: calc(100% - 50px) !important;}
 		.layout_wt_content span{float: left;padding-left: 5px;}
+		.layout_wt_content h9 span {    margin-top: 0px;}
 		.layout_wt_content h8, .layout_wt_content h9{display: flex;}
 		.mobilelayout_l2{width: 50%;float: left;padding-top: 4px;}
 		.mobilelayout_r2{width: 50%;float: right;display: inline-flex;margin: 0;}
 		.mobilelayout_r2 input[type="range"]{width: 70px;margin: 0;float: left;margin-top: -28px;}
-		.mobileinner-r1{margin-left: 8px;
-    margin-top: -25px;}
+		.mobileinner-r1{margin-left: 8px;margin-top: -25px;}
+	.mobRight select, .mobpadd select, .mobpadd input{margin-right: 0;}
 
 	}
 	@media only screen and (max-width: 480px) {	
@@ -438,7 +442,7 @@ input[type=range]:focus::-ms-fill-upper {
 			</TR>
 	  
 				<TR>
-			  <TD class="mobLeft" title="&#013;Changing the fuel or cycle in this menu only changes&#013;the maximum and minimum limits. To compare&#013;launchers with different fuels select 'Set averages'" width="460"><div  class="engineText">1st&ensp;stage Fuel & Cycle &emsp;&emsp;</div><SELECT  class="right-select" id="Fuel"></SELECT></TD>
+			  <TD class="mobLeft" title="&#013;Changing the fuel or cycle in this menu only changes&#013;the maximum and minimum limits. To compare&#013;launchers with different fuels select 'Set averages'" width="460"><div class="engineText">1st&ensp;stage Fuel & Cycle &emsp;&emsp;</div><SELECT  class="right-select" id="Fuel"></SELECT></TD>
 			  <TD class="mobRight" title="Changing the cycle in this menu only changes&#013;the maximum and minimum limits. To compare&#013;launchers with different cycles select 'Set averages'" width="220"><SELECT id="Cycle"></SELECT> </TD></TR>
 	  
 				<TR class="Projecting">
@@ -455,10 +459,10 @@ input[type=range]:focus::-ms-fill-upper {
 	  
 				<TR>
 			  <TD title="Having more stages increases efficiency - but also increases the complexity and the cost of the rocket"><div class="engineText mobilelayout_l1 nopadd">Stages</div></TD>
-			  <TD><div class="mobilelayout_r1"><SELECT id="Stages" title="Number of stages"></SELECT> </div></TD></TR>
+			  <TD class="mobpadd"><div class="mobilelayout_r1"><SELECT id="Stages" title="Number of stages"></SELECT> </div></TD></TR>
 				<TR>
 			  <TD title="Dimensionless ratio of engine thrust to weight of a rocket"><div class="mobilelayout_l1">Thrust-to-weight ratio</div></TD>
-			  <TD><div class="mobilelayout_r1"><INPUT id="Thrust_to_weight_ratio"  class="inputstyle-1" type="text"></div></TD></TR>
+			  <TD class="mobpadd"><div class="mobilelayout_r1"><INPUT id="Thrust_to_weight_ratio"  class="inputstyle-1" type="text"></div></TD></TR>
 				<TR>
 			  <TD title="The initial mass of a rocket"><div class="mobilelayout_l1">Lift-off mass</div></TD>
 			  <TD><div class="mobilelayout_r2"><h8><LABEL id="Lift_off_Mass"></LABEL> kg</div></TD></TR>
