@@ -162,7 +162,7 @@ input[type=range]:focus::-ms-fill-upper {
   cursor: pointer;
 }
 	h8 {display:inline-block; text-align:left; width:128px;padding: 10px 0;}
-	h9 {display:inline-block; text-align:left;padding: 10px 0;}
+	h9 {display:inline-block; text-align:left;padding: 4px 0;}
 
 	body {
 		font-family: 'Montserrat', sans-serif !important;
@@ -223,12 +223,7 @@ input[type=range]:focus::-ms-fill-upper {
 		padding: 20px 20px 8px 20px;
 		border-bottom: 1px solid #eeeff1;
 	}
-	.headerTitle{
-		padding-right: 20px;
-		width: calc(40% - 35px);
-		max-width: 530px;
-		float: left;
-	}
+	.headerTitle{padding-right: 20px;width: calc(40% - 35px);max-width: 530px;float: left;}
 	.secondHeader{padding-right: 40px !important;float: left; width:calc(30% - 30px);}
 	.lastChild{width: 30%;float: right;}
 	.secondHeader font, .lastChild font{font-weight: 500; font-size: 20px;}
@@ -267,9 +262,10 @@ input[type=range]:focus::-ms-fill-upper {
 	.borderTable tr{font-size: 15px;font-weight: 400;}
 	.borderTable td{padding:0px 10px;line-height: 1;}
 	input[type=checkbox]{width: 20px;background-color: #fff;}
-	input[type="text"]{border-radius: 1.5px;text-align: right;
-    border: solid 0.5px #688093;margin: 2px 0;
+	input[type="text"]{border-radius: 1.5px;
+    border: solid 0.5px #688093;margin: 2px 0;text-align: right;
     padding: 4px 8px 4px 8px;}
+	.tableResultContent input[type="text"]{width:85px;}
 	.inputstyle-1{width:150px;text-align: left;}
 	.spacetitle{height: auto;overflow: hidden;background-color: #ffffff;padding: 5px 10px;border: 1px solid rgba(216, 216, 216, 0.25);}
 	.spacetitle select{margin-left: 15px;}
@@ -284,6 +280,7 @@ input[type=range]:focus::-ms-fill-upper {
 	.tableRocketContent{
 		float: left;
 		width: calc(55% - 15px);
+		padding-bottom: 30px;
 	}
 	.tableResultContent{float: left;
     width: calc(45% - 15px);
@@ -297,6 +294,7 @@ input[type=range]:focus::-ms-fill-upper {
 	.layout_wt_content{text-align: right;float: right;}
 	.layout_wt_content input{float: left;}
 	.layout_wt_content span{display: inline-block;width: 20px;text-align:left;padding-left:5px;margin-top: 10px;}
+	.layout_wt_content h8 span{margin-top: 0;}
 	.adwacedContent button{margin:0 auto;display:block;font-size:16px;width: 170px;height: 40px;border-radius: 2px;border: solid 0.5px #b5bdcd;background-color: #fff;;}
 	.mobilelayout_r2{width: 100%;}
 	.mobilelayout_r2 input[type="range"]{margin-top: 15px;}
@@ -540,25 +538,25 @@ input[type=range]:focus::-ms-fill-upper {
 				type="range" min="1" max="100" value="50"><section class="mobileinner-r1">									    
 	  <INPUT type="text" id="First_stage_isp_sea_level"> <span>s</span></section></div></TD></TR>
 				<TR>
-			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel.">1st&ensp;stage Isp vacuum</TD>
-			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="First_stage_isp_vac_Range" type="range" 
-				min="1" max="100" value="50">					
-	  <INPUT type="text" id="First_stage_isp_vac"> s</TD></TR>
+			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel."><div class="mobilelayout_l2">1st&ensp;stage Isp vacuum</div></TD>
+			  <TD title="Easy to reach <-- --> Hard to reach"><div class="mobilelayout_r2 layout_wt_content"><INPUT class="slider" id="First_stage_isp_vac_Range" type="range" 
+				min="1" max="100" value="50"><section class="mobileinner-r1">			
+	  <INPUT type="text" id="First_stage_isp_vac"> <span>s</span></section></div></TD></TR>
 				<TR>
-			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel.&#013;The specific impulse of the upper stage engines is usually higher,&#013;since due to the absence of amospheric pressure a higher&#013;expansion ratio can be achieved (longer nozzle).">2nd stage Isp</TD>
-			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="Second_stage_isp_vac_Range" 
-				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="Second_stage_isp_vac"> s</TD></TR>
+			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel.&#013;The specific impulse of the upper stage engines is usually higher,&#013;since due to the absence of amospheric pressure a higher&#013;expansion ratio can be achieved (longer nozzle)."><div class="mobilelayout_l2">2nd stage Isp</div></TD>
+			  <TD title="Easy to reach <-- --> Hard to reach"><div class="mobilelayout_r2 layout_wt_content"><INPUT class="slider" id="Second_stage_isp_vac_Range" 
+				type="range" min="1" max="100" value="50"><section class="mobileinner-r1">									    
+	  <INPUT type="text" id="Second_stage_isp_vac"> <span>s</span></section></div></TD></TR>
 				<TR class="f3stages">
-			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel.">Transfer Orbit stage Isp</TD>
-			  <TD title="Easy to reach <-- --> Hard to reach"><INPUT class="slider" id="Transfer_Orbit_Stage_isp_Range" 
-				type="range" min="1" max="100" value="50">											    
-	  <INPUT type="text" id="Transfer_Orbit_Stage_isp"> s</TD></TR>
+			  <TD title="The generated thrust divided by the propellant mass flow rate,&#013; resulting in units of time (seconds). Specific impulse is&#013;a measure of how effectively a jet engine uses fuel."><div class="mobilelayout_l2">Transfer Orbit stage Isp</div></TD>
+			  <TD title="Easy to reach <-- --> Hard to reach"><div class="mobilelayout_r2 layout_wt_content"><INPUT class="slider" id="Transfer_Orbit_Stage_isp_Range" 
+				type="range" min="1" max="100" value="50"><section class="mobileinner-r1">						    
+	  <INPUT type="text" id="Transfer_Orbit_Stage_isp"> <span>s</span></section></div></TD></TR>
 				<TR class="ProjectingH">
-			  <TD title="Percentage change in the specific impulse of engines of all stages&#013;to demonstrate its effect on the rocket performance.">Specific Impulse variation</TD>
-			  <TD><INPUT class="slider" id="Specific_Impulse_Variation_Range" 
-				type="range" min="90" max="110" value="100">											    
-	  <INPUT type="text" id="Specific_Impulse_Variation"> %</TD></TR></TBODY></TABLE></TD></TR>
+			  <TD title="Percentage change in the specific impulse of engines of all stages&#013;to demonstrate its effect on the rocket performance."><div class="mobilelayout_l2">Specific Impulse variation</div></TD>
+			  <TD><div class="mobilelayout_r2 layout_wt_content"><INPUT class="slider" id="Specific_Impulse_Variation_Range" 
+				type="range" min="90" max="110" value="100"><section class="mobileinner-r1">											    
+	  <INPUT type="text" id="Specific_Impulse_Variation"> <span>%</span></section></div></TD></TR></TBODY></TABLE></TD></TR>
 	  
 		  </TBODY></TABLE></TD>
 		  
@@ -689,7 +687,7 @@ input[type=range]:focus::-ms-fill-upper {
 						<TBODY>
 						<TR class="Expanding">
 					  <TD title="The integral specific impulse of the engines of the first stage.&#013;This way back pressure losses are taken into account."><div class="mobilelayout_l1">1st&ensp;stage average trajectory Isp</div></TD>
-					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="First_stage_average_trajectory_isp"></LABEL> <span>s &emsp;</span></h9></div></TD></TR>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="First_stage_average_trajectory_isp"></LABEL> <span>s</span></h9></div></TD></TR>
 						<TR>
 					  <TD class="tdpadd1" title="The increment of the rocket velocity due to the thrust of the first stage engines&#013;in the ideal case (the absence of external forces) calculated by the Tsiolkovsky formula." width="460"><div class="mobilelayout_l1">1st&ensp;stage delta-v</div></TD>
 					  <TD width="220"><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="First_stage_delta_v"></LABEL> <span>m/s</span></h9></div></TD></TR>
@@ -704,7 +702,7 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="First_stage_dry_mass"><span> kg</span></div></TD></TR>
 						<TR class="Expanding">
 					  <TD title="Approximate engines run time&#013;This is usually less than the real time&#013;because it does not take into account&#013;the real thrust profile."><div class="mobilelayout_l1">1st&ensp;stage engines run time</div></TD>
-					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="First_stage_run_time"></LABEL> <span>s &emsp;</span></h9></div></TD></TR>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="First_stage_run_time"></LABEL> <span>s </span></h9></div></TD></TR>
 			  
 						<TR>
 					  <TD class="tdpadd1" title="The increment of the rocket velocity due to the thrust of the second stage engines&#013;in the ideal case (the absence of external forces) calculated by the Tsiolkovsky formula."><div class="mobilelayout_l1">2nd stage delta-v <LABEL id="Required"></LABEL></div> </TD>
@@ -732,7 +730,7 @@ input[type=range]:focus::-ms-fill-upper {
 					  <TD><div class="mobilelayout_r1 layout_wt_content"><INPUT type="text" id="Second_stage_dry_mass"> <span>kg</span></div></TD></TR>
 						<TR class="Expanding">
 					  <TD title="Approximate engine run time"><div class="mobilelayout_l1">2nd&ensp;stage engine run time</div></TD>
-					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Second_stage_run_time"></LABEL> <span>s &emsp;</span></h9></div></TD></TR>
+					  <TD><div class="mobilelayout_r1 layout_wt_content"><h9><LABEL id="Second_stage_run_time"></LABEL> <span>s </span></h9></div></TD></TR>
 			  
 						<TR class="f3stages">
 					  <TD class="tdpadd1" title="The increment of the rocket velocity due to the thrust of the third stage engines&#013;in the ideal case (the absence of external forces) calculated by the Tsiolkovsky formula."><div class="mobilelayout_l1">Transfer Orbit stage delta-v (required)</div></TD>
