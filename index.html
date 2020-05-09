@@ -183,9 +183,9 @@ input[type=range]:focus::-ms-fill-upper {
 		}
 	.content {
 			background-color: #ffffff;
-			display: inline-block;
+			display: block;
 			text-align: left;
-			max-width:1800px;
+			max-width:100%;
 			height: auto;
     		overflow: hidden;
 		}
@@ -230,7 +230,7 @@ input[type=range]:focus::-ms-fill-upper {
 	.logoContent font{display: inline-flex;}
 	.logoContent font img{width:30px;height:30px;margin: 0 7px 0px 7px;}
 	.logoContent span{font-size: 16px; font-weight: 400;}
-	.lastChild h8{padding: 2px;}
+	.lastChild h8{padding: 2px;text-align: right;}
 	#RocketDescription{margin: 0;width: 99%;overflow: hidden;font-weight: 400;line-height: 1.5; font-size: 16px;}
 	.launcher-header p{
 		margin: 10px 0;
@@ -252,11 +252,11 @@ input[type=range]:focus::-ms-fill-upper {
     -webkit-appearance: none;
     background-position-x: 96%;}
 	.right-select{float:right;}
-	#Rocket{margin-top: 5px;width: 100%;}
+	#Rocket{margin-top: 5px;width: 100%;max-width:400px}
 	.headerTable{font-size:14px;}
 	.headerTable tr{font-size: 16px;font-weight: 400;}
 	.heighlightBG{border-radius: 2px;background-color: #5c00f7;padding: 5px;color:#fff;font-size: 18px;}
-	.highlightprice{padding: 8px 0 10px 0;}
+	.highlightprice{padding: 8px 0 10px 0;text-align: right;}
 	.borderTable{border:1px solid #eeeff1;width: 100%;}
 	table{width: 100%;}
 	.borderTable tr{font-size: 15px;font-weight: 400;}
@@ -302,6 +302,11 @@ input[type=range]:focus::-ms-fill-upper {
 	.mobRight select, .mobpadd select, .mobpadd input{margin-right: 25px;}
 	.mobilelayout_r2 input[type="range"]{margin-top: 15px;width:calc(100% - 115px)}
 	.mobileinner-r1 input{margin-left: 5px;}
+	.rocketnewview{display: flex;float: right;}
+	.rocketnewview input{width: 30px;min-width: 28px;}
+	.rocketnewview .inputstyle-1, #Second_stage_engine_thrust{width: 60px;}
+	.rocketnewview span{padding-top: 7px;padding-left: 5px;}
+	.rocketnewview .kgtext{padding-right: 5px;}
 	@media only screen and (max-width: 980px) {
 		.tableRocketContent{float: none;width: 100%;max-width: 100%;}
 		.tableResultContent{float: none;width: 100%;max-width: 100%;margin: 0;}
@@ -352,7 +357,8 @@ input[type=range]:focus::-ms-fill-upper {
 		.mobilelayout_r2{width: 50%;float: right;display: inline-flex;margin: 0;}
 		.mobilelayout_r2 input[type="range"]{width: 70px;margin: 0;float: left;margin-top: -28px;}
 		.mobileinner-r1{margin-left: 8px;margin-top: -25px;}
-	.mobRight select, .mobpadd select, .mobpadd input{margin-right: 0;}
+		.mobRight select, .mobpadd select, .mobpadd input{margin-right: 0;}
+		.rocketnewview span{padding-top: 10px;padding-left: 5px;}
 
 	}
 	@media only screen and (max-width: 480px) {	
@@ -438,7 +444,7 @@ input[type=range]:focus::-ms-fill-upper {
 					  <FONT size="5" title="Choose the Orbit you want to reach">Rocket</FONT>
 				</div>
 			  <TD width="460" title="Choose an engine for the first stage"><div class="engineText">1st&ensp;engine</div><SELECT class="right-select" id="Engine1" title="First stage engine name"> </TD>
-			  <TD width="220"><INPUT type="text" class="inputstyle-1" id="First_stage_engine_thrust" title="First stage engine thrust"><span class='kgtext'>kg</span><INPUT id="First_stage_engines_number" type="text" class="number-text1" title="Number of engines on the first stage"> Number</TD>
+			  <TD width="220"><div class="rocketnewview"><INPUT type="text" class="inputstyle-1" id="First_stage_engine_thrust" title="First stage engine thrust"><span class='kgtext'>kg</span><INPUT id="First_stage_engines_number" type="text" class="number-text1" title="Number of engines on the first stage"><span>Number</span></div></TD>
 			</TR>
 	  
 				<TR>
@@ -447,7 +453,7 @@ input[type=range]:focus::-ms-fill-upper {
 	  
 				<TR class="Projecting">
 			  <TD width="460" title="Choose an engine for the second stage"><div class="engineText">2nd engine </div><SELECT class="right-select" id="Engine2" title="Second stage engine name"> </TD>
-			  <TD width="220"><INPUT id="Second_stage_engine_thrust" type="text" class="number-text1" title="Second stage engine thrust"><span class='kgtext'>kg</span>&emsp;<INPUT id="Second_stage_engines_number" type="text" class="number-text1" title="Number of engines on the second stage"> Number</TD></TR>
+			  <TD width="220"><div class="rocketnewview"><INPUT id="Second_stage_engine_thrust" type="text" class="number-text1" title="Second stage engine thrust"><span class='kgtext'>kg</span><INPUT id="Second_stage_engines_number" type="text" class="number-text1" title="Number of engines on the second stage"><span>Number</span></div></TD></TR>
 	  
 				<TR>
 			  <TD class="mobLeft" title="Second stage rocket engine fuel and cycle"><div class="engineText">2nd stage Fuel & Cycle &emsp;&emsp;&ensp; </div><SELECT class="right-select" id="Fuel2" title="Second stage engine fuel"></SELECT></TD>
