@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>cart page</title>
+  </head>
+  
+  <body>
+    <section class="cartPageHeader">
+        <p>Free Shipping On All Orders!</p>
+    </section>
+    <div class="bodyContent">
+        <header class="header">
+            <a href="" class="logo">PICCADES</a>
+            <a class="basketMobileIcon"><img class="basketIcon" src="basket.svg"/></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a>Home</a></li>
+                <li><a>Shop Now</a></li>
+                <li class="hideMobile"><a><img class="basketIcon" src="basket.svg"/></a></li>
+            </ul>
+        </header>
+        <div class="contentContainer">
+            <div class="imageContainer">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img src="https://image.shutterstock.com/image-photo/earth-night-holding-human-hands-260nw-1063994879.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="https://image.shutterstock.com/image-photo/digital-marketing-businessman-using-modern-260nw-1053868622.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="https://image.shutterstock.com/image-photo/businessman-holding-plastic-credit-card-260nw-608936375.jpg" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                </div>
+                <div class="carouselPin" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+            <div class="detailsContainer">
+                <section class="item_details">
+                          <h2 class="item_title">Fire jet Touch</h2>
+                          <p class="price_content"><span>$ 49.99 </span>&nbsp;&nbsp;$29.99</p>
+                          <p class="highlight_line"></p>
+                          <p class="colorContent">Color</p>
+                          <select class="selectcolor">
+                            <option value="0">Black</option>
+                            <option value="1">Green</option>
+                            <option value="2">Yellow</option>
+                            <option value="3">white</option>]
+                          </select>
+                          <button class="addCart">ADD TO CART</button>
+                </section>
+                <p class="descrptionCont">Nutrition residents soccer sad old and ugly netus et malesuada hunger and poverty. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. I always want free football until the carrots. Aenean ultricies mi vitae est. Japan's largest real estate lion.</p>
+                <p class="descrptionCont">Nutrition residents soccer sad old and ugly netus et malesuada hunger and poverty. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. I always want free football until the carrots. Aenean ultricies mi vitae est. Japan's largest real estate lion.</p>
+                <p class="descrptionCont">Nutrition residents soccer sad old and ugly netus et malesuada hunger and poverty.Aenean ultricies mi vitae est. Japan's largest real estate lion.</p>
+                <section class="social_icons">
+                    <a><img src="facebook.svg"/>Share</a>
+                    <a><img src="twitter.svg"/>Tweet</a>
+                    <a><img src="pin.svg"/>Pin</a>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p class="highlight_line"></p>
+        <h4>Search</h4>
+        <section class="footercontent">
+            <p>c 2020, piccades</p>
+            <p>Powered by Shopfy</p>
+            <ul>
+                <li><img src="american_express.svg"></li>
+                <li><img src="mastercard.svg"></li>
+                <li><img src="discover.svg"></li>
+                <li><img src="visa.svg"></li>
+                <li><img src="pattern_paying.svg"></li>
+                <li><img src="paypal_card_income.svg"></li>
+            </ul>
+        </section>
+    </footer>
+  </body>
+  <script>
+    var slideIndex = 1;
+    window.addEventListener('resize', function(event){
+        showSlides(slideIndex);
+    });
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      if(window.innerWidth > 768) {
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "block";  
+        }
+        return false; 
+      }
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>
