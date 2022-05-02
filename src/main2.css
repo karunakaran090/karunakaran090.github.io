@@ -1,0 +1,32 @@
+.highlighContainer{
+    height: 350px;
+}
+
+.slash {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    z-index: 1;
+    width: 80%;
+    min-height: 110%;
+    background: #fbfbfb;
+}
+.transformContainer{
+    overflow: hidden;
+}
+.highlightText{
+    width: 40%;
+    
+}
+.flex-container {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .flex-container > div {
+    margin: 10px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 30px;
+  }

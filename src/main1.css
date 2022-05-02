@@ -1,0 +1,94 @@
+.split-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+}
+.split-row-adjustment-2 .slash-image {
+  left: 35%;
+}
+figure.slash-image {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.hero-image, .slash-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* kk */
+  width: 100%;
+  left:20% !important;
+}
+
+.split-row .grid-container {
+  position: relative;
+  height: 100%;
+  z-index: 4;
+}
+
+.split-row .grid-container {
+    position: relative;
+    height: 100%;
+    z-index: 4;
+}
+.grid-container {
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  position: relative;
+}
+.split-row-adjustment-2 .split-row-content {
+  width: 45%;
+  padding: 110px 0 140px 0;
+}
+
+.split-row-before {
+  position: absolute;
+  top: 0;
+  left: -40%;
+  bottom: 0;
+  width: 85%;
+  background: #ffffff;
+  -webkit-transform: skewX(-25deg);
+  -moz-transform: skewX(-25deg);
+  -ms-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.split-row-adjustment-2 .split-row-before {
+  /* left: -30%;  kk*/
+}
+.slash-row.split-row-last .split-row-before:before {
+  content: "";
+}
+
+@media only screen and (max-width: 1855px){
+
+  .grid-container {
+      padding-left: 3%;
+      padding-right: 3%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1700px;
+  }
+  .grid-container {
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+  #hero.slider-home .hero-content {
+    top: 32vh;
+  }
+  #hero.slider-home h1 {
+    font-size: 34px;
+    line-height: 1.4;
+  }
+}
+
