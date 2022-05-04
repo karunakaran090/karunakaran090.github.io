@@ -10,26 +10,44 @@
     <!-- <link rel="stylesheet" type="text/css" href="./GV_files/main.css" /> -->
     <link rel="stylesheet" type="text/css" href="main1.css" />
     <link rel="stylesheet" type="text/css" href="main2.css" />
-    <link rel="stylesheet" href="./style/sass/app.css" />
+    <link rel="stylesheet" href="/style/sass/app.css" />
     <link rel="icon" href="https://www.gv.com/img/favicons/32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div id="banner" class="split-container">
+    <div id="banner" class="portfolio split-container">
       <header>
         <div class="grid-container">
-          <ul>
-            <li class="firstChild"><img src="./images/gv-black.png" /></li>
-            <li>Team</li>
-            <li>Portfolio</li>
-            <li>News</li>
-          </ul>
+          <nav>
+            <div class="navbar">
+              <div class="container nav-container">
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                  <div class="logo">
+                    <img src="./images/gv-black.png"/>
+                  </div>
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>  
+                <div class="menu-items">
+                  <ul>
+                    <li class="firstChild"><img src="images/gv-black.png" /></li>
+                    <li>Team</li>
+                    <li>Portfolio</li>
+                    <li>News</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
       </header>
       <!-- The slash-cutter is closed in layout-base -->
       <div id="profileContainer" class="split-row split-row-adjustment-2 split-row-last">
         <figure
           class="slash-image"
-          style="background-image: url(./images/bowery.jpg)"
+          style="background-image: url(/images/bowery.jpg)"
         ></figure>
 
         <div class="grid-container">
@@ -351,22 +369,18 @@
 
     <footer>
       <div class="grid-container">
-        <ul>
-          <li>
-            <a><img src="images/facebook.svg" /></a>
-          </li>
-          <li>
-            <a><img src="images/twitter.svg" /></a>
-          </li>
-          <li>
-            <a><img src="images/linkedin.svg" /></a>
-          </li>
-          <li>News</li>
-          <li>Press</li>
-          <li>Jobs</li>
-          <li>Privacy policy</li>
-        </ul>
-        <p>©2022 GV. All rights reserved.</p>
+            <ul>
+              <li><a><img src="images/facebook.svg"></a></li>
+              <li><a><img src="images/twitter.svg"></a></li>
+              <li><a><img src="images/linkedin.svg"></a></li>
+            </ul>
+            <ul class="footerLink">
+              <li>News</li>
+              <li>Press</li>
+              <li>Jobs</li>
+              <li>Privacy policy</li>
+            </ul>
+            <p>©2022 GV. All rights reserved.</p>
       </div>
     </footer>
   </body>
