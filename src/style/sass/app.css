@@ -362,8 +362,21 @@ figure.slash-image {
     display: none;
   }
   #banner .split-row-before {
-    left: -77%;
+    left: -77% !important;
     background-color: #6dc85e;
+  }
+  .portfolio #profileContainer .split-row-before {
+    left: -89% !important;
+    background-color: #ffffff !important;
+  }
+  .portfolio .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1, .portfolio .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    background-color: #646464 !important;
+  }
+  .portfolio .menu-items {
+    background-color: #fbfbfb !important;
+  }
+  .portfolio .menu-items ul li {
+    color: #646464 !important;
   }
   .transformContainer .split-row-before {
     display: none;
@@ -421,6 +434,26 @@ body {
   font-size: 16px;
   font-weight: 300;
   margin: 0;
+}
+
+.portfolio {
+  height: auto !important;
+}
+
+.portfolio .split-row-content {
+  padding: 100px 0 70px 0 !important;
+}
+
+.portfolio .split-row-content h2 {
+  max-width: 100% !important;
+}
+
+.portfolio .split-row-content p {
+  padding: 15px 0;
+}
+
+.portfolio .slash-image {
+  height: 100vh;
 }
 
 .transformContainer .split-row-before {
@@ -804,6 +837,7 @@ footer .grid-container p {
   #banner .menu-items {
     background-color: #6dc85e;
     width: 106%;
+    position: fixed;
   }
   #banner .menu-items ul {
     display: block;
@@ -918,5 +952,32 @@ footer .grid-container p {
     margin: 10px 0 40px 0;
     text-align: left;
     padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #banner .split-row-before {
+    left: -39%;
+  }
+  .companies-conainer .company-names ul li {
+    min-width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #banner .split-row-before {
+    left: -38%;
+  }
+  .portfolioGroup .company-container {
+    width: 100%;
+    float: none;
+  }
+  .portfolioGroup .company-logo-container {
+    width: 100%;
+    float: none;
+    padding-top: 30px;
+  }
+  .companies-conainer .company-names ul li {
+    min-width: 42%;
   }
 }
