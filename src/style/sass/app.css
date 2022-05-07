@@ -489,15 +489,6 @@ body {
   height: 100vh;
 }
 
-.transformContainer .split-row-before {
-  top: 20%;
-  left: -45%;
-}
-
-.transformContainer .slash {
-  left: 23.5%;
-}
-
 .transformContainer .highlightContainer {
   min-height: 340px;
   background-color: #d7fc68;
@@ -1059,17 +1050,14 @@ footer .grid-container p {
 }
 
 @media only screen and (max-width: 1024px) {
-  #banner .split-row-before {
-    left: -39%;
-  }
   .companies-conainer .company-names ul li {
     min-width: 25%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #banner .split-row-before {
-    left: -38%;
+  .split-row-before {
+    left: -35%;
   }
   .portfolioGroup .company-container {
     width: 100%;
