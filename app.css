@@ -6,7 +6,8 @@ header {
   z-index: 4;
 }
 
-header .logo, header .checkbox {
+header .logo,
+header .checkbox {
   display: none;
 }
 
@@ -19,19 +20,51 @@ header ul {
 
 header ul li {
   list-style: none;
-  padding: 23px 3em 0 0;
-  color: #999999;
+  margin: 23px 3em 0 0;
+  position: relative;
 }
 
 header ul li img {
   width: 100%;
 }
 
+header ul .menu-link a {
+  color: #999999;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+header ul .menu-link a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #1c1c1c;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header ul .menu-link a:hover {
+  color: #000000;
+}
+
+header ul .menu-link a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+header ul .mobile-link-menu {
+  display: none;
+}
+
 header ul .firstChild {
   padding: 0;
   width: 65px;
   height: 40px;
-  margin-right: 3em;
+  margin: 0 3em 0 0;
 }
 
 .bannerContainer {
@@ -329,7 +362,7 @@ figure.slash-image {
     text-align: center;
   }
   .navbar .menu-items li {
-    margin-bottom: 1.2rem;
+    margin-bottom: 2.3rem;
     font-size: 1.5rem;
     font-weight: 500;
   }
@@ -345,7 +378,7 @@ figure.slash-image {
     padding-top: 20px;
   }
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(0);
+    transform: translateX(0) skew(-25deg);
   }
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
@@ -454,15 +487,6 @@ body {
 
 .portfolio .slash-image {
   height: 100vh;
-}
-
-.transformContainer .split-row-before {
-  top: 20%;
-  left: -45%;
-}
-
-.transformContainer .slash {
-  left: 23.5%;
 }
 
 .transformContainer .highlightContainer {
@@ -747,6 +771,50 @@ footer .grid-container p {
   font-size: 18px;
 }
 
+#profileContainer .slash-image section {
+  width: 50% !important;
+  float: left;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-25deg);
+  transform-origin: bottom left;
+  left: 0;
+  display: block;
+  width: 50%;
+}
+
+#profileContainer .slash-image section .innerElement {
+  height: 50%;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  height: 50%;
+  left: 0;
+}
+
+#profileContainer .slash-image section .innerElement .childeElement {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+#profileContainer .slash-image .split-image {
+  background-image: url(./images/burgers.jpg);
+  width: 150%;
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  transform: skewX(25deg);
+  transform-origin: bottom left;
+}
+
 #profileContainer .groupswitch {
   padding-top: 40px;
 }
@@ -838,20 +906,43 @@ footer .grid-container p {
     background-color: #6dc85e;
     width: 106%;
     position: fixed;
+    left: -10px;
   }
   #banner .menu-items ul {
     display: block;
+    transform: skewX(25deg);
   }
   #banner .menu-items ul .firstChild {
     display: none;
   }
   #banner .menu-items ul li {
     text-align: left;
+  }
+  #banner .menu-items ul li a {
+    font-size: 32px;
     color: #f0f0f0;
-    font-size: 28px;
+    font-weight: 200;
+  }
+  #banner .menu-items ul li a:hover {
+    color: #ffffff;
+  }
+  #banner .menu-items ul li a:hover::before {
+    visibility: none;
+    transform: scaleX(0);
+  }
+  #banner .menu-items ul .mobile-link-menu {
+    display: block;
+    opacity: 1;
   }
   #banner .grid-container {
     z-index: -1;
+  }
+  .portfolio .menu-items ul li a {
+    color: #222222 !important;
+    opacity: 0.7;
+  }
+  .portfolio .menu-items ul li .active {
+    opacity: 1;
   }
   .transformContainer .highlightContainer .latestText {
     position: relative;
@@ -959,17 +1050,14 @@ footer .grid-container p {
 }
 
 @media only screen and (max-width: 1024px) {
-  #banner .split-row-before {
-    left: -39%;
-  }
   .companies-conainer .company-names ul li {
     min-width: 25%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #banner .split-row-before {
-    left: -38%;
+  .split-row-before {
+    left: -35%;
   }
   .portfolioGroup .company-container {
     width: 100%;
