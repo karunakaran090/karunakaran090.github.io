@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title></title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.4.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="animate.css" />
+
+    <script>
+      function replaceVerticalScrollByHorizontal(event) {
+        if (event.deltaY !== 0) {
+          window.scroll(window.scrollX + event.deltaY * 2, window.scrollY);
+          //event.preventDefault();
+        }
+      }
+
+      const mediaQuery = window.matchMedia("(min-width: 770px)");
+
+      if (mediaQuery.matches) {
+        window.addEventListener("wheel", replaceVerticalScrollByHorizontal);
+      }
+    </script>
+    <!--<style>
+        @-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeInDown{from{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes fadeInDown{from{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}@-webkit-keyframes fadeInDownBig{from{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes fadeInDownBig{from{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.fadeInDownBig{-webkit-animation-name:fadeInDownBig;animation-name:fadeInDownBig}@-webkit-keyframes fadeInLeft{from{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes fadeInLeft{from{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}@-webkit-keyframes fadeInUp{from{opacity:0;-webkit-transform:translate3d(0,50%,0);transform:translate3d(0,50%,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}@keyframes fadeInUp{from{opacity:0;-webkit-transform:translate3d(0,50%,0);transform:translate3d(0,50%,0)}to{opacity:1;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.animate__fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.animated.delay-1s{-webkit-animation-delay:1s;animation-delay:1s}.animated.delay-2s{-webkit-animation-delay:2s;animation-delay:2s}.animated.delay-3s{-webkit-animation-delay:3s;animation-delay:3s}.animated.delay-4s{-webkit-animation-delay:4s;animation-delay:4s}.animated.delay-5s{-webkit-animation-delay:5s;animation-delay:5s}.animated.fast{-webkit-animation-duration:800ms;animation-duration:800ms}.animated.faster{-webkit-animation-duration:500ms;animation-duration:500ms}.animated.slow{-webkit-animation-duration:2s;animation-duration:2s}.animated.slower{-webkit-animation-duration:3s;animation-duration:3s}@media (print),(prefers-reduced-motion:reduce){.animated{-webkit-animation-duration:1ms!important;animation-duration:1ms!important;-webkit-transition-duration:1ms!important;transition-duration:1ms!important;-webkit-animation-iteration-count:1!important;animation-iteration-count:1!important}}
+    </style>-->
+    <style>
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+      }
+      body::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+      .wow {
+        visibility: hidden;
+      }
+      .animate__animated {
+        visibility: visible;
+      }
+      body {
+        overflow-y: hidden;
+        display: inline-flex;
+        overscroll-behavior-y: none;
+      }
+      @media (max-width: 768px) {
+        body {
+          overflow-y: auto;
+          display: block;
+        }
+      }
+      @font-face {
+        font-family: dahlia;
+        src: url("fonts/dahlia-regular.woff") format("truetype");
+        font-weight: normal;
+        font-display: swap;
+      }
+      header {
+        position: fixed;
+        width: 100%;
+        padding: 15px;
+        z-index: 999;
+      }
+      .inquire {
+        right: 100px;
+        position: absolute;
+        margin-left: 10px;
+        background: #fff;
+        padding: 10px 27px 10px 27px;
+        text-decoration: none;
+        color: green;
+        border-radius: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        mix-blend-mode: difference;
+      }
+      .call {
+        background: #fff;
+        position: absolute;
+        right: 50px;
+        top: 16px;
+        padding: 3px;
+        height: 31px;
+        display: flex;
+        align-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 50%;
+        width: 33px;
+        text-align: center;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+      .call img {
+        width: 20px;
+        height: 20px;
+      }
+      .first {
+        background: url(img/01.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        justify-content: center;
+      }
+      .first h1 {
+        padding-bottom: 15px;
+        font-size: 74px;
+        font-family: dahlia;
+        font-weight: 100;
+      }
+      .first h2 {
+        padding-bottom: 10px;
+      }
+      .first p {
+        display: flex;
+        letter-spacing: 6px;
+      }
+      @media (max-width: 768px) {
+        .first h1 {
+          font-size: 30px;
+        }
+        .first h2 {
+          font-size: 17px;
+        }
+      }
+    </style>
+    <style type="text/css">
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .container {
+        scroll-direction: horizontal;
+        scroll-behavior: smooth;
+      }
+      .bgwater {
+        background: url(bgbl.jpg) no-repeat center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+      #bubbles {
+        padding: 100px 0;
+      }
+
+      /*.bubble {
+        width: 30px;
+        height: 30px;
+        background-image: linear-gradient(45deg, #0b62abbd, #106499);
+        border-radius: 200px;
+        -moz-border-radius: 200px;
+        -webkit-border-radius: 200px;
+        position: absolute;animation:wave 5s linear infinite;
+      }
+
+      .x1 {
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        transform: scale(0.9);
+        opacity: 0.2;
+        animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        -webkit-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        -moz-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        -o-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+      }
+
+      .x2 {
+        left: 200px; width:40px; height:40px;border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+                  box-shadow: inset 10px 10px 10px rgb(255 255 255 / 5%), 15px 25px 10px rgb(0 0 0 / 10%), 15px 20px 20px rgb(0 0 0 / 5%), inset -10px -10px 15px rgb(34 161 236 / 88%);
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 0.5;
+        animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+        -webkit-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+        -moz-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+        -o-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+      }
+
+      .x3 {
+        left: 350px;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.3;
+        animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        -webkit-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        -moz-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        -o-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+      }
+
+      .x4 {
+        left: 470px;
+        -webkit-transform: scale(0.75);
+        -moz-transform: scale(0.75);
+        transform: scale(0.75);
+        opacity: 0.35;
+        animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        -webkit-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        -moz-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+        -o-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+      }
+
+      .x5 {
+        left: 150px;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.3;
+        animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+        -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+        -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+        -o-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+      }
+
+      @keyframes moveclouds {
+        0% {
+          top: 500px;
+        }
+        100% {
+          top: -500px;
+        }
+      }
+
+      @keyframes sideWays {
+        0% {
+          margin-left: 0px;
+        }
+        100% {
+          margin-left: 50px;
+        }
+      }
+
+      @-webkit-keyframes moveclouds {
+        0% {
+          top: 500px;
+        }
+        100% {
+          top: -500px;
+        }
+      }
+
+      @-webkit-keyframes sideWays {
+        0% {
+          margin-left: 0px;
+        }
+        100% {
+          margin-left: 50px;
+        }
+      }
+
+      @-moz-keyframes moveclouds {
+        0% {
+          top: 500px;
+        }
+        100% {
+          top: -500px;
+        }
+      }
+
+      @-moz-keyframes sideWays {
+        0% {
+          margin-left: 0px;
+        }
+        100% {
+          margin-left: 50px;
+        }
+      }
+
+      @-o-keyframes moveclouds {
+        0% {
+          top: 500px;
+        }
+        100% {
+          top: -500px;
+        }
+      }
+
+      @-o-keyframes sideWays {
+        0% {
+          margin-left: 0px;
+        }
+        100% {
+          margin-left: 50px;
+        }
+      }*/
+      .drops {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .drop {
+        position: absolute;
+        left: 20%;
+        top: 40%;
+        width: 150px;
+        height: 150px; /*background: #00a1ff85;
+        border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+        box-shadow: inset 10px 10px 10px rgb(0 0 0 / 5%), 15px 25px 10px rgb(0 0 0 / 10%), 15px 20px 20px rgb(0 0 0 / 5%), inset -10px -10px 15px rgb(34 161 236 / 88%);*/
+        background-image: radial-gradient(rgb(28 142 193), rgb(0 88 154));
+        border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+        box-shadow: inset 10px 10px 10px rgb(255 255 255 / 5%),
+          15px 25px 10px rgb(0 0 0 / 5%), 15px 20px 20px rgb(0 0 0 / 3%),
+          inset -10px -10px 15px rgb(34 161 236 / 88%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        flex-direction: column;
+        animation: wave 5s linear infinite;
+      }
+
+      @keyframes wave {
+        20% {
+          border-radius: 40% 55% 62% 30% / 52% 51% 49% 47%;
+        }
+        40% {
+          border-radius: 40% 55% 49% 30% / 36% 51% 49% 64%;
+        }
+        60% {
+          border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+        }
+        80% {
+          border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+        }
+      }
+      .drop span {
+        font-size: 30px;
+      }
+
+      /*.bgwater::before {
+    position: absolute;
+    content: " ";
+    
+    height: 100vh;
+    width: 202px;
+    background-size: cover;
+    margin-left: -70px;
+}*/
+      .bgwaterleft {
+        margin-left: -92px;
+        height: 100%;
+        width: 324px;
+        position: absolute;
+      }
+      .animate__animated1 {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-duration: var(--animate-duration);
+        animation-duration: var(--animate-duration);
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        visibility: hidden;
+      }
+      .animate__fadeInUp {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="first animate__animated animate__fadeIn">
+      <video
+        style="position: absolute; width: 100vw"
+        class="a-video__video"
+        data-video=""
+        playsinline=""
+        autoplay=""
+        muted=""
+        loop=""
+        poster="https://neom.scene7.com/is/image/neom/food-hero-thumbnail-new?scl=1"
+      >
+        <source src="pexels-mikhail-nilov-6981411.mp4" type="video/mp4" />
+
+        Your browser does not support the video tag.
+      </video>
+      <h1 class="animate__animated animate__fadeInUp">
+        The best of Mass & Class!
+      </h1>
+      <h2 class="animate__animated animate__fadeInUp">
+        India's first water themed plotted township
+      </h2>
+      <p class="animate__animated animate__fadeInUp">
+        <img
+          src="img/Location-icon.svg"
+          width="20"
+          height="20"
+          style="margin-right: 10px"
+        />BALLARI
+      </p>
+      <span
+        style="
+          position: absolute;
+          right: 70px;
+          bottom: 30px;
+          z-index: 999;
+          display: flex;
+          font-size: 11px;
+          width: 215px;
+          letter-spacing: 1px;
+        "
+        ><img
+          src="img/scroll.svg"
+          width="80px"
+          style="padding-right: 5px"
+        />SCROLL TO EXPLORE</span
+      >
+    </section>
+    <header>
+      <img
+        src="img/Gsquare-Logo-white.svg"
+        class="animate__animated animate__fadeInRight"
+        width="190"
+        height="37"
+      /><a href="" class="call animate__animated animate__fadeInLeft"
+        ><img src="img/call.svg" /></a
+      ><a href="" class="inquire animate__animated animate__fadeInLeft"
+        >ENQUIRE NOW</a
+      >
+    </header>
+
+    <section class="bgwater anim">
+      <img src="img/divider.png" class="bgwaterleft" />
+      <div id="bubbles">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+      </div>
+      <div
+        class="wow wow2 animate__animated1"
+        data-inanimation="animate__fadeInLeft"
+        data-outanimation="animate__fadeOutUp"
+      >
+        <div class="drop">Project Area<br /><span>89</span>Acres</div>
+      </div>
+    </section>
+    <section class="bgwater anim2">
+      <div id="bubbles">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+      </div>
+      <div
+        class="wow wow3"
+        data-inanimation="animate__fadeInLeft"
+        data-outanimation="animate__fadeOutUp"
+      >
+        <div class="drop">Project Area<br /><span>89</span>Acres</div>
+      </div>
+    </section>
+    <script
+      type="text/javascript"
+      src="https://dezvolta.in/trishul/wp-content/themes/trishul-child/trishul.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <script>
+      // init controller
+      //var controller = new ScrollMagic.Controller();
+    </script>
+    <script>
+      var controller = new ScrollMagic.Controller({ vertical: false });
+      // build scene
+      var scene = new ScrollMagic.Scene({ triggerElement: ".anim" })
+        // trigger animation by adding a css class
+        .setClassToggle(".wow2", "animate__fadeInUp")
+
+        .addTo(controller);
+    </script>
+  </body>
+</html>

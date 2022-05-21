@@ -1,1 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G Square</title>
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="./style/sass/app.css" />
+    <style>
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+      }
+      body::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+      .wow {
+        visibility: hidden;
+      }
+      .animate__animated {
+        visibility: visible;
+      }
+      body {
+        overflow-y: hidden;
+        display: inline-flex;
+        overscroll-behavior-y: none;
+      }
+      @media (max-width: 768px) {
+        body {
+          overflow-y: auto;
+          display: block;
+        }
+      }
+      @font-face {
+        font-family: dahlia;
+        src: url("fonts/dahlia-regular.woff") format("truetype");
+        font-weight: normal;
+        font-display: swap;
+      }
+
+      .inquire {
+        right: 100px;
+        position: absolute;
+        margin-left: 10px;
+        background: #fff;
+        padding: 10px 27px 10px 27px;
+        text-decoration: none;
+        color: green;
+        border-radius: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        mix-blend-mode: difference;
+      }
+      .call {
+        background: #fff;
+        position: absolute;
+        right: 50px;
+        top: 16px;
+        padding: 3px;
+        height: 31px;
+        display: flex;
+        align-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 50%;
+        width: 33px;
+        text-align: center;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+      .call img {
+        width: 20px;
+        height: 20px;
+      }
+      .first {
+        background: url(img/01.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        justify-content: center;
+      }
+      .first h1 {
+        padding-bottom: 15px;
+        font-size: 74px;
+        font-family: dahlia;
+        font-weight: 100;
+      }
+      .first h2 {
+        padding-bottom: 10px;
+      }
+      .first p {
+        display: flex;
+        letter-spacing: 6px;
+      }
+      @media (max-width: 768px) {
+        .first h1 {
+          font-size: 30px;
+        }
+        .first h2 {
+          font-size: 17px;
+        }
+      }
+    </style>
+    <style type="text/css">
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .container {
+        scroll-direction: horizontal;
+        scroll-behavior: smooth;
+      }
+      .bgwater {
+        background: url(bgbl.jpg) no-repeat center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+
+      /*.bubble {
+      width: 30px;
+      height: 30px;
+      background-image: linear-gradient(45deg, #0b62abbd, #106499);
+      border-radius: 200px;
+      -moz-border-radius: 200px;
+      -webkit-border-radius: 200px;
+      position: absolute;animation:wave 5s linear infinite;
+    }
+
+    .x1 {
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      transform: scale(0.9);
+      opacity: 0.2;
+      animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+      -webkit-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+      -moz-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+      -o-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    }
+
+    .x2 {
+      left: 200px; width:40px; height:40px;border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+                box-shadow: inset 10px 10px 10px rgb(255 255 255 / 5%), 15px 25px 10px rgb(0 0 0 / 10%), 15px 20px 20px rgb(0 0 0 / 5%), inset -10px -10px 15px rgb(34 161 236 / 88%);
+      -webkit-transform: scale(0.6);
+      -moz-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 0.5;
+      animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+      -webkit-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+      -moz-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+      -o-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+    }
+
+    .x3 {
+      left: 350px;
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0.3;
+      animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+      -webkit-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+      -moz-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+      -o-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    }
+
+    .x4 {
+      left: 470px;
+      -webkit-transform: scale(0.75);
+      -moz-transform: scale(0.75);
+      transform: scale(0.75);
+      opacity: 0.35;
+      animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+      -webkit-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+      -moz-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+      -o-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    }
+
+    .x5 {
+      left: 150px;
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      transform: scale(0.8);
+      opacity: 0.3;
+      animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+      -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+      -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+      -o-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes moveclouds {
+      0% {
+        top: 500px;
+      }
+      100% {
+        top: -500px;
+      }
+    }
+
+    @keyframes sideWays {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: 50px;
+      }
+    }
+
+    @-webkit-keyframes moveclouds {
+      0% {
+        top: 500px;
+      }
+      100% {
+        top: -500px;
+      }
+    }
+
+    @-webkit-keyframes sideWays {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: 50px;
+      }
+    }
+
+    @-moz-keyframes moveclouds {
+      0% {
+        top: 500px;
+      }
+      100% {
+        top: -500px;
+      }
+    }
+
+    @-moz-keyframes sideWays {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: 50px;
+      }
+    }
+
+    @-o-keyframes moveclouds {
+      0% {
+        top: 500px;
+      }
+      100% {
+        top: -500px;
+      }
+    }
+
+    @-o-keyframes sideWays {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: 50px;
+      }
+    }*/
+      .drops {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .drop {
+        position: absolute;
+        left: 20%;
+        top: 40%;
+        width: 150px;
+        height: 150px; /*background: #00a1ff85;
+      border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+      box-shadow: inset 10px 10px 10px rgb(0 0 0 / 5%), 15px 25px 10px rgb(0 0 0 / 10%), 15px 20px 20px rgb(0 0 0 / 5%), inset -10px -10px 15px rgb(34 161 236 / 88%);*/
+        background-image: radial-gradient(rgb(28 142 193), rgb(0 88 154));
+        border-radius: 54% 46% 42% 58% / 60% 58% 42% 40%;
+        box-shadow: inset 10px 10px 10px rgb(255 255 255 / 5%),
+          15px 25px 10px rgb(0 0 0 / 5%), 15px 20px 20px rgb(0 0 0 / 3%),
+          inset -10px -10px 15px rgb(34 161 236 / 88%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        flex-direction: column;
+        animation: wave 5s linear infinite;
+      }
+
+      @keyframes wave {
+        20% {
+          border-radius: 40% 55% 62% 30% / 52% 51% 49% 47%;
+        }
+        40% {
+          border-radius: 40% 55% 49% 30% / 36% 51% 49% 64%;
+        }
+        60% {
+          border-radius: 60% 40% 57% 43% / 47% 62% 38% 53%;
+        }
+        80% {
+          border-radius: 60% 40% 32% 68% / 38% 36% 64% 62%;
+        }
+      }
+      .drop span {
+        font-size: 30px;
+      }
+
+      /*.bgwater::before {
+  position: absolute;
+  content: " ";
+  
+  height: 100vh;
+  width: 202px;
+  background-size: cover;
+  margin-left: -70px;
+}*/
+
+      .animate__animated1 {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-duration: var(--animate-duration);
+        animation-duration: var(--animate-duration);
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        visibility: hidden;
+      }
+      .animate__fadeInUp {
+        visibility: visible;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="img/Gsquare city Logo-01.svg"
+        class="animate__animated animate__fadeInRight"
+      />
+      <a href="" class="call animate__animated animate__fadeInLeft">
+        <img src="img/call.svg" />
+      </a>
+      <a href="" class="inquire animate__animated animate__fadeInLeft"
+        >ENQUIRE NOW</a
+      >
+    </header>
+    <!-- container 1 -->
+    <section class="first animate__animated animate__fadeIn">
+      <video
+        style="position: absolute; width: 100vw"
+        class="a-video__video"
+        data-video=""
+        playsinline=""
+        autoplay=""
+        muted=""
+        loop=""
+        poster="https://neom.scene7.com/is/image/neom/food-hero-thumbnail-new?scl=1"
+      >
+        <source src="pexels-mikhail-nilov-6981411.mp4" type="video/mp4" />
+
+        Your browser does not support the video tag.
+      </video>
+      <h1 class="animate__animated animate__fadeInUp">
+        The best of Mass & Class!
+      </h1>
+      <h2 class="animate__animated animate__fadeInUp">
+        India's first water themed plotted township
+      </h2>
+      <p class="animate__animated animate__fadeInUp">
+        <img
+          src="img/Location-icon.svg"
+          width="20"
+          height="20"
+          style="margin-right: 10px"
+        />
+        BALLARI
+      </p>
+      <span
+        style="
+          position: absolute;
+          right: 70px;
+          bottom: 30px;
+          z-index: 999;
+          display: flex;
+          font-size: 11px;
+          width: 215px;
+          letter-spacing: 1px;
+        "
+        ><img
+          src="img/scroll.svg"
+          width="80px"
+          style="padding-right: 5px"
+        />SCROLL TO EXPLORE</span
+      >
+    </section>
+    <!-- container 2 -->
+    <section class="bgwater anim">
+      <img src="img/divider.png" class="bgwaterleft" />
+      <img src="img/divider W.png" class="bgwaterright" />
+      <section class="bubbleContainer">
+        <h3>Highlights</h3>
+        <section class="imageContainer">
+          <img src="img/Img 01.jpg" />
+        </section>
+        <section class="bubbleGroup">
+          <div class="bubbleGroup">
+            <div
+              class="wow wow2 animate__animated1 bubbleChild1"
+              data-inanimation="animate__fadeInLeft"
+              data-outanimation="animate__fadeOutUp"
+            >
+              <div class="drop">Project Area<br /><span>1</span>Acres</div>
+            </div>
+            <div
+              class="wow wow2 animate__animated1 bubbleChild2"
+              data-inanimation="animate__fadeInLeft"
+              data-outanimation="animate__fadeOutUp"
+            >
+              <div class="drop">Project Area<br /><span>2</span>Acres</div>
+            </div>
+            <div
+              class="wow wow2 animate__animated1 bubbleChild3"
+              data-inanimation="animate__fadeInLeft"
+              data-outanimation="animate__fadeOutUp"
+            >
+              <div class="drop">Project Area<br /><span>3</span>Acres</div>
+            </div>
+            <div
+              class="wow wow2 animate__animated1 bubbleChild4"
+              data-inanimation="animate__fadeInLeft"
+              data-outanimation="animate__fadeOutUp"
+            >
+              <div class="drop">Project Area<br /><span>4</span>Acres</div>
+            </div>
+            <div
+              class="wow wow2 animate__animated1 bubbleChild5"
+              data-inanimation="animate__fadeInLeft"
+              data-outanimation="animate__fadeOutUp"
+            >
+              <div class="drop">Project Area<br /><span>5</span>Acres</div>
+            </div>
+          </div>
+        </section>
+        <div id="bubbles">
+          <div class="bubble x1"></div>
+          <div class="bubble x2"></div>
+          <div class="bubble x3"></div>
+          <div class="bubble x4"></div>
+          <div class="bubble x5"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- container 3 -->
+    <section class="bgpricing anim">
+      <div class="pricingTextContainer">
+        <section>
+          <h3>Pricing Table</h3>
+          <ul>
+            <li><img src="./img/Price table/Icon-01.svg" /><br />Plot Size</li>
+            <li class="bg">1800 Sft</li>
+            <li class="bg">1500 Sft</li>
+            <li class="bg">2100 Sft</li>
+          </ul>
+          <ul class="centerCont">
+            <li>
+              <img src="./img/Price table/Icon-02.svg" /><br />Price Rate Per
+              Sqft
+            </li>
+            <li class="bg">Rs. 2599</li>
+            <li class="bg">Rs. 2599</li>
+            <li class="bg">Rs. 2599</li>
+          </ul>
+          <ul>
+            <li>
+              <img src="./img/Price table/Icon-03.svg" /><br />Average Price
+            </li>
+            <li class="bg">45 L (1800 Sq.ft Avg)</li>
+            <li class="bg">45 L (1800 Sq.ft Avg)</li>
+            <li class="bg">45 L (1800 Sq.ft Avg)</li>
+          </ul>
+        </section>
+      </div>
+      <div class="pricingImgContainer">
+        <img src="./img/Price table/Img 02.jpg" />
+      </div>
+    </section>
+
+    <!-- container 4 -->
+    <section class="bgLayout anim">
+      <div class="pricingTextContainer">
+        <section class="layouttext">
+          <h3>Layout</h3>
+          <h4>Plug & Play plots</h4>
+          <p>
+            Dont belive in waiting and postponing ? <br />
+            Then this community is the one for you.
+          </p>
+          <p>
+            With all essential connections like EB, Water and drainage already
+            in place.its now very easy to build your dream home.
+          </p>
+          <a href=""
+            >Download Brochure <img src="./img/Layout/arrow icon.svg"
+          /></a>
+          <img class="arrowright" src="./img/Layout/arrow-01.png" />
+        </section>
+      </div>
+      <div class="pricingImgContainer">
+        <section class="layoutImg">
+          <img src="./img/Layout/icon.svg" />
+        </section>
+      </div>
+    </section>
+
+    <!-- container 5 -->
+    <section class="bgLayout anim">
+      <div class="pricingTextContainer">
+        <section class="layouttext">
+          <h3>Salient <br/> Features </h3>
+          <h4>Lorem Ipsum is simply</h4>
+          <p>
+            dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          </p>
+         
+          <img class="arrowright" src="./img/Layout/arrow-01.png" />
+        </section>
+      </div>
+      <div class="pricingImgContainer">
+        <section class="layoutImg">
+          <img src="./img/Layout/icon.svg" />
+        </section>
+      </div>
+    </section>
+
+      <!-- container 6 -->
+   <section class="bgLayout anim">
+    <div class="pricingTextContainer">
+      <section class="layouttext">
+        <h3>Neighborhood</h3>
+       Map will be placed here
+      </section>
+    </div>
+    <div class="pricingImgContainer">
+      <section class="layoutImg">
+        <img src="./img/Layout/icon.svg" />
+      </section>
+    </div>
+</section>
+
+    <!-- 
+    <section class="bgwater anim2">
+      <div id="bubbles">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+      </div>
+      <div
+        class="wow wow3"
+        data-inanimation="animate__fadeInLeft"
+        data-outanimation="animate__fadeOutUp"
+      >
+        <div class="drop">Project Area<br /><span>89</span>Acres</div>
+      </div>
+    </section> -->
+  </body>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-2.2.4.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://dezvolta.in/trishul/wp-content/themes/trishul-child/trishul.js"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script>
+    function replaceVerticalScrollByHorizontal(event) {
+      if (event.deltaY !== 0) {
+        window.scroll(window.scrollX + event.deltaY * 2, window.scrollY);
+        //event.preventDefault();
+      }
+    }
+
+    const mediaQuery = window.matchMedia("(min-width: 770px)");
+
+    if (mediaQuery.matches) {
+      window.addEventListener("wheel", replaceVerticalScrollByHorizontal);
+    }
+  </script>
+  <script>
+    // init controller
+    //var controller = new ScrollMagic.Controller();
+  </script>
+  <script>
+    var controller = new ScrollMagic.Controller({ vertical: false });
+    // build scene
+    var scene = new ScrollMagic.Scene({ triggerElement: ".anim" })
+      // trigger animation by adding a css class
+      .setClassToggle(".wow2", "animate__fadeInUp")
+
+      .addTo(controller);
+  </script>
+</html>
