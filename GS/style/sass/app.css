@@ -3,7 +3,7 @@ header {
   position: fixed;
   width: 100%;
   padding: 20px;
-  z-index: 999;
+  z-index: 9;
 }
 
 header img {
@@ -35,11 +35,13 @@ header img {
 
 .bgwater .bubbleContainer h3 {
   font-size: 80px;
-  color: #fff;
+  color: #aaf0ff;
   line-height: 1;
   margin-left: 150px;
+  font-weight: 300;
   z-index: 9;
   position: relative;
+  font-family: 'Dahlia';
 }
 
 .bgwater .bubbleContainer .imageContainer {
@@ -105,13 +107,16 @@ header img {
   width: 50%;
   position: relative;
   z-index: 9;
-  padding-top: calc(25% - 150px);
+  padding-top: 7%;
 }
 
 .bgpricing .pricingTextContainer h3 {
-  font-size: 70px;
+  font-size: 80px;
   padding-left: 0;
-  color: #049d90;
+  color: #006757;
+  font-family: 'Dahlia';
+  font-weight: 200;
+  line-height: 1.9;
 }
 
 .bgpricing .pricingTextContainer ul {
@@ -133,7 +138,7 @@ header img {
 .bgpricing .pricingTextContainer ul .bg {
   font-weight: 400;
   font-size: 14px;
-  background-color: #58b89e;
+  background-color: #7fb2b5;
   margin: 10px 0;
   color: #fff;
 }
@@ -177,7 +182,10 @@ header img {
 
 .bgLayout .pricingTextContainer .layouttext h3 {
   font-size: 70px;
-  color: #049d90;
+  color: #006757;
+  font-family: 'Dahlia';
+  font-weight: 200;
+  line-height: 1.9;
 }
 
 .bgLayout .pricingTextContainer .layouttext h4 {
@@ -229,4 +237,576 @@ header img {
   position: absolute;
   right: -45px;
   bottom: 100px;
+}
+
+.amenities {
+  min-width: 140vw;
+  height: 100vh;
+  position: relative;
+  background-color: #f8f9fb;
+  transform: skewX(-5deg);
+}
+
+.amenities .sliceCont {
+  transform: skewX(5deg);
+}
+
+.amenities .sliceCont .bgwaterleft {
+  position: absolute;
+  left: -180px;
+}
+
+.amenities .pricingTextContainer {
+  float: left;
+  width: 35%;
+  position: relative;
+  z-index: 9;
+  padding-top: 100px;
+}
+
+.amenities .pricingTextContainer h3 {
+  font-size: 70px;
+  padding-left: 30px;
+  color: #049d90;
+}
+
+.amenities .pricingTextContainer .layouttext {
+  padding-left: 35px;
+  padding-top: 120px;
+  max-width: 300px;
+}
+
+.amenities .pricingTextContainer .layouttext h5 {
+  font-size: 22px;
+}
+
+.amenities .pricingTextContainer .layouttext p {
+  font-size: 14px;
+  line-height: 1.3;
+  padding-top: 10px;
+}
+
+.amenities .pricingImgContainer {
+  float: left;
+  width: auto;
+  min-width: 65%;
+  height: 100vh;
+}
+
+.amenities .pricingImgContainer .layoutImg {
+  position: relative;
+  height: 100%;
+}
+
+.amenities .pricingImgContainer .amenities-ico {
+  position: absolute;
+  bottom: 160px;
+  left: -190px;
+  height: 200px;
+  width: 230px;
+}
+
+.amenities .pricingImgContainer .amenities-ico h4 {
+  font-size: 24px;
+  font-weight: 300;
+  padding-left: 70px;
+}
+
+.amenities .pricingImgContainer .amenities-ico .imageCont {
+  position: relative;
+  width: 200px;
+  top: 50px;
+}
+
+.amenities .pricingImgContainer .amenities-ico .imageCont .circleImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 2;
+  position: relative;
+}
+
+.amenities .pricingImgContainer .amenities-ico .imageCont .icon {
+  width: 30px;
+  z-index: 9;
+  position: absolute;
+  left: -35px;
+  bottom: 0px;
+}
+
+.amenities .pricingImgContainer .amenities-ico .imageCont .person {
+  width: 30px;
+  z-index: 9;
+  position: absolute;
+  right: 0;
+}
+
+.amenities .pricingImgContainer .amenities-ico .toolTipContainer {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -180px;
+  width: 150px;
+  height: auto;
+  background-color: #0fa578;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.amenities .pricingImgContainer .amenities-ico .toolTipContainer ul {
+  padding: 0;
+}
+
+.amenities .pricingImgContainer .amenities-ico .toolTipContainer ul li {
+  list-style: none;
+}
+
+.amenities .pricingImgContainer .amenities-ico .toolTipContainer ul li img {
+  width: 8px;
+}
+
+.amenities .pricingImgContainer .amenities-ico .cont4 {
+  top: 60px;
+  right: 130px;
+  z-index: 9;
+}
+
+.amenities .pricingImgContainer .amenities-ico .cont2 {
+  top: 0px;
+}
+
+.amenities .pricingImgContainer .amenities-ico .cont3 {
+  top: 100px;
+}
+
+.amenities .pricingImgContainer .ico-child1 {
+  top: 10%;
+  left: 20%;
+}
+
+.amenities .pricingImgContainer .ico-child1 h4 {
+  padding-left: 0;
+  margin-left: -160px;
+}
+
+.amenities .pricingImgContainer .ico-child1 .imageCont {
+  top: -10px;
+}
+
+.amenities .pricingImgContainer .ico-child2 {
+  top: calc(100% - 370px);
+  left: 40%;
+}
+
+.amenities .pricingImgContainer .ico-child3 {
+  top: 7%;
+  left: 75%;
+}
+
+.amenities .pricingImgContainer .ico-child3 h4 {
+  padding-left: 0;
+  margin-left: -120px;
+}
+
+.amenities .pricingImgContainer .ico-child3 .imageCont {
+  top: 35px;
+  left: -30px;
+}
+
+.amenities .pricingImgContainer img {
+  width: 100%;
+  transform: scale(1.6);
+}
+
+.walkthrogh {
+  min-width: 100vw;
+  height: 100vh;
+  position: relative;
+  transform: skewX(-5deg);
+}
+
+.walkthrogh .sliceCont {
+  transform: skewX(5deg);
+  height: 100%;
+}
+
+.walkthrogh .sliceCont .bgwaterleft {
+  position: absolute;
+  left: -80px;
+  z-index: 3;
+}
+
+.walkthrogh .sliceCont .bgwaterright {
+  position: absolute;
+  height: 100%;
+  right: -4px;
+  top: 0;
+}
+
+.walkthrogh .sliceCont h3 {
+  font-size: 80px;
+  z-index: 3;
+  position: relative;
+  padding-top: 70px;
+}
+
+.walkthrogh .sliceCont .cycle {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.galleryContainer .pricingImgContainer {
+  position: absolute;
+  right: -20%;
+  top: 2%;
+}
+
+.galleryContainer .pricingImgContainer img {
+  transform: scale(1);
+}
+
+.galleryContainer .pricingTextContainer {
+  position: absolute;
+  width: 90%;
+  padding: 100px 0 0 40px;
+}
+
+.galleryContainer .imageViewer {
+  width: 30%;
+  height: 420px;
+  overflow: hidden;
+  float: left;
+  padding: 0 !important;
+}
+
+.galleryContainer .imageViewer .galleryImg {
+  padding: 0;
+  width: calc(100% - 15px);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100%;
+}
+
+.galleryContainer .imageViewer .gall-img1 {
+  background-image: url(./../../img/gallery/img-04.jpg);
+}
+
+.galleryContainer .imageViewer .gall-img2 {
+  background-image: url(./../../img/gallery/img-02.jpg);
+  height: calc(50% - 10px);
+  margin-bottom: 15px;
+}
+
+.galleryContainer .imageViewer .gall-img3 {
+  background-image: url(./../../img/gallery/img-03.jpg);
+  height: 50%;
+}
+
+.galleryContainer .imageViewer .gall-img4 {
+  background-image: url(./../../img/gallery/img-01.jpg);
+}
+
+.galleryContainer .middleCont {
+  width: 40%;
+}
+
+.testmonialCont {
+  padding-top: 40px;
+}
+
+.testmonialCont .pricingTextContainer {
+  width: 40%;
+  padding-left: 20%;
+}
+
+.testmonialCont .pricingTextContainer .layouttext {
+  padding: 0 0;
+}
+
+.testmonialCont .pricingImgContainer {
+  height: 100%;
+  width: 40%;
+}
+
+.testmonialCont .pricingImgContainer .layoutImg {
+  border-radius: 160px 160px 0 0;
+  background-size: cover !important;
+  background: url("./../../img/Testimonial/img-01.jpg");
+  width: 100%;
+  max-width: 330px;
+  position: relative;
+  top: calc(100% - 480px);
+}
+
+.testmonialCont .pricingImgContainer .layoutImg img {
+  top: 30px;
+  left: 0;
+  width: 65px;
+}
+
+.aboutCont {
+  padding-top: 40px;
+}
+
+.aboutCont .pricingTextContainer {
+  width: 70%;
+}
+
+.aboutCont .pricingTextContainer .layouttext {
+  padding: 10% 15% 50px 30px;
+}
+
+.aboutCont .pricingImgContainer {
+  height: 100%;
+  width: 30%;
+}
+
+.aboutCont .pricingImgContainer .layoutImg {
+  background-size: cover !important;
+  background: url("./../../img/About/divider.png");
+  width: 100%;
+  max-width: 330px;
+  position: relative;
+  top: calc(100% - 480px);
+  float: right;
+}
+
+.aboutCont .pricingImgContainer .layoutImg img {
+  top: 30px;
+  left: 0;
+  width: 100%;
+  left: -50%;
+  transform: scale(1.5);
+  z-index: -2;
+}
+
+.contactCont {
+  padding-top: 0;
+  width: 100%;
+  max-width: 768px;
+}
+
+.contactCont .pricingTextContainer {
+  width: 100%;
+  margin-left: 25%;
+  background-color: #006756;
+  background-image: url(./../../img/Salient/Pattern.png);
+}
+
+.contactCont .pricingTextContainer .bgwaterleft {
+  position: relative;
+  top: -20px;
+  left: -40px;
+}
+
+.contactCont .pricingTextContainer .patterIcon {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  width: 85%;
+  margin: auto;
+  display: block;
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer {
+  width: 100%;
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer .childElement {
+  padding-top: 20px;
+  color: #fff;
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer .childElement span {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer .childElement h5 {
+  font-size: 30px;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer .formCont {
+  padding-top: 60px;
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer .formCont form {
+  padding-top: 30px;
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer .formCont input {
+  width: 45%;
+  margin-bottom: 40px;
+  height: 38px;
+  padding: 0px 0 0 10px;
+  background-color: #095042;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer .formCont input:first-child {
+  margin-right: 40px;
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer .formCont input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  font-size: 12px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contactCont .pricingTextContainer .patterIcon .FormContainer .formCont button {
+  width: 150px;
+  height: 40px;
+  border-radius: 34px;
+  background-color: #fff;
+  color: #0a5043;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  float: right;
+}
+
+.imagePopup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 12;
+}
+
+.imagePopup .innerpopUP {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+.fixedBody {
+  overflow: hidden;
+}
+
+.salientCont .pricingTextContainer .layouttext h3 {
+  line-height: 1;
+  font-weight: 200 !important;
+}
+
+.salientCont .pricingTextContainer .layouttext h4 {
+  line-height: 1.8;
+  padding-top: 20px;
+}
+
+.salientCont .pricingImgContainer {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  top: -85px;
+}
+
+.salientCont .pricingImgContainer .carouselGroup {
+  width: 90%;
+  height: 100%;
+  margin-left: 10%;
+  background-color: #006756;
+  background-image: url(./../../img/Salient/Pattern.png);
+}
+
+.salientCont .pricingImgContainer .carouselGroup .contain {
+  padding-top: 20%;
+  width: 110%;
+  margin-left: -10%;
+}
+
+.salientCont .pricingImgContainer .carouselGroup .item {
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+}
+
+.salientCont .pricingImgContainer .carouselGroup .item img {
+  height: 100%;
+}
+
+.salientCont .pricingImgContainer .carouselGroup .item p {
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.salientCont .pricingImgContainer .carouselGroup .previewClass {
+  transform: scale(0.9);
+}
+
+.salientCont .pricingImgContainer .carouselGroup .previewClass p {
+  display: none;
+}
+
+.salientCont .pricingImgContainer .carouselGroup .slider-counter {
+  font-size: 52px;
+  color: #588c81;
+  margin-top: -50px;
+  padding-left: 20px;
+}
+
+.salientCont .pricingImgContainer .carouselGroup .arrow-icon {
+  width: 70px;
+  margin-top: 50px;
+}
+
+.salientCont .pricingImgContainer .carouselGroup .owl-theme .owl-nav [class*='owl-']:hover {
+  background: none;
+}
+
+.salientCont .pricingImgContainer .personRight {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -70%;
+  transform: scale(1.1);
+}
+
+.contain {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.item {
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: 'Dahlia';
+  src: url("./../../fonts/dahlia-bold.otf");
 }
