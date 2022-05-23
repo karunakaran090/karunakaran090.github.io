@@ -19,6 +19,8 @@
     />
     <link rel="stylesheet" href="animate.css" />
     <link rel="stylesheet" href="./style/sass/app.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />    
     <style>
       body {
         font-family: "Nunito Sans", sans-serif;
@@ -348,6 +350,12 @@
         visibility: visible;
       }
     </style>
+
+    <!-- pan image style -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./style/css/normalize.css?v=1.0">
+    <link rel="stylesheet" href="./style/css/jquery.zoom.css?v=1.0">
+    <link rel="stylesheet" href="./style/css/styles.css?v=1.0">
   </head>
 
   <body>
@@ -428,35 +436,40 @@
               data-inanimation="animate__fadeInLeft"
               data-outanimation="animate__fadeOutUp"
             >
-              <div class="drop">Project Area<br /><span>1</span>Acres</div>
+              <div class="drop">Project Area<br /><span>89</span>Acres</div>
             </div>
             <div
               class="wow wow2 animate__animated1 bubbleChild2"
               data-inanimation="animate__fadeInLeft"
               data-outanimation="animate__fadeOutUp"
             >
-              <div class="drop">Project Area<br /><span>2</span>Acres</div>
+              <div class="drop">Residential<br/>
+                Plot Price<br/>
+                Rs.2599 / Sq.Ft.</div>
             </div>
             <div
               class="wow wow2 animate__animated1 bubbleChild3"
               data-inanimation="animate__fadeInLeft"
               data-outanimation="animate__fadeOutUp"
             >
-              <div class="drop">Project Area<br /><span>3</span>Acres</div>
+              <div class="drop">Project Size<br /><span>821</span>Units</div>
             </div>
             <div
               class="wow wow2 animate__animated1 bubbleChild4"
               data-inanimation="animate__fadeInLeft"
               data-outanimation="animate__fadeOutUp"
             >
-              <div class="drop">Project Area<br /><span>4</span>Acres</div>
+              <div class="drop"> Residential <br>
+                Plot Sizes<br>
+                1000-5000 Sq. Ft.</div>
             </div>
             <div
               class="wow wow2 animate__animated1 bubbleChild5"
               data-inanimation="animate__fadeInLeft"
               data-outanimation="animate__fadeOutUp"
             >
-              <div class="drop">Project Area<br /><span>5</span>Acres</div>
+              <div class="drop">Ready to<br>
+                construct</div>
             </div>
           </div>
         </section>
@@ -527,33 +540,67 @@
       </div>
       <div class="pricingImgContainer">
         <section class="layoutImg">
-          <img src="./img/Layout/icon.svg" />
+          <img onClick="showImagePopup(true)" src="./img/Layout/icon.svg" />
         </section>
       </div>
     </section>
 
     <!-- container 5 -->
-    <section class="bgLayout anim">
+    <section class="bgLayout salientCont anim">
       <div class="pricingTextContainer">
         <section class="layouttext">
-          <h3>Salient <br/> Features </h3>
+          <h3>Salient  Features </h3>
           <h4>Lorem Ipsum is simply</h4>
           <p>
             dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
           </p>
-         
-          <img class="arrowright" src="./img/Layout/arrow-01.png" />
         </section>
       </div>
       <div class="pricingImgContainer">
-        <section class="layoutImg">
-          <img src="./img/Layout/icon.svg" />
+        <section class="carouselGroup">
+          <div class="contain">
+            <div id="owl-carousel" class="owl-carousel owl-theme">
+              <div class="item 1">
+                <img src="./img/Salient/Img 5.jpg" />
+                <p>India’s first water-themed
+                  plotted township</p>
+              </div>
+              <div class="item 2">
+                <img src="./img/Salient/Img 4.jpg" />
+                <p>India’s first water-themed
+                  plotted township</p>
+              </div>
+              <div class="item 3">
+                <img src="./img/Salient/Img 5.jpg" />
+                <p>India’s first water-themed
+                  plotted township</p>
+              </div>
+              <div class="item 4">
+                <img src="./img/Salient/Img 4.jpg" />
+                <p>India’s first water-themed
+                  plotted township</p>
+              </div>
+              <div class="item 5">
+                <img src="./img/Salient/Img 5.jpg" />
+                <p>India’s first water-themed
+                  plotted township</p>
+              </div>
+              <div class="item 6">
+                <img src="./img/Salient/Img 4.jpg" />
+                <p>India’s first water-themed
+                  plotted township</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-counter"></div>
         </section>
+        <img class="personRight" src="./img/Salient/Img 6.png" />
+        </div>
       </div>
     </section>
 
       <!-- container 6 -->
-   <section class="bgLayout anim">
+   <section class="bgLayout mapContant anim">
     <div class="pricingTextContainer">
       <section class="layouttext">
         <h3>Neighborhood</h3>
@@ -567,34 +614,242 @@
     </div>
 </section>
 
-    <!-- 
-    <section class="bgwater anim2">
-      <div id="bubbles">
-        <div class="bubble x1"></div>
-        <div class="bubble x2"></div>
-        <div class="bubble x3"></div>
-        <div class="bubble x4"></div>
-        <div class="bubble x5"></div>
+<!-- container 7 -->
+<section class="amenities anim">
+  <!-- <img src="img/divider W.png" class="bgwaterright" /> -->
+  <section class="sliceCont">
+    <img src="./img/amenities/divider.png" class="bgwaterleft" />
+    <div class="pricingTextContainer">
+      <h3>Amenities</h3>
+      <section class="layouttext">
+        <h5>A world of Amenities</h5>
+        <p>dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>  
+      </section>
+    </div>
+    <div class="pricingImgContainer">
+      <section class="layoutImg">
+        <!-- icon 1 -->
+        <div class="amenities-ico">
+          <h4>Health and <br/>Wellness</h4>
+          <section class="imageCont">
+            <img class="icon" src="./img/Amenities/A-icon-03.svg" />
+            <img class="circleImg" src="./img/Amenities/img 04.jpg" />
+            <!-- <img class="person" class="showTip" src="./img/Amenities/icon-02.svg" /> -->
+            <img src="./img/Amenities/icon-02.svg" class="person expander ico1" onClick="toggleTip('.cont1','.ico1')" alt="Expand" />
+          </section>
+          <div id="TableData" class="toolTipContainer cont1">
+            <ul>
+              <li><img src="./img/Amenities/icon-01.svg"/>Yoga Lawn</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Meditation deck</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Foot reflexology pathway</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Jogging track</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Aerobic lawn</li>
+            </ul>
+          </div>
+        </div>
+        <!-- icon 2 -->
+        <div class="amenities-ico ico-child1">
+          <h4>Entertainment <br/> Amenities</h4>
+          <section class="imageCont">
+            <img class="icon" src="./img/Amenities/A-icon-03.svg" />
+            <img class="circleImg" src="./img/Amenities/img 03.jpg" />
+            <!-- <img class="person" class="showTip" src="./img/Amenities/icon-02.svg" /> -->
+            <img src="./img/Amenities/icon-02.svg" class="person expander ic02" onClick="toggleTip('.cont2','.ic02')" alt="Expand" />
+          </section>
+          <div id="TableData" class="toolTipContainer cont2">
+            <ul>
+              <li><img src="./img/Amenities/icon-01.svg"/>Yoga Lawn</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Meditation deck</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Foot reflexology pathway</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Jogging track</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Aerobic lawn</li>
+            </ul>
+          </div>
+        </div>
+        <!-- icon 3 -->
+        <div class="amenities-ico ico-child2">
+          <h4>Sports <br/> Amenities</h4>
+          <section class="imageCont">
+            <img class="icon" src="./img/Amenities/A-icon-03.svg" />
+            <img class="circleImg" src="./img/Amenities/img 02.jpg" />
+            <!-- <img class="person" class="showTip" src="./img/Amenities/icon-02.svg" /> -->
+            <img src="./img/Amenities/icon-02.svg" class="person expander ico3" onClick="toggleTip('.cont3','.ico3')" alt="Expand" />
+          </section>
+          <div id="TableData" class="toolTipContainer cont3">
+            <ul>
+              <li><img src="./img/Amenities/icon-01.svg"/>Yoga Lawn</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Meditation deck</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Foot reflexology pathway</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Jogging track</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Aerobic lawn</li>
+            </ul>
+          </div>
+        </div>
+         <!-- icon 4 -->
+         <div class="amenities-ico ico-child3">
+          <h4>Children <br/> Amenities</h4>
+          <section class="imageCont">
+            <img class="icon" src="./img/Amenities/A-icon-03.svg" />
+            <img class="circleImg" src="./img/Amenities/img 01.jpg" />
+            <!-- <img class="person" class="showTip" src="./img/Amenities/icon-02.svg" /> -->
+            <img src="./img/Amenities/icon-02.svg" class="person expander ico4" onClick="toggleTip('.cont4','.ico4')" alt="Expand" />
+          </section>
+          <div id="TableData" class="toolTipContainer cont4">
+            <ul>
+              <li><img src="./img/Amenities/icon-01.svg"/>Yoga Lawn</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Meditation deck</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Foot reflexology pathway</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Jogging track</li>
+              <li><img src="./img/Amenities/icon-01.svg"/>Aerobic lawn</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</section>
+
+<!-- container 9 -->
+<section class="walkthrogh anim">
+  <!-- <div class="pricingTextContainer"> -->
+    <section class="sliceCont">
+      <img src="./img/Walkthrough/divider 01.png" class="bgwaterleft" />
+      <h3>Walkthrogh</h3>
+      <div class="cycle" style="background:url(./img/Walkthrough/img-01.jpg);height:100%"></div>
+      <img src="./img/Walkthrough/divider 02.png" class="bgwaterright" />
+    </section>
+  <!-- </div> -->
+</section>
+
+    <!-- container 10 -->
+    <section class="bgpricing galleryContainer anim">
+      <div class="pricingTextContainer">
+        <section class="imageViewer">
+          <section class="galleryImg gall-img1"></section>
+        </section>
+        <section class="imageViewer middleCont">
+          <section class="galleryImg gall-img2"></section>
+          <section class="galleryImg gall-img3"></section>
+        </section>
+        <section class="imageViewer">
+          <section class="galleryImg gall-img4"></section>
+        </section>
       </div>
-      <div
-        class="wow wow3"
-        data-inanimation="animate__fadeInLeft"
-        data-outanimation="animate__fadeOutUp"
-      >
-        <div class="drop">Project Area<br /><span>89</span>Acres</div>
+      <div class="pricingImgContainer">
+        <img src="./img/gallery/divider.png" />
       </div>
-    </section> -->
+    </section>
+
+    <!-- container 11 -->
+   <section class="bgLayout testmonialCont anim">
+    <div class="pricingTextContainer">
+      <section class="layouttext">
+        <h3>Testimonial</h3>
+      </section>
+      <section class="testiTextCont">
+        <h4>Joseph Bradley</h4>
+        <span>Chennai</span>
+        <p>Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an
+          unknown printer took a galley Lorem Ipsum has 
+          been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer
+          took a galley </p>
+      </section>
+    </div>
+    <div class="pricingImgContainer">
+      <section class="layoutImg">
+        <img src="./img/Testimonial/icon-01.svg" />
+      </section>
+    </div>
+</section>
+    <!-- container 12 -->
+    <section class="bgLayout aboutCont anim">
+      <div class="pricingTextContainer">
+        <section class="layouttext">
+          <h3>About us</h3>
+          <h4>South India’s Largest and Tamil Nadu’s
+            No. 1 Real Estate Developer</h4>
+            <p>G Square is South India’s largest and Tamil Nadu’s No. 1 Real Estate Developer with acres of land parcels.
+              With our keen sense of focus and an eye for detail, we’re able to identify lands at the right time and offer
+              it to you in a hassle-free manner. G Square takes pride in having an absolutely clean slate by analysing
+              every aspect and compliance.</p>
+        </section>
+      </div>
+      <div class="pricingImgContainer">
+        <section class="layoutImg">
+          <img src="./img/About/pattern.png" />
+        </section>
+      </div>
+  </section>
+   <!-- container 13 -->
+   <section class="bgLayout contactCont anim">
+    <div class="pricingTextContainer">
+      <img src="./img/About/divider 02.png" class="bgwaterleft" /> 
+     <section class="patterIcon">
+        <div class="FormContainer">
+          <section class="childElement">
+            <span>Call Us</span>
+            <h5>+91 893 954 0008</h5>
+          </section>
+          <section class="childElement">
+            <span>Email Us</span>
+            <h5>marketing@gsquarehousing.com</h5>
+          </section>
+          <section class="childElement formCont">
+            <span>EnquirE Now</span>
+            <form >
+              <section class="inputElement">
+                <input type="text" placeholder="Name"/>
+                <input type="email" placeholder="Email"/>
+              </section>
+              <section class="inputElement">
+                <input type="text" placeholder="Project"/>
+                <input type="number" placeholder="Phone"/>
+              </section>
+               <button>SUBMIT</button>
+            </form>
+          </section>
+        </div>
+    </section>
+    </div>
+    </section>
+    
+     
+
+    <!-- image viewer popup -->
+    <div class="imagePopup">
+      <div class="innerpopUP">
+          <button onclick="hideImagePopup()">close</button>
+
+        </div>
+    </div>
+
   </body>
   <script
     type="text/javascript"
     src="https://code.jquery.com/jquery-2.2.4.js"
   ></script>
+  <!-- https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js -->
+
   <script
     type="text/javascript"
     src="https://dezvolta.in/trishul/wp-content/themes/trishul-child/trishul.js"
   ></script>
+  <!-- <script
+    type="text/javascript"
+    src="https://www.jqueryscript.net/demo/Cyclotron-Panorama-Image-Display-Plugin/index_files/jquery-1.7.1.min.js"
+  ></script> -->
+  <script
+    type="text/javascript"
+    src="https://www.jqueryscript.net/demo/Cyclotron-Panorama-Image-Display-Plugin/index_files/jquery.cyclotron.js"
+  ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <!-- owl -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
   <script>
     function replaceVerticalScrollByHorizontal(event) {
       if (event.deltaY !== 0) {
@@ -612,6 +867,50 @@
   <script>
     // init controller
     //var controller = new ScrollMagic.Controller();
+
+    // showing toolTip
+    function toggleTip(ele,ico){
+      let imgElement = $(ico).attr('src');
+      let imgSrc = imgElement.indexOf('icon-02') != -1? './img/Amenities/icon-01.svg' : './img/Amenities/icon-02.svg';
+      $(ico).attr('src',imgSrc);
+      $(ele).slideToggle();
+    }
+    // image 360 view 
+    $(document).ready(function ($) {
+      $('.cycle').cyclotron();
+    });
+    // image Pan popup 
+    function showImagePopup(){
+      $('.imagePopup').show(200);
+    }
+    function hideImagePopup(){
+      $('.imagePopup').hide(100);
+    }
+    // owl calrousel
+    $('#owl-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        dots: false,
+        nav: true,
+        items: 2,
+        onChanged: counter,
+        navText:["<img class='nav-btn prev-slide arrow-icon' src='/img/Salient/next-icon.svg'/>","<img class='arrow-icon nav-btn next-slide' src='/img/Salient/prev-icon.svg'/>"],
+    })
+
+    function counter(event) {
+      if (!event.namespace) {
+        return;
+      }
+      var slides = event.relatedTarget;
+      let firstCl = 'item zoomClass '+(slides.relative(slides.current())+1);
+      let classlen = ((slides.relative(slides.current()) == 5 ? -1 :(slides.relative(slides.current()))) +2)
+      let nextCl = 'item previewClass '+ classlen;
+      $('.'+classlen).attr('class', nextCl);
+      $('.'+(slides.relative(slides.current())+1)).attr('class', firstCl);
+      // $('.'+slides.relative(slides.current())).attr('class','item in-1');
+      $('.slider-counter').text(slides.relative(slides.current()) + 1 + '/' + slides.items().length);
+    }
+
   </script>
   <script>
     var controller = new ScrollMagic.Controller({ vertical: false });
